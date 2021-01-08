@@ -99,68 +99,33 @@
           />
         </div>
         <div
+          v-if="isDesktop || alwaysVisible"
+          ref="swiperWrapper"
           class="vhd__datepicker__months"
           :class="{ 'vhd__datepicker__months--full': showSingleMonth }"
-          v-if="screenSize === 'desktop' || alwaysVisible"
         >
-          <div
-            ref="datepickerMonth"
-            class="vhd__datepicker__month"
+          <Month
             v-for="(month, monthIndex) in paginateMonths"
             :key="`${datepickerMonthKey}-${month}`"
-          >
-            <p class="vhd__datepicker__month-name">
-              {{ getMonth(months[activeMonthIndex + month].days[15].date) }}
-            </p>
-            <div class="vhd__datepicker__week-row vhd__hide-up-to-tablet">
-              <div
-                class="vhd__datepicker__week-name"
-                v-for="(dayName, datePickerWeekIndexDesktop) in i18n['day-names']"
-                :key="`${datepickerWeekKey}-${datePickerWeekIndexDesktop}`"
-              >
-                {{ dayName }}
-              </div>
-            </div>
-            <div
-              class="vhd__square"
-              v-for="(day, dayIndexDesktop) in months[activeMonthIndex + month].days"
-              @mouseenter="mouseEnterDay(day)"
-              :key="`${datepickerDayKey}-${monthIndex}-${dayIndexDesktop}`"
-            >
-              <Day
-                :activeMonthIndex="activeMonthIndex"
-                :belongsToThisMonth="day.belongsToThisMonth"
-                :bookings="sortBookings"
-                :checkIn="checkIn"
-                :checkIncheckOutHalfDay="checkIncheckOutHalfDay"
-                :checkInPeriod="checkInPeriod"
-                :checkOut="checkOut"
-                :date="day.date"
-                :disableCheckoutOnCheckin="disableCheckoutOnCheckin"
-                :duplicateBookingDates="duplicateBookingDates"
-                :hoveringDate="hoveringDate"
-                :hoveringPeriod="hoveringPeriod"
-                :i18n="i18n"
-                :isOpen="isOpen"
-                :minNightCount="minNightCount"
-                :nextDisabledDate="nextDisabledDate"
-                :nextPeriodDisableDates="nextPeriodDisableDates"
-                :options="dayOptions"
-                :screenSize="screenSize"
-                :showCustomTooltip="showCustomTooltip"
-                :showPrice="showPrice"
-                :sortedDisabledDates="sortedDisabledDates"
-                :sortedPeriodDates="sortedPeriodDates"
-                :tooltipMessage="customTooltipMessage"
-                @clear-selection="clearSelection"
-                @booking-clicked="handleBookingClicked"
-                @day-clicked="handleDayClick"
-              />
-            </div>
-          </div>
+            :monthIndex="monthIndex"
+            :month="month"
+            :is-desktop="isDesktop"
+            :months="months"
+            :options="dayOptions"
+            :activeMonthIndex="activeMonthIndex"
+            :customTooltip.sync="showCustomTooltip"
+            v-bind="$props"
+            ref="datepickerMonth"
+            @set-custom-tooltip-on-hover="setCustomTooltipOnHover"
+            @mouse-enter-day="mouseEnterDay"
+            @clear-selection="clearSelection"
+            @booking-clicked="handleBookingClicked"
+            @day-clicked="handleDayClick"
+            @set-current-period="setCurrentPeriod"
+          />
         </div>
         <div
-          v-if="screenSize !== 'desktop' && isOpen && !alwaysVisible"
+          v-if="!isDesktop && isOpen && !alwaysVisible"
           :class="['vhd__datepicker__months-wrapper', { 'vhd__show-tooltip': showCustomTooltip && hoveringTooltip }]"
         >
           <div class="vhd__datepicker__tooltip--mobile" v-if="hoveringTooltip">
@@ -169,60 +134,23 @@
             </template>
           </div>
           <div class="vhd__datepicker__months" ref="swiperWrapper">
-            <div
+            <Month
+              v-for="(month, monthIndex) in paginateMonths"
+              :key="`${datepickerMonthKey}-${month}`"
+              :monthIndex="monthIndex"
+              :month="month"
+              :is-desktop="isDesktop"
+              :months="months"
+              :options="dayOptions"
+              :activeMonthIndex="activeMonthIndex"
+              v-bind="$props"
               ref="datepickerMonth"
-              class="vhd__datepicker__month"
-              v-for="(a, n) in paginateMonths"
-              :key="`${datepickerMonthKey}-${n}`"
-            >
-              <p class="vhd__datepicker__month-name">
-                {{ getMonth(months[activeMonthIndex + n].days[15].date) }}
-              </p>
-              <div class="vhd__datepicker__week-row">
-                <div
-                  class="vhd__datepicker__week-name"
-                  v-for="(dayName, datePickerIndex) in i18n['day-names']"
-                  :key="`datepicker__month-name-datepicker__week-name-${datePickerIndex}`"
-                >
-                  {{ dayName }}
-                </div>
-              </div>
-              <div
-                class="vhd__square"
-                v-for="(day, dayIndexMobile) in months[activeMonthIndex + n].days"
-                :key="`${datepickerDayKey}-${n}-${dayIndexMobile}`"
-                @mouseenter="mouseEnterDay(day)"
-              >
-                <Day
-                  :activeMonthIndex="activeMonthIndex"
-                  :belongsToThisMonth="day.belongsToThisMonth"
-                  :bookings="sortBookings"
-                  :checkIn="checkIn"
-                  :checkIncheckOutHalfDay="checkIncheckOutHalfDay"
-                  :checkInPeriod="checkInPeriod"
-                  :checkOut="checkOut"
-                  :date="day.date"
-                  :disableCheckoutOnCheckin="disableCheckoutOnCheckin"
-                  :duplicateBookingDates="duplicateBookingDates"
-                  :hoveringDate="hoveringDate"
-                  :hoveringPeriod="hoveringPeriod"
-                  :i18n="i18n"
-                  :isOpen="isOpen"
-                  :minNightCount="minNightCount"
-                  :nextDisabledDate="nextDisabledDate"
-                  :nextPeriodDisableDates="nextPeriodDisableDates"
-                  :options="dayOptions"
-                  :screenSize="screenSize"
-                  :showPrice="showPrice"
-                  :sortedDisabledDates="sortedDisabledDates"
-                  :sortedPeriodDates="sortedPeriodDates"
-                  :tooltipMessage="customTooltipMessage"
-                  @clear-selection="clearSelection"
-                  @booking-clicked="handleBookingClicked"
-                  @day-clicked="handleDayClick"
-                />
-              </div>
-            </div>
+              @set-custom-tooltip-on-hover="setCustomTooltipOnHover($event)"
+              @clear-selection="clearSelection"
+              @booking-clicked="handleBookingClicked"
+              @day-clicked="handleDayClick"
+              @set-current-period="setCurrentPeriod"
+            />
           </div>
         </div>
       </div>
@@ -235,16 +163,16 @@
 import throttle from 'lodash.throttle'
 import fecha from 'fecha'
 
-import Day from './components/Day.vue'
+import Month from './components/Month.vue'
 import DateInput from './components/DateInput.vue'
-import Helpers from '../helpers'
 import i18nDefaults from '../i18n/en'
+import Helpers from '../helpers'
 
 export default {
   name: 'HotelDatePicker',
   components: {
-    Day,
     DateInput,
+    Month,
   },
   props: {
     alwaysVisible: {
@@ -390,7 +318,6 @@ export default {
       hoveringPeriod: {},
       customTooltip: '',
       customTooltipHalfday: '',
-      datepickerDayKey: 0,
       datepickerMonthKey: 0,
       datepickerWeekKey: 0,
       dynamicNightCounts: null,
@@ -418,24 +345,9 @@ export default {
       set(open) {
         this.open = open
 
-        if (this.screenSize !== 'desktop' && !this.alwaysVisible) {
-          const body = document.querySelector('body')
-
-          if (open) {
-            body.style.overflow = 'hidden'
-
-            this.$nextTick(() => {
-              if (this.$refs) {
-                const { swiperWrapper } = this.$refs
-                const monthHeihgt = this.$refs.datepickerMonth[0].offsetHeight
-                const currentSelectionIndex = this.checkOut ? this.getMonthDiff(new Date(), this.checkOut) : 0
-
-                swiperWrapper.scrollTop = currentSelectionIndex * monthHeihgt
-              }
-            })
-          } else {
-            body.style.overflow = ''
-          }
+        if (!this.isDesktop && !this.alwaysVisible) {
+          document.body.style.overflow = this.open ? 'hidden' : ''
+          this.$nextTick(this.setSwiper)
         }
 
         this.$emit('input', this.open)
@@ -471,11 +383,9 @@ export default {
       return this.disabledDates
     },
     paginateMonths() {
-      if (this.showSingleMonth || (this.alwaysVisible && this.screenSize !== 'desktop')) {
-        return [0]
-      }
+      const oneMonth = this.showSingleMonth || (this.alwaysVisible && !this.isDesktop)
 
-      return [0, 1]
+      return oneMonth ? [0] : [0, 1]
     },
     customTooltipMessage() {
       let tooltip = ''
@@ -569,6 +479,9 @@ export default {
     dayOptions() {
       return { ...this.$props, disabledWeekDaysObject: this.disabledWeekDaysObject }
     },
+    isDesktop() {
+      return this.screenSize === 'desktop'
+    },
   },
   watch: {
     bookings() {
@@ -635,7 +548,7 @@ export default {
 
     window.addEventListener('resize', this.handleWindowResize)
 
-    if (this.screenSize !== 'desktop') {
+    if (!this.isDesktop) {
       document.addEventListener('touchstart', this.handleTouchStart, false)
       document.addEventListener('touchmove', this.handleTouchMove, false)
       document.addEventListener('touchend', this.handleTouchEnd, false)
@@ -664,7 +577,17 @@ export default {
   },
   methods: {
     ...Helpers,
-    transformDisabledWeekDays() {},
+    mouseEnterDay(day) {
+      const formatDate = this.dateFormater(day.date)
+      const halfDays = Object.keys(this.checkIncheckOutHalfDay)
+      const disableDays = this.disabledDates
+        .filter((disableDate) => !halfDays.includes(disableDate))
+        .includes(formatDate)
+
+      if (!this.dayIsDisabled(day.date) && day.belongsToThisMonth && !disableDays) {
+        this.setCustomTooltipOnHover(day)
+      }
+    },
     handleBookingClicked(event, date, currentBooking) {
       this.$emit('booking-clicked', event, date, currentBooking)
       /**
@@ -685,48 +608,6 @@ export default {
     cleanString(string) {
       // eslint-disable-next-line no-useless-escape
       return string.replace(/\<br\/>/g, '')
-    },
-    dateIsInCheckInCheckOut(date) {
-      const compareDate = this.dateFormater(date)
-      let currentPeriod = null
-
-      this.sortedPeriodDates.forEach((d) => {
-        if (
-          d.endAt !== compareDate &&
-          (d.startAt === compareDate || this.validateDateBetweenTwoDates(d.startAt, d.endAt, compareDate))
-        ) {
-          currentPeriod = d
-        }
-      })
-
-      return currentPeriod
-    },
-    dayIsDisabled(date) {
-      if (
-        this.checkIn &&
-        !this.checkOut &&
-        !this.isDateLessOrEquals(date, this.nextDisabledDate) &&
-        this.nextDisabledDate !== Infinity
-      ) {
-        return true
-      }
-
-      if (this.checkIn && !this.checkOut && this.isDateLessOrEquals(date, this.checkIn)) {
-        return true
-      }
-
-      return false
-    },
-    mouseEnterDay(day) {
-      const formatDate = this.dateFormater(day.date)
-      const halfDays = Object.keys(this.checkIncheckOutHalfDay)
-      const disableDays = this.disabledDates
-        .filter((disableDate) => !halfDays.includes(disableDate))
-        .includes(formatDate)
-
-      if (!this.dayIsDisabled(day.date) && day.belongsToThisMonth && !disableDays) {
-        this.setCustomTooltipOnHover(day)
-      }
     },
     setCurrentPeriod(date, eventType) {
       let currentPeriod = {}
@@ -771,41 +652,6 @@ export default {
           startAt: this.checkIn,
           endAt: this.addDays(this.checkIn, this.minNightCount),
         }
-      }
-    },
-    setCustomTooltipOnHover(day) {
-      const { date } = day
-
-      this.hoveringDate = date
-      if (this.showCustomTooltip) this.showCustomTooltip = false
-
-      this.setCurrentPeriod(date, 'hover')
-
-      if (Object.keys(this.hoveringPeriod).length > 0) {
-        // Create tooltip
-        if (this.hoveringPeriod.periodType === 'weekly_by_saturday') {
-          const dayCode = 6
-          const text = this.i18n.tooltip.saturdayToSaturday
-
-          this.showTooltipWeeklyOnHover(date, dayCode, text)
-        } else if (this.hoveringPeriod.periodType === 'weekly_by_sunday') {
-          const dayCode = 0
-          const text = this.i18n.tooltip.sundayToSunday
-
-          this.showTooltipWeeklyOnHover(date, dayCode, text)
-        } else if (this.hoveringPeriod.periodType === 'nightly') {
-          this.showTooltipNightlyOnHover(date)
-        } else {
-          // Clean tooltip
-          this.showCustomTooltip = false
-          this.customTooltip = ''
-        }
-      } else {
-        this.hoveringPeriod = {}
-      }
-
-      if (this.halfDay) {
-        this.createHalfDayTooltip(day.date)
       }
     },
     handleDayClick(event, date, formatDate, resetCheckin) {
@@ -893,129 +739,6 @@ export default {
         this.showTooltipWeeklyOnClick()
       } else if (this.checkInPeriod.periodType === 'nightly') {
         this.showTooltipNightlyOnClick()
-      }
-    },
-    showTooltipWeeklyOnHover(date, periodDayType, text) {
-      const countDaysBetweenCheckInCurrentDay = this.countDays(this.checkIn, date)
-      const notOnPeriodDayType = date.getDay() !== periodDayType
-      const isCheckInCheckOut = this.checkIn && this.checkOut
-      const notCheckInNotPeriodDayType = !this.checkIn && notOnPeriodDayType
-      const isCheckInNotCheckOut = this.checkIn && !this.checkOut
-      const isNotBetweenCheckInAndCheckOut = !this.validateDateBetweenTwoDates(this.checkIn, this.checkOut, date)
-      const notAllowDaysBetweenCheckInAndNextValidDate =
-        this.hoveringPeriod.nextValidDate &&
-        this.validateDateBetweenTwoDates(this.checkIn, this.hoveringPeriod.nextValidDate, this.hoveringDate) &&
-        this.dateFormater(this.checkIn) !== this.dateFormater(this.hoveringDate) &&
-        this.dateFormater(this.hoveringPeriod.nextValidDate) !== this.dateFormater(this.hoveringDate)
-      const hasHalfDayOnWeeklyPeriod =
-        Object.keys(this.checkIncheckOutHalfDay).length > 0 &&
-        this.checkIncheckOutHalfDay[this.dateFormater(date)] &&
-        this.checkIncheckOutHalfDay[this.dateFormater(date)].checkIn
-
-      // Show tooltip on not-allowed day
-      if (notCheckInNotPeriodDayType) {
-        this.showCustomTooltip = true
-        this.customTooltip = text
-      } else {
-        this.showCustomTooltip = false
-        this.customTooltip = ''
-      }
-
-      // Show tooltip when CheckIn
-      if (isCheckInNotCheckOut) {
-        const nextDayValid = this.addDays(this.checkIn, this.minNightCount)
-        const isDateAfterMinimumDuration = this.getDayDiff(date, nextDayValid) <= 0
-
-        if (isDateAfterMinimumDuration && notOnPeriodDayType) {
-          this.showCustomTooltip = true
-          this.customTooltip = text
-        } else if (notOnPeriodDayType || notAllowDaysBetweenCheckInAndNextValidDate) {
-          if (this.checkInPeriod && this.checkInPeriod.periodType === 'nightly') {
-            this.showCustomTooltip = false
-            this.customTooltip = ''
-          } else {
-            // Show default message on currentDay
-            const night = this.pluralize(this.minNightCount, 'week')
-
-            this.showCustomTooltip = true
-            this.customTooltip = this.completeTrad(this.i18n.tooltip.minimumRequiredPeriod, {
-              minNightInPeriod: this.minNightCount / 7,
-              night,
-            })
-          }
-        } else if (hasHalfDayOnWeeklyPeriod) {
-          // Show the correct wording in comparison to periodType of this.checkInPeriod equal to "nightly" / "weekly"
-          if (this.checkInPeriod.periodType !== 'nightly') {
-            this.customTooltip = `${countDaysBetweenCheckInCurrentDay / 7} ${this.pluralize(
-              this.minNightCount,
-              'week',
-            )}`
-          } else if (this.checkInPeriod.periodType === 'nightly') {
-            this.customTooltip = `${countDaysBetweenCheckInCurrentDay} ${
-              countDaysBetweenCheckInCurrentDay !== 1 ? this.i18n.nights : this.i18n.night
-            }`
-          }
-        } else {
-          // Clean tooltip
-          this.showCustomTooltip = false
-          this.customTooltip = ''
-        }
-        // Show tooltip when CheckIn & CheckOut on all the days that are not between checkIn and CheckOut
-      } else if (isCheckInCheckOut && notOnPeriodDayType && isNotBetweenCheckInAndCheckOut) {
-        this.showCustomTooltip = true
-        this.customTooltip = text
-      }
-    },
-    showTooltipWeeklyOnClick() {
-      const night = this.pluralize(this.minNightCount, 'week')
-
-      this.showCustomTooltip = true
-      this.customTooltip = this.completeTrad(this.i18n.tooltip.minimumRequiredPeriod, {
-        minNightInPeriod: this.minNightCount / 7,
-        night,
-      })
-    },
-    showTooltipNightlyOnHover(date) {
-      if (this.checkIn && !this.checkOut) {
-        const nextDayValid = this.addDays(this.checkIn, this.minNightCount)
-        const isDateAfterMinimumDuration = this.getDayDiff(date, nextDayValid) <= 0
-        const countOfDays = this.countDays(this.checkIn, date)
-        const night = this.pluralize(Math.max(this.minNightCount, countOfDays))
-
-        if (!isDateAfterMinimumDuration) {
-          const minNightInPeriod = this.hoveringPeriod.minimumDuration
-
-          this.showCustomTooltip = true
-          this.customTooltip = this.completeTrad(this.i18n.tooltip.minimumRequiredPeriod, {
-            minNightInPeriod,
-            night,
-          })
-        } else {
-          this.customTooltip = `${countOfDays} ${night}`
-        }
-      } else {
-        this.customTooltip = ''
-      }
-    },
-    showTooltipNightlyOnClick() {
-      const minNightInPeriod = this.hoveringPeriod.minimumDuration
-      const night = this.pluralize(this.minNightCount)
-
-      this.showCustomTooltip = true
-      this.customTooltip = this.completeTrad(this.i18n.tooltip.minimumRequiredPeriod, { minNightInPeriod, night })
-    },
-    createHalfDayTooltip(date) {
-      this.customTooltipHalfday = ''
-      const formatedHoveringDate = this.dateFormater(date)
-
-      if (this.checkIncheckOutHalfDay[formatedHoveringDate]) {
-        this.showCustomTooltip = true
-
-        if (this.checkIncheckOutHalfDay[formatedHoveringDate].checkIn) {
-          this.customTooltipHalfday = this.i18n.tooltip.halfDayCheckOut
-        } else if (this.checkIncheckOutHalfDay[formatedHoveringDate].checkOut) {
-          this.customTooltipHalfday = this.i18n.tooltip.halfDayCheckIn
-        }
       }
     },
     completeTrad(translation, keys) {
@@ -1294,6 +1017,16 @@ export default {
        * @deprecated since v4.0.0 beta 11
        */
       this.$emit('handleCheckinCheckoutHalfDay', this.checkIncheckOutHalfDay)
+    },
+    setSwiper() {
+      const swiper = this.$refs.swiperWrapper
+
+      if (swiper) {
+        const monthHeight = this.$refs.datepickerMonth[0].offsetHeight
+        const currentSelectionIndex = this.checkOut ? this.getMonthDiff(new Date(), this.checkOut) : 0
+
+        swiper.scrollTop = currentSelectionIndex * monthHeight
+      }
     },
   },
 }

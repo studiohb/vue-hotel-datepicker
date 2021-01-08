@@ -17,6 +17,9 @@
       <div :class="['menu', { hidden: !menu }]">
         <h3>Examples</h3>
         <ul>
+          <li @click="selectBox(24)" :class="{ selected: boxShow == 24 }">Set checkIn value</li>
+          <li @click="selectBox(25)" :class="{ selected: boxShow == 25 }">Set checkOut value</li>
+          <li @click="selectBox(26)" :class="{ selected: boxShow == 26 }">Event CheckIn</li>
           <li @click="selectBox(0)" :class="{ selected: boxShow == 0 }">Show list of static bookings</li>
           <li @click="selectBox(1)" :class="{ selected: boxShow == 1 }">Calendar in full view</li>
           <li @click="selectBox(2)" :class="{ selected: boxShow == 2 }">Show calendar on the right</li>
@@ -59,9 +62,6 @@
           <li @click="selectBox(23)" :class="{ selected: boxShow == 23 }">
             Change the first day of the week to Monday
           </li>
-          <li @click="selectBox(24)" :class="{ selected: boxShow == 24 }">Set checkIn value</li>
-          <li @click="selectBox(25)" :class="{ selected: boxShow == 25 }">Set checkOut value</li>
-          <li @click="selectBox(26)" :class="{ selected: boxShow == 26 }">Event CheckIn</li>
         </ul>
       </div>
       <div v-show="!menu || currentWidth > 1184" class="box-container">
@@ -381,7 +381,7 @@ export default {
       minNights: 3,
       menu: false,
       currentWidth: window.innerWidth,
-      boxShow: 0,
+      boxShow: 24,
       language: 'en',
       languages: { pt, fr, en, es },
     }

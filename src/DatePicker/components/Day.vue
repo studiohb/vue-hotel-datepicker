@@ -278,6 +278,7 @@ export default {
         !isDateAfterMinimumDuration &&
         !this.checkOut &&
         !this.isDisabled &&
+        this.checkIn &&
         this.compareDay(this.date, this.checkIn) >= 0 &&
         this.minNightCount > 0 &&
         this.compareDay(this.date, this.addDays(this.checkIn, this.minNightCount)) === -1
@@ -531,6 +532,19 @@ export default {
     nextDisabledDate() {
       this.disableNextDays()
     },
+  },
+  created() {
+    fecha.i18n = {
+      dayNames: this.i18n['day-names'],
+      dayNamesShort: this.shortenString(this.i18n['day-names'], 3),
+      monthNames: this.i18n['month-names'],
+      monthNamesShort: this.shortenString(this.i18n['month-names'], 3),
+      amPm: ['am', 'pm'],
+      // D is the day of the month, function returns something like...  3rd or 11th
+      DoFn(D) {
+        return D + ['th', 'st', 'nd', 'rd'][D % 10 > 3 ? 0 : ((D - (D % 10) !== 10) * D) % 10]
+      },
+    }
   },
   beforeMount() {
     this.checkIfDisabled()
