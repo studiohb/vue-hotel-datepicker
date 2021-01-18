@@ -4,12 +4,13 @@
     .datepicker__month-day(
       @click.prevent.stop='dayClicked(date)'
       @keyup.enter.prevent.stop='dayClicked(date)'
-      v-text='dayNumber'
       :class='dayClass'
       :style='isToday ? currentDateStyle : ""'
       :tabindex="tabIndex"
       ref="day"
     )
+      .day-number {{ dayNumber }}
+      .day-price {{ price }}
 </template>
 
 <script>
@@ -69,6 +70,10 @@ export default {
     currentDateStyle: {
       type: [Object, null, String],
       required: true
+    },
+    price: {
+      type: [Number, String],
+      default: ''
     }
   },
 

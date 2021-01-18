@@ -565,28 +565,18 @@ export default {
       this.sortedDisabledDates = sortedDates;
     },
     getPrice(day) {
-      const ranges = Array.isArray(this.priceByDate) ? this.priceByDate : [];
-      const range = ranges.find(range => {
-        const hasPrice = range.price ? true : false;
-        const hasStartDate = range.start ? true : false;
-        const hasEndDate = range.end ? true : false;
-        const dateIsGreaterOrEqualThatStart =
-          hasStartDate && day.date >= range.start ? true : false;
-        const dateIsLessThatEnd =
-          hasEndDate && day.date < range.end ? true : false;
+      const priceRanges = Array.isArray(this.priceByDate) ? this.priceByDate : [];
+      const currentRange = priceRanges.find(range => this.isDateInRange(day.date, range.start, range.end));
 
-        return (
-          (hasStartDate || hasEndDate) &&
-          (!hasStartDate || dateIsGreaterOrEqualThatStart) &&
-          (!hasEndDate || dateIsLessThatEnd)
-        );
-      });
-
-      return String(
-        typeof range === 'object' ? range.price : this.priceDefault || ''
-      );
+      return currentRange?.price || this.priceDefault;
+    },
+    normalizedDate(date) {
+      return new Date(date).setUTCHours(0,0,0,0);
+    },
+    isDateInRange(date, rangeStart, rangeEnd) {
+      return this.normalizedDate(date) >= this.normalizedDate(rangeStart)
+          && this.normalizedDate(date) <= this.normalizedDate(rangeEnd);
     }
   },
-
 };
 </script>
