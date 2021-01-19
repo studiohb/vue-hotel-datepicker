@@ -224,10 +224,6 @@ export default {
       default: () => defaulti18n,
       type: Object
     },
-    enableCheckout: {
-      default: false,
-      type: Boolean
-    },
     singleDaySelection: {
       default: false,
       type: Boolean

@@ -298,10 +298,6 @@ export default {
           ) ||
           Infinity;
 
-        if (this.options.enableCheckout) {
-          nextDisabledDate = Infinity;
-        }
-
         this.$emit('day-clicked', { date, nextDisabledDate });
       }
     },
@@ -328,15 +324,6 @@ export default {
         this.options.disabledDaysOfWeek.some(
           i => i == fecha.format(this.date, 'dddd')
         );
-      // Handle checkout enabled
-      if (this.options.enableCheckout) {
-        if (
-          this.compareDay(this.date, this.checkIn) == 1 &&
-          this.compareDay(this.date, this.checkOut) == -1
-        ) {
-          this.isDisabled = false;
-        }
-      }
     },
 
     checkIfHighlighted() {
@@ -374,14 +361,6 @@ export default {
         this.options.minNights == 0
       ) {
         this.isDisabled = false;
-      }
-      if (
-        this.isDateLessOrEquals(this.checkIn, this.date) &&
-        this.options.enableCheckout
-      ) {
-        this.isDisabled = false;
-      } else {
-        return;
       }
     }
   },

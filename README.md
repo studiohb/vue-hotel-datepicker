@@ -121,14 +121,6 @@ An array of strings in this format: `['Monday', 'Tuesday', 'Wednesday', 'Thursda
 An array of numbers. Example: `[7,10,14]`.
 After selecting the start date the calendar will be updated only allowing the checkout 7, 10 or 14 days after.
 
-### enableCheckout
-
-- Type: `Boolean`
-- Default: `false`
-
-If `true`, allows the checkout on a disabled date.
-
-
 ### hoveringTooltip
 
 - Type: `Boolean` or `Function`
