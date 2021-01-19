@@ -206,12 +206,6 @@ export default {
       },
       type: Array
     },
-    allowedRanges: {
-      default: function() {
-        return [];
-      },
-      type: Array
-    },
     hoveringTooltip: {
       default: true,
       type: [Boolean, Function]

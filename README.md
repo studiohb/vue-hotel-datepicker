@@ -114,13 +114,6 @@ An array of strings in this format: `YYYY-MM-DD`. All the dates passed to the li
 
 An array of strings in this format: `['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']`. All the days passed to the list will be disabled.
 
-### allowedRanges
-- Type: `Array`
-- Default: `[]`
-
-An array of numbers. Example: `[7,10,14]`.
-After selecting the start date the calendar will be updated only allowing the checkout 7, 10 or 14 days after.
-
 ### hoveringTooltip
 
 - Type: `Boolean` or `Function`
