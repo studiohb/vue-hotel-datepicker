@@ -76,7 +76,7 @@ export default {
     },
     price: {
       type: [Number, String],
-      default: ''
+      default: null
     }
   },
 
@@ -130,7 +130,8 @@ export default {
           || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
           || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
           || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
-          || this.compareDay(this.date, this.nextDisabledDate) == 1; // Or is after the next disabled date
+          || this.compareDay(this.date, this.nextDisabledDate) == 1 // Or is after the next disabled date
+          || !this.price; // Or it doesn't have a price
     },
 
     isEnabled() {
