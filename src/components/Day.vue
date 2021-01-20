@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   div
     .datepicker__tooltip(v-if='showTooltip && this.options.hoveringTooltip' v-html='tooltipMessageDisplay')
     .datepicker__month-day(
@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import fecha from 'fecha';
-
 import Helpers from '../helpers.js';
 
 export default {
@@ -26,7 +24,11 @@ export default {
       type: Boolean,
       required: true
     },
-    sortedDisabledDates: {
+    disabledDatesForCheckIn: {
+      type: Array,
+      default: () => []
+    },
+    disabledDatesForCheckOut: {
       type: Array,
       default: () => []
     },
@@ -78,13 +80,6 @@ export default {
     }
   },
 
-  data() {
-    return {
-      isHighlighted: false,
-      currentDate: new Date()
-    };
-  },
-
   computed: {
     tabIndex() {
       if (
@@ -119,15 +114,19 @@ export default {
     },
 
     isToday() {
-      return this.compareDay(this.currentDate, this.date) == 0;
+      return this.compareDay(new Date(), this.date) == 0;
     },
 
     isCheckInDay() {
       return this.compareDay(this.checkIn, this.date) == 0;
     },
 
+    isCheckOutDay() {
+      return this.compareDay(this.checkOut, this.date) == 0;
+    },
+
     isDisabled() {
-      return this.sortedDisabledDates.some(i => this.compareDay(i, this.date) == 0) // If this day is explicitely disabled
+      return this.disabledDates.some(i => this.compareDay(i, this.date) == 0) // If this day is explicitely disabled
           || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
           || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
           || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
@@ -138,85 +137,45 @@ export default {
       return !this.isDisabled;
     },
 
-    dayClass() {
-      if (this.belongsToThisMonth) {
-        // If the calendar has a minimum number of nights
-        if (
-          !this.isDisabled &&
-          this.compareDay(this.date, this.checkIn) == 1 &&
-          this.options.minNights > 0 &&
-          this.compareDay(
-            this.date,
-            this.addDays(this.checkIn, this.options.minNights)
-          ) == -1
-        ) {
-          return 'datepicker__month-day--selected datepicker__month-day--out-of-range';
-        }
+    isHighlighted() {
+      if (!this.checkIn) return false;
+      return this.isDayInRange(this.date, [this.checkIn, this.checkOut || this.hoveringDate]);
+    },
 
-        // Highlight the selected dates and prevent the user from selecting
-        // the same date for checkout and checkin
-        if (
-          this.checkIn !== null &&
-          fecha.format(this.checkIn, 'YYYYMMDD') ==
-            fecha.format(this.date, 'YYYYMMDD')
-        ) {
-          if (this.options.minNights == 0) {
-            return 'datepicker__month-day--first-day-selected';
-          } else {
-            return 'datepicker__month-day--disabled datepicker__month-day--first-day-selected';
-          }
-        }
-        if (this.checkOut !== null) {
-          if (
-            fecha.format(this.checkOut, 'YYYYMMDD') ==
-            fecha.format(this.date, 'YYYYMMDD')
-          ) {
-            return 'datepicker__month-day--disabled datepicker__month-day--last-day-selected';
-          }
-        }
-        // Only highlight dates that are not disabled
-        if (this.isHighlighted && !this.isDisabled) {
-          return ' datepicker__month-day--selected';
-        }
-        if (this.isDisabled) {
-          return 'datepicker__month-day--disabled';
-        }
-      } else if (!this.belongsToThisMonth) {
-        return 'datepicker__month-day--hidden';
-      }
-      return 'datepicker__month-day--valid';
+    forbidsCheckIn() {
+      return this.disabledDatesForCheckIn.some(i => this.compareDay(i, this.date) == 0);
+    },
+
+    forbidsCheckOut() {
+      return this.disabledDatesForCheckOut.some(i => this.compareDay(i, this.date) == 0);
+    },
+
+    dayClass() {
+      if (!this.belongsToThisMonth) return this.cssClass('hidden');
+
+      const classes = [this.cssClass(this.isDisabled ? 'disabled' : 'valid')];
+
+      // Selection
+      if (this.isHighlighted) classes.push(this.cssClass('selected'));
+      if (this.isCheckInDay) classes.push(this.cssClass('first-day-selected'));
+      if (this.isCheckOutDay) classes.push(this.cssClass('last-day-selected'));
+
+      // Half-days
+      if (this.forbidsCheckIn) classes.push(this.cssClass('check-in-forbidden'));
+      if (this.forbidsCheckOut) classes.push(this.cssClass('check-out-forbidden'));
+
+      return classes.join(' ');
+    },
+
+    disabledDates() {
+      return this.sortDates(
+        this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn
+      );
     },
 
     showPrice() {
       return this.isEnabled || this.isCheckInDay;
     },
-  },
-
-  watch: {
-    hoveringDate(date) {
-      if (
-        this.checkIn !== null &&
-        this.checkOut == null &&
-        this.isDisabled == false
-      ) {
-        this.isDateLessOrEquals(this.checkIn, this.date) &&
-        this.isDateLessOrEquals(this.date, this.hoveringDate)
-          ? (this.isHighlighted = true)
-          : (this.isHighlighted = false);
-      }
-    },
-    activeMonthIndex(index) {
-      this.checkIfHighlighted();
-      if (this.checkIn !== null && this.checkOut !== null) {
-        this.isDateLessOrEquals(this.checkIn, this.date) &&
-        this.isDateLessOrEquals(this.date, this.checkOut)
-          ? (this.isHighlighted = true)
-          : (this.isHighlighted = false);
-      }
-    },
-  },
-  beforeMount() {
-    this.checkIfHighlighted();
   },
 
   methods: {
@@ -230,33 +189,13 @@ export default {
       }
     },
 
-    compareDay(day1, day2) {
-      if (!day1 || !day2) return null;
-
-      const date1 = fecha.format(new Date(day1), 'YYYYMMDD');
-      const date2 = fecha.format(new Date(day2), 'YYYYMMDD');
-
-      if (date1 > date2) return 1;
-      if (date1 == date2) return 0;
-      if (date1 < date2) return -1;
-    },
-
     dayClicked(date) {
       if (!this.isDisabled && this.isClickable())
         this.$emit('day-clicked', date);
     },
 
-    checkIfHighlighted() {
-      if (
-        this.checkIn !== null &&
-        this.checkOut !== null &&
-        this.isDisabled == false
-      ) {
-        this.isDateLessOrEquals(this.checkIn, this.date) &&
-        this.isDateLessOrEquals(this.date, this.checkOut)
-          ? (this.isHighlighted = true)
-          : (this.isHighlighted = false);
-      }
+    cssClass(suffix) {
+      return `datepicker__month-day--${suffix}`;
     },
   },
 };

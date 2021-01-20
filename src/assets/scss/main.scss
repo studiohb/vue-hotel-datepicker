@@ -191,25 +191,17 @@
         padding-top: 14px;
         @include focusStyle();
 
-        &--invalid-range {
-            background-color: rgba($primary-color, 0.3);
-            color: $lightest-gray;
-            cursor: not-allowed;
-            position: relative;
-        }
+        &--valid {
+            cursor: pointer;
+            color: $medium-gray;
 
-        &--invalid {
-            color: $lightest-gray;
-            cursor: not-allowed;
-        }
-
-        &--valid:hover,
-        &--allowed-checkout:hover {
-            background-color: $white;
-            color: $primary-color;
-            z-index: 1;
-            position: relative;
-            box-shadow: 0 0 10px 3px rgba($gray, 0.4);
+            &:hover {
+                background-color: $white;
+                color: $primary-color;
+                z-index: 1;
+                position: relative;
+                box-shadow: 0 0 10px 3px rgba($gray, 0.4);
+            }
         }
 
         &--disabled {
@@ -235,25 +227,6 @@
         &--first-day-selected,
         &--last-day-selected {
             background: $primary-color;
-            color: $white;
-            cursor: pointer;
-            pointer-events: auto;
-        }
-
-        &--allowed-checkout {
-            color: $medium-gray;
-        }
-
-        &--out-of-range {
-            color: $lightest-gray;
-            cursor: not-allowed;
-            position: relative;
-            pointer-events: none;
-        }
-
-        &--valid {
-            cursor: pointer;
-            color: $medium-gray;
         }
 
         &--hidden {

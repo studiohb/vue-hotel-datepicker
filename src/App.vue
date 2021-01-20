@@ -1,4 +1,4 @@
-<template lang='pug'>
+<template lang="pug">
   .datepicker__wrapper(v-if='show' v-on-click-outside='clickOutside' @blur="clickOutside")
     .datepicker__close-button.-hide-on-desktop(v-if='isOpen' @click='hideDatepicker') ＋
     .datepicker__dummy-wrapper(  :class="`${isOpen ? 'datepicker__dummy-wrapper--is-active' : ''}` ")
@@ -71,7 +71,8 @@
                 @day-clicked='handleDayClick($event)'
                 :date='day.date'
                 :choosingCheckOut='choosingCheckOut'
-                :sortedDisabledDates='contextualizedDisabledDates'
+                :disabledDatesForCheckIn='disabledDatesForCheckIn'
+                :disabledDatesForCheckOut='disabledDatesForCheckOut'
                 :nextDisabledDate='nextDisabledDate'
                 :activeMonthIndex='activeMonthIndex'
                 :hoveringDate='hoveringDate'
@@ -113,7 +114,8 @@
                   @day-clicked='handleDayClick($event)'
                   :date='day.date'
                   :choosingCheckOut='choosingCheckOut'
-                  :sortedDisabledDates='contextualizedDisabledDates'
+                  :disabledDatesForCheckIn='disabledDatesForCheckIn'
+                  :disabledDatesForCheckOut='disabledDatesForCheckOut'
                   :nextDisabledDate='nextDisabledDate'
                   :activeMonthIndex='activeMonthIndex'
                   :hoveringDate='hoveringDate'
@@ -270,11 +272,6 @@ export default {
     },
     disabledDatesForCheckOut() {
       return this.disabledDates.map(date => this.addDays(date, 1));
-    },
-    contextualizedDisabledDates() {
-      return this.sortDates(
-        this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn
-      );
     },
     choosingCheckOut() {
       return this.checkIn && !this.checkOut;
@@ -560,20 +557,10 @@ export default {
     },
     getPrice(day) {
       const priceRanges = Array.isArray(this.priceByDate) ? this.priceByDate : [];
-      const currentRange = priceRanges.find(range => this.isDateInRange(day.date, range.start, range.end));
+      const currentRange = priceRanges.find(range => this.isDayInRange(day.date, [range.start, range.end]));
 
       return currentRange?.price || this.priceDefault;
     },
-    normalizedDate(date) {
-      return new Date(date).setUTCHours(0,0,0,0);
-    },
-    isDateInRange(date, rangeStart, rangeEnd) {
-      return this.normalizedDate(date) >= this.normalizedDate(rangeStart)
-          && this.normalizedDate(date) <= this.normalizedDate(rangeEnd);
-    },
-    sortDates(dates) {
-      return [...dates].sort((a, b) => new Date(a) - new Date(b));
-    }
   },
 };
 </script>

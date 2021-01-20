@@ -1,3 +1,5 @@
+import fecha from 'fecha';
+
 export default {
   getNextDate(datesArray, referenceDate) {
     var now = new Date(referenceDate);
@@ -16,9 +18,27 @@ export default {
       return closest;
     }
   },
-  isDateLessOrEquals(time1, time2) {
-    return new Date(time1) <= new Date(time2);
+
+  compareDay(day1, day2) {
+    if (!day1 || !day2) return null;
+
+    const date1 = fecha.format(new Date(day1), 'YYYYMMDD');
+    const date2 = fecha.format(new Date(day2), 'YYYYMMDD');
+
+    if (date1 > date2) return 1;
+    if (date1 == date2) return 0;
+    if (date1 < date2) return -1;
   },
+
+  isDayInRange(day, range) {
+    if (!day || !range[0] || !range[1]) return null;
+    return this.compareDay(day, range[0]) >= 0 && this.compareDay(day, range[1]) <= 0;
+  },
+
+  sortDates(dates) {
+    return [...dates].sort((a, b) => new Date(a) - new Date(b));
+  },
+
   countDays(start, end) {
     const oneDay = 24 * 60 * 60 * 1000;
     const firstDate = new Date(start);
@@ -26,11 +46,13 @@ export default {
 
     return Math.round(Math.abs((firstDate.getTime() - secondDate.getTime()) / (oneDay)));
   },
+
   addDays(date, quantity) {
     let result = new Date(date);
     result.setDate(result.getDate() + quantity);
     return result;
   },
+
   getFirstDay(date, firstDayOfWeek) {
     var firstDay =  this.getFirstDayOfMonth(date);
     var offset = 0;
@@ -44,12 +66,14 @@ export default {
       )
     );
   },
+
   getFirstDayOfMonth(date) {
     return new Date(
       date.getFullYear(),
       date.getMonth(), 1
     );
   },
+
   getNextMonth(date) {
     let nextMonth;
 
@@ -90,6 +114,7 @@ export default {
     this.xDown = evt.touches[0].clientX;
     this.yDown = evt.touches[0].clientY;
   },
+
   getMonthDiff(d1, d2) {
     d1 = new Date(d1);
     d2 = new Date(d2);
@@ -99,6 +124,7 @@ export default {
     const d2M = d2.getMonth();
     return (d2M + 12 * d2Y) - (d1M + 12 * d1Y);
   },
+
   handleTouchMove(evt) {
     if (!this.xDown || !this.yDown) {
       return;
