@@ -27,7 +27,8 @@ export default {
       required: true
     },
     sortedDisabledDates: {
-      type: Array
+      type: Array,
+      default: () => []
     },
     options: {
       type: Object
@@ -37,6 +38,9 @@ export default {
     },
     checkOut: {
       type: Date
+    },
+    choosingCheckOut: {
+      type: Boolean
     },
     hoveringDate: {
       type: Date
@@ -80,7 +84,6 @@ export default {
   data() {
     return {
       isHighlighted: false,
-      isDisabled: false,
       currentDate: new Date()
     };
   },
@@ -120,6 +123,14 @@ export default {
 
     isToday() {
       return this.compareDay(this.currentDate, this.date) == 0;
+    },
+
+    isDisabled() {
+      return this.sortedDisabledDates.some(i => this.compareDay(i, this.date) == 0) // If this day is explicitely disabled
+          || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
+          || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
+          || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
+          || this.compareDay(this.date, this.nextDisabledDate) == 1; // Or is after the next disabled date
     },
 
     dayClass() {
@@ -186,28 +197,16 @@ export default {
       }
     },
     activeMonthIndex(index) {
-      this.checkIfDisabled();
       this.checkIfHighlighted();
       if (this.checkIn !== null && this.checkOut !== null) {
         this.isDateLessOrEquals(this.checkIn, this.date) &&
         this.isDateLessOrEquals(this.date, this.checkOut)
           ? (this.isHighlighted = true)
           : (this.isHighlighted = false);
-      } else if (this.checkIn !== null && this.checkOut == null) {
-        this.disableNextDays();
-      } else {
-        return;
       }
     },
-    nextDisabledDate() {
-      this.disableNextDays();
-    },
-    checkIn(date) {
-      this.createAllowedCheckoutDays(date);
-    }
   },
   beforeMount() {
-    this.checkIfDisabled();
     this.checkIfHighlighted();
   },
 
@@ -223,51 +222,19 @@ export default {
     },
 
     compareDay(day1, day2) {
+      if (!day1 || !day2) return null;
+
       const date1 = fecha.format(new Date(day1), 'YYYYMMDD');
       const date2 = fecha.format(new Date(day2), 'YYYYMMDD');
 
-      if (date1 > date2) {
-        return 1;
-      } else if (date1 == date2) {
-        return 0;
-      } else if (date1 < date2) {
-        return -1;
-      }
+      if (date1 > date2) return 1;
+      if (date1 == date2) return 0;
+      if (date1 < date2) return -1;
     },
 
     dayClicked(date) {
-      if (this.isDisabled || !this.isClickable()) {
-        return;
-      } else {
-        let nextDisabledDate =
-          (this.options.maxNights
-            ? this.addDays(this.date, this.options.maxNights)
-            : null) ||
-          this.getNextDate(this.sortedDisabledDates, this.date)||
-          Infinity;
-
-        this.$emit('day-clicked', { date, nextDisabledDate });
-      }
-    },
-
-    compareEndDay() {
-      if (this.options.endDate !== Infinity) {
-        return this.compareDay(this.date, this.options.endDate) == 1;
-      }
-    },
-
-    checkIfDisabled() {
-      this.isDisabled =
-        // If this day is equal any of the disabled dates
-        (this.sortedDisabledDates
-          ? this.sortedDisabledDates.some(
-            i => this.compareDay(i, this.date) == 0
-          )
-          : null) ||
-        // Or is before the start date
-        this.compareDay(this.date, this.options.startDate) == -1 ||
-        // Or is after the end date
-        this.compareEndDay();
+      if (!this.isDisabled && this.isClickable())
+        this.$emit('day-clicked', date);
     },
 
     checkIfHighlighted() {
@@ -282,24 +249,6 @@ export default {
           : (this.isHighlighted = false);
       }
     },
-
-    disableNextDays() {
-      if (
-        !this.isDateLessOrEquals(this.date, this.nextDisabledDate) &&
-        this.nextDisabledDate !== Infinity
-      ) {
-        this.isDisabled = true;
-      } else if (this.isDateLessOrEquals(this.date, this.checkIn)) {
-        this.isDisabled = true;
-      }
-      if (
-        this.compareDay(this.date, this.checkIn) == 0 &&
-        this.options.minNights == 0
-      ) {
-        this.isDisabled = false;
-      }
-    }
   },
-
 };
 </script>

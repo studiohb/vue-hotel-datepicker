@@ -70,7 +70,8 @@
                 :options="$props"
                 @day-clicked='handleDayClick($event)'
                 :date='day.date'
-                :sortedDisabledDates='sortedDisabledDates'
+                :choosingCheckOut='choosingCheckOut'
+                :sortedDisabledDates='contextualizedDisabledDates'
                 :nextDisabledDate='nextDisabledDate'
                 :activeMonthIndex='activeMonthIndex'
                 :hoveringDate='hoveringDate'
@@ -111,7 +112,8 @@
                   :options="$props"
                   @day-clicked='handleDayClick($event)'
                   :date='day.date'
-                  :sortedDisabledDates='sortedDisabledDates'
+                  :choosingCheckOut='choosingCheckOut'
+                  :sortedDisabledDates='contextualizedDisabledDates'
                   :nextDisabledDate='nextDisabledDate'
                   :activeMonthIndex='activeMonthIndex'
                   :hoveringDate='hoveringDate'
@@ -247,14 +249,12 @@ export default {
       checkOut: this.endingDateValue,
       months: [],
       activeMonthIndex: 0,
-      nextDisabledDate: null,
       show: true,
       isOpen: false,
       xDown: null,
       yDown: null,
       xUp: null,
       yUp: null,
-      sortedDisabledDates: null,
       screenSize: this.handleWindowResize()
     };
   },
@@ -264,6 +264,34 @@ export default {
       return Boolean(
         (this.checkIn || this.checkOut) && this.displayClearButton
       );
+    },
+    disabledDatesForCheckIn() {
+      return this.disabledDates;
+    },
+    disabledDatesForCheckOut() {
+      return this.disabledDates.map(date => this.addDays(date, 1));
+    },
+    contextualizedDisabledDates() {
+      return this.sortDates(
+        this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn
+      );
+    },
+    choosingCheckOut() {
+      return this.checkIn && !this.checkOut;
+    },
+    nextDisabledDate() {
+      if (!this.choosingCheckOut) return null;
+
+      const firstDateExceedingMaxNights = this.maxNights ? this.addDays(this.checkIn, this.maxNights) : null;
+      const nextExplicitlyDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));
+      const maximumDate = new Date(8640000000000000); // will be used as default, if there is no future disabled date
+      const candidates = [
+        firstDateExceedingMaxNights,
+        nextExplicitlyDisabledDate,
+        maximumDate
+      ].filter(e => e);
+
+      return new Date(Math.min(...candidates));
     }
   },
 
@@ -295,9 +323,7 @@ export default {
     checkOut(newDate) {
       if (this.checkOut !== null && this.checkOut !== null) {
         this.hoveringDate = null;
-        this.nextDisabledDate = null;
         this.show = true;
-        this.parseDisabledDates();
         this.reRender();
         this.isOpen = false;
       }
@@ -348,7 +374,6 @@ export default {
       this.createMonth(new Date(this.startDate));
       this.createMonth(this.getNextMonth(new Date(this.startDate)));
     }
-    this.parseDisabledDates();
   },
 
   mounted() {
@@ -421,11 +446,10 @@ export default {
     },
 
     clearSelection() {
-      (this.hoveringDate = null), (this.checkIn = null);
+      this.hoveringDate = null;
+      this.checkIn = null;
       this.checkOut = null;
-      this.nextDisabledDate = null;
       this.show = true;
-      this.parseDisabledDates();
       this.reRender();
     },
 
@@ -447,20 +471,18 @@ export default {
       }
     },
 
-    handleDayClick(event) {
+    handleDayClick(date) {
       if (this.checkIn == null && this.singleDaySelection == false) {
-        this.checkIn = event.date;
+        this.checkIn = date;
       } else if (this.singleDaySelection == true) {
-        this.checkIn = event.date;
-        this.checkOut = event.date;
+        this.checkIn = date;
+        this.checkOut = date;
       } else if (this.checkIn !== null && this.checkOut == null) {
-        this.checkOut = event.date;
+        this.checkOut = date;
       } else {
         this.checkOut = null;
-        this.checkIn = event.date;
+        this.checkIn = date;
       }
-
-      this.nextDisabledDate = event.nextDisabledDate;
     },
 
     renderPreviousMonth() {
@@ -536,18 +558,6 @@ export default {
       }
       this.months.push(month);
     },
-
-    parseDisabledDates() {
-      const sortedDates = [];
-
-      for (let i = 0; i < this.disabledDates.length; i++) {
-        sortedDates[i] = new Date(this.disabledDates[i]);
-      }
-
-      sortedDates.sort((a, b) => a - b);
-
-      this.sortedDisabledDates = sortedDates;
-    },
     getPrice(day) {
       const priceRanges = Array.isArray(this.priceByDate) ? this.priceByDate : [];
       const currentRange = priceRanges.find(range => this.isDateInRange(day.date, range.start, range.end));
@@ -560,6 +570,9 @@ export default {
     isDateInRange(date, rangeStart, rangeEnd) {
       return this.normalizedDate(date) >= this.normalizedDate(rangeStart)
           && this.normalizedDate(date) <= this.normalizedDate(rangeEnd);
+    },
+    sortDates(dates) {
+      return [...dates].sort((a, b) => new Date(a) - new Date(b));
     }
   },
 };
