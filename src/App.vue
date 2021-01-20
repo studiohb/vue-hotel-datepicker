@@ -7,8 +7,6 @@
         :input-date="formatDate(checkIn)"
         input-date-type="check-in"
         :is-open="isOpen"
-        :show-datepicker="showDatepicker"
-        :hide-datepicker="hideDatepicker"
         :toggle-datepicker="toggleDatepicker"
         :single-day-selection="singleDaySelection"
       )
@@ -18,8 +16,6 @@
         :input-date="formatDate(checkOut)"
         input-date-type="check-out"
         :is-open="isOpen"
-        :showDatepicker="showDatepicker"
-        :hide-datepicker="hideDatepicker"
         :toggle-datepicker="toggleDatepicker"
         :single-day-selection="singleDaySelection"
       )
