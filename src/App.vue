@@ -69,6 +69,7 @@
                 :choosingCheckOut='choosingCheckOut'
                 :disabledDatesForCheckIn='disabledDatesForCheckIn'
                 :disabledDatesForCheckOut='disabledDatesForCheckOut'
+                :firstEnabledDate='firstEnabledDate'
                 :nextDisabledDate='nextDisabledDate'
                 :activeMonthIndex='activeMonthIndex'
                 :hoveringDate='hoveringDate'
@@ -78,7 +79,7 @@
                 :checkIn='checkIn'
                 :checkOut='checkOut'
                 :currentDateStyle='currentDateStyle'
-                :price='getPrice(day)'
+                :price='getPrice(day.date)'
               )
         div(v-if='screenSize !== "desktop" && isOpen')
           .datepicker__week-row
@@ -112,6 +113,7 @@
                   :choosingCheckOut='choosingCheckOut'
                   :disabledDatesForCheckIn='disabledDatesForCheckIn'
                   :disabledDatesForCheckOut='disabledDatesForCheckOut'
+                  :firstEnabledDate='firstEnabledDate'
                   :nextDisabledDate='nextDisabledDate'
                   :activeMonthIndex='activeMonthIndex'
                   :hoveringDate='hoveringDate'
@@ -121,7 +123,7 @@
                   :checkIn='checkIn'
                   :checkOut='checkOut'
                   :currentDateStyle='currentDateStyle'
-                  :price='getPrice(day)'
+                  :price='getPrice(day.date)'
                 )
             .next--mobile(
               @click='renderNextMonth' type="button"
@@ -173,10 +175,8 @@ export default {
       type: String
     },
     startDate: {
-      default: function() {
-        return new Date();
-      },
-      type: [Date, String]
+      type: [Date, String],
+      default: () => new Date()
     },
     endDate: {
       default: Infinity,
@@ -184,14 +184,6 @@ export default {
     },
     firstDayOfWeek: {
       default: 0,
-      type: Number
-    },
-    minNights: {
-      default: 1,
-      type: Number
-    },
-    maxNights: {
-      default: null,
       type: Number
     },
     disabledDates: {
@@ -233,10 +225,12 @@ export default {
       type: [Number, String, null]
     },
     priceByDate: {
-      default: function() {
-        return [];
-      },
-      type: [Array, null]
+      type: Array,
+      default: () => []
+    },
+    minNightsByDate: {
+      type: Array,
+      default: () => []
     }
   },
 
@@ -272,19 +266,16 @@ export default {
     choosingCheckOut() {
       return this.checkIn && !this.checkOut;
     },
+    firstEnabledDate() {
+      if (!this.checkIn) return null;
+      return this.addDays(this.checkIn, this.getMinNights(this.checkIn));
+    },
+    maximumDate() {
+      return new Date(8640000000000000);
+    },
     nextDisabledDate() {
       if (!this.choosingCheckOut) return null;
-
-      const firstDateExceedingMaxNights = this.maxNights ? this.addDays(this.checkIn, this.maxNights) : null;
-      const nextExplicitlyDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));
-      const maximumDate = new Date(8640000000000000); // will be used as default, if there is no future disabled date
-      const candidates = [
-        firstDateExceedingMaxNights,
-        nextExplicitlyDisabledDate,
-        maximumDate
-      ].filter(e => e);
-
-      return new Date(Math.min(...candidates));
+      return this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1)) || this.maximumDate;
     }
   },
 
@@ -551,11 +542,15 @@ export default {
       }
       this.months.push(month);
     },
-    getPrice(day) {
-      const priceRanges = Array.isArray(this.priceByDate) ? this.priceByDate : [];
-      const currentRange = priceRanges.find(range => this.isDayInRange(day.date, [range.start, range.end]));
 
+    getPrice(date) {
+      const currentRange = this.priceByDate.find(range => this.isDayInRange(date, [range.start, range.end]));
       return currentRange?.price || this.priceDefault;
+    },
+
+    getMinNights(date) {
+      const currentRange = this.minNightsByDate.find(range => this.isDayInRange(date, [range.start, range.end]));
+      return currentRange?.minNights || 1;
     },
   },
 };

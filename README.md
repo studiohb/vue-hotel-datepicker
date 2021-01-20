@@ -86,19 +86,22 @@ The first day of the week. Where Sun = 0, Mon = 1, ... Sat = 6.
 
 You need to set the right order in `i18n.day-names` too.
 
-### minNights
+### minNightsByDate
 
-- Type: `Number`
-- Default: `1`
+- Type: `Array`
+- Default: `[]`
 
-Minimum nights required to select a range of dates.
+Minimum nights required to select a range of dates, by date range.
 
-### maxNights
+Example:
 
-- Type: `Number`
-- Default: `0`
-
-Maximum nights required to select a range of dates.
+```js
+[
+  {start: '2021-01-01', end: '2021-06-30', minNights: 1},
+  {start: '2021-07-01', end: '2021-08-31', minNights: 7},
+  {start: '2021-09-01', end: '2021-12-31', minNights: 1}
+]
+```
 
 ### disabledDates
 
