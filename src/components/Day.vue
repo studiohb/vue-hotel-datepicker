@@ -10,7 +10,7 @@
       ref="day"
     )
       .day-number {{ dayNumber }}
-      .day-price {{ price }}
+      .day-price(v-if='showPrice') {{ price }}
 </template>
 
 <script>
@@ -44,9 +44,6 @@ export default {
     },
     hoveringDate: {
       type: Date
-    },
-    mounseOverFunction: {
-      type: Function
     },
     belongsToThisMonth: {
       type: Boolean
@@ -125,12 +122,20 @@ export default {
       return this.compareDay(this.currentDate, this.date) == 0;
     },
 
+    isCheckInDay() {
+      return this.compareDay(this.checkIn, this.date) == 0;
+    },
+
     isDisabled() {
       return this.sortedDisabledDates.some(i => this.compareDay(i, this.date) == 0) // If this day is explicitely disabled
           || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
           || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
           || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
           || this.compareDay(this.date, this.nextDisabledDate) == 1; // Or is after the next disabled date
+    },
+
+    isEnabled() {
+      return !this.isDisabled;
     },
 
     dayClass() {
@@ -180,7 +185,11 @@ export default {
         return 'datepicker__month-day--hidden';
       }
       return 'datepicker__month-day--valid';
-    }
+    },
+
+    showPrice() {
+      return this.isEnabled || this.isCheckInDay;
+    },
   },
 
   watch: {
