@@ -107,13 +107,6 @@ Maximum nights required to select a range of dates.
 
 An array of strings in this format: `YYYY-MM-DD`. All the dates passed to the list will be disabled.
 
-### disabledDaysOfWeek
-
-- Type: `Array`
-- Default: `[]`
-
-An array of strings in this format: `['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']`. All the days passed to the list will be disabled.
-
 ### hoveringTooltip
 
 - Type: `Boolean` or `Function`

@@ -243,11 +243,7 @@ export default {
           (this.options.maxNights
             ? this.addDays(this.date, this.options.maxNights)
             : null) ||
-          this.getNextDate(this.sortedDisabledDates, this.date) ||
-          this.nextDateByDayOfWeekArray(
-            this.options.disabledDaysOfWeek,
-            this.date
-          ) ||
+          this.getNextDate(this.sortedDisabledDates, this.date)||
           Infinity;
 
         this.$emit('day-clicked', { date, nextDisabledDate });
@@ -271,11 +267,7 @@ export default {
         // Or is before the start date
         this.compareDay(this.date, this.options.startDate) == -1 ||
         // Or is after the end date
-        this.compareEndDay() ||
-        // Or is in one of the disabled days of the week
-        this.options.disabledDaysOfWeek.some(
-          i => i == fecha.format(this.date, 'dddd')
-        );
+        this.compareEndDay();
     },
 
     checkIfHighlighted() {

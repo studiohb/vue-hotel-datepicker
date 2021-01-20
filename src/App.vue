@@ -200,12 +200,6 @@ export default {
       },
       type: Array
     },
-    disabledDaysOfWeek: {
-      default: function() {
-        return [];
-      },
-      type: Array
-    },
     hoveringTooltip: {
       default: true,
       type: [Boolean, Function]

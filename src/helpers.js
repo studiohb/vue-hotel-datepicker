@@ -16,30 +16,6 @@ export default {
       return closest;
     }
   },
-  nextDateByDayOfWeek(weekDay, referenceDate) {
-    referenceDate = new Date(referenceDate);
-    weekDay = weekDay.toLowerCase();
-    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-    let referenceDateDay = referenceDate.getDay();
-
-    for (var i = 7; i--;) {
-      if (weekDay === days[i]) {
-        weekDay = (i <= referenceDateDay) ? (i + 7) : i;
-        break;
-      }
-    }
-
-    let daysUntilNext = weekDay - referenceDateDay;
-
-    return referenceDate.setDate(referenceDate.getDate() + daysUntilNext);
-  },
-  nextDateByDayOfWeekArray(daysArray, referenceDate) {
-    let tempArray = [];
-    for (var i = 0; i < daysArray.length; i++) {
-      tempArray.push(new Date(this.nextDateByDayOfWeek(daysArray[i], referenceDate)));
-    }
-    return this.getNextDate(tempArray, referenceDate);
-  },
   isDateLessOrEquals(time1, time2) {
     return new Date(time1) <= new Date(time2);
   },
