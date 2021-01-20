@@ -4731,12 +4731,12 @@ fecha.parse = function (dateStr, format, i18nSettings) {
   'check-out': 'Check-out',
   'month-names': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=31a700aa&lang=pug&
-var Dayvue_type_template_id_31a700aa_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip && this.options.hoveringTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessageDisplay)}}):_vm._e(),_c('div',{ref:"day",staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
-var Dayvue_type_template_id_31a700aa_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=34a72d84&lang=pug&
+var Dayvue_type_template_id_34a72d84_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip && this.options.hoveringTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessageDisplay)}}):_vm._e(),_c('div',{ref:"day",staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
+var Dayvue_type_template_id_34a72d84_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=31a700aa&lang=pug&
+// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=34a72d84&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -5093,27 +5093,33 @@ function _toConsumableArray(arr) {
     isCheckOutDay: function isCheckOutDay() {
       return this.compareDay(this.checkOut, this.date) == 0;
     },
-    isDisabled: function isDisabled() {
+    isInDisabledDates: function isInDisabledDates() {
       var _this = this;
 
       return this.disabledDates.some(function (i) {
         return _this.compareDay(i, _this.date) == 0;
-      }) // If this day is explicitely disabled
-      || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
-      || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
-      || this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0 // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
-      || this.choosingCheckOut && this.compareDay(this.date, this.firstEnabledDate) == -1 // Or is before the first enabled date
-      || this.choosingCheckOut && this.compareDay(this.date, this.nextDisabledDate) == 1 // Or is after the next disabled date
-      || !this.price; // Or it doesn't have a price
-      // const isInDisabledDates = this.disabledDates.some(i => this.compareDay(i, this.date) == 0);
-      // const 
-      // return 
-      //     || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
-      //     || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
-      //     || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
-      //     || (this.choosingCheckOut && this.compareDay(this.date, this.firstEnabledDate) == -1) // Or is before the first enabled date
-      //     || (this.choosingCheckOut && this.compareDay(this.date, this.nextDisabledDate) == 1) // Or is after the next disabled date
-      //     || !this.price; // Or it doesn't have a price
+      });
+    },
+    isBeforeGlobalStartDate: function isBeforeGlobalStartDate() {
+      return this.compareDay(this.date, this.options.startDate) == -1;
+    },
+    isAfterGlobalEndDate: function isAfterGlobalEndDate() {
+      return this.compareDay(this.date, this.options.endDate) == 1;
+    },
+    isBeforeCheckInDay: function isBeforeCheckInDay() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.checkIn) == -1;
+    },
+    isBeforeFirstEnabledDate: function isBeforeFirstEnabledDate() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.firstEnabledDate) == -1;
+    },
+    isAfterNextDisabledDate: function isAfterNextDisabledDate() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.nextDisabledDate) == 1;
+    },
+    isDisabled: function isDisabled() {
+      return this.isInDisabledDates || this.isBeforeGlobalStartDate || this.isAfterGlobalEndDate || !this.price || this.isBeforeCheckInDay || this.isCheckInDay || this.isBeforeFirstEnabledDate || this.isAfterNextDisabledDate;
     },
     isEnabled: function isEnabled() {
       return !this.isDisabled;
@@ -5283,8 +5289,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_Dayvue_type_script_lang_js_,
-  Dayvue_type_template_id_31a700aa_lang_pug_render,
-  Dayvue_type_template_id_31a700aa_lang_pug_staticRenderFns,
+  Dayvue_type_template_id_34a72d84_lang_pug_render,
+  Dayvue_type_template_id_34a72d84_lang_pug_staticRenderFns,
   false,
   null,
   null,

@@ -128,14 +128,42 @@ export default {
       return this.compareDay(this.checkOut, this.date) == 0;
     },
 
+    isInDisabledDates() {
+      return this.disabledDates.some(i => this.compareDay(i, this.date) == 0);
+    },
+
+    isBeforeGlobalStartDate() {
+      return this.compareDay(this.date, this.options.startDate) == -1;
+    },
+
+    isAfterGlobalEndDate() {
+      return this.compareDay(this.date, this.options.endDate) == 1;
+    },
+
+    isBeforeCheckInDay() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.checkIn) == -1;
+    },
+
+    isBeforeFirstEnabledDate() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.firstEnabledDate) == -1;
+    },
+
+    isAfterNextDisabledDate() {
+      if (!this.choosingCheckOut) return null;
+      return this.compareDay(this.date, this.nextDisabledDate) == 1;
+    },
+
     isDisabled() {
-      return this.disabledDates.some(i => this.compareDay(i, this.date) == 0) // If this day is explicitely disabled
-          || this.compareDay(this.date, this.options.startDate) == -1 // Or is before the calendar start date
-          || this.compareDay(this.date, this.options.endDate) == 1 // Or is after the calendar end date
-          || (this.choosingCheckOut && this.compareDay(this.date, this.checkIn) <= 0) // Or is before (or equals) the check-in date (only when users are choosing their check-out date)
-          || (this.choosingCheckOut && this.compareDay(this.date, this.firstEnabledDate) == -1) // Or is before the first enabled date
-          || (this.choosingCheckOut && this.compareDay(this.date, this.nextDisabledDate) == 1) // Or is after the next disabled date
-          || !this.price; // Or it doesn't have a price
+      return this.isInDisabledDates
+          || this.isBeforeGlobalStartDate
+          || this.isAfterGlobalEndDate
+          || !this.price
+          || this.isBeforeCheckInDay
+          || this.isCheckInDay
+          || this.isBeforeFirstEnabledDate
+          || this.isAfterNextDisabledDate;
     },
 
     isEnabled() {
