@@ -54,7 +54,7 @@
         background: white;
 
         &:after {
-            background: transparent url("../images/ic-arrow-right-green.regular.svg") no-repeat center / 8px;
+            background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"><path fill="none" fill-rule="evenodd" stroke="%2300CA9D" stroke-width="1.5" d="M1.368 1L6.66 7.092 1 13.512"/></svg>') no-repeat center / 8px;
             transform: rotate(90deg);
             content: "";
             position: absolute;
@@ -92,7 +92,7 @@
         display: inline-block;
         width: 100%;
         height: 3em;
-        background: $white url("../images/calendar_icon.regular.svg") no-repeat 17px center / 16px;
+        background: $white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="18" viewBox="0 0 16 18"><defs><path id="a" d="M0 17.311h15.754V.115H0z"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 .148)"><mask id="b" fill="%23fff"><use xlink:href="%23a"/></mask><path fill="%2300CA9D" d="M14.465 16.215H1.29a.196.196 0 0 1-.194-.193v-8.69h13.562v8.69a.196.196 0 0 1-.193.193zM1.29 2.958h1.013v.563c0 .817.664 1.482 1.481 1.482.818 0 1.482-.665 1.482-1.482v-.563h5.046v.563c0 .817.665 1.482 1.482 1.482s1.482-.665 1.482-1.482v-.563h1.189c.105 0 .193.089.193.193v3.142H1.096V3.151c0-.104.089-.193.194-.193zM3.34 1.596a.444.444 0 0 1 .887 0v1.925a.444.444 0 0 1-.887 0V1.596zm8.01 0a.444.444 0 0 1 .886 0v1.925a.444.444 0 0 1-.887 0V1.596zm3.114.266h-1.19v-.266c0-.817-.664-1.482-1.481-1.482-.817 0-1.482.665-1.482 1.482v.266H5.266v-.266C5.266.78 4.602.114 3.784.114c-.817 0-1.481.665-1.481 1.482v.266H1.29C.579 1.862 0 2.44 0 3.152v12.87c0 .711.579 1.29 1.29 1.29h13.175a1.29 1.29 0 0 0 1.29-1.29V3.152a1.29 1.29 0 0 0-1.29-1.29z" mask="url(%23b)"/></g><path fill="%2300CA9D" d="M3.194 10.998h1.357V9.642H3.194zM5.864 10.998h1.357V9.642H5.864zM8.534 10.998H9.89V9.642H8.534zM11.204 10.998h1.356V9.642h-1.356zM3.194 13.94h1.357v-1.357H3.194zM5.864 13.94h1.357v-1.357H5.864zM8.534 13.94H9.89v-1.357H8.534zM11.204 13.94h1.356v-1.357h-1.356z"/></g></svg>') no-repeat 17px center / 16px;
     }
 
     &__input {
@@ -150,7 +150,7 @@
         }
 
         &:first-child {
-            background: transparent url("../images/ic-arrow-right-datepicker.regular.svg") no-repeat right center / 8px;
+            background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 8 18"><path fill="%239599AA" fill-rule="nonzero" d="M.119.718l7.158 7.407-.033-.551-6.737 8.889a.425.425 0 0 0 .08.593.42.42 0 0 0 .59-.08l6.737-8.889a.425.425 0 0 0-.033-.551L.723.128A.42.42 0 0 0 .128.12a.425.425 0 0 0-.009.598z"/></svg>') no-repeat right center / 8px;
             width: calc(50% - 4px);
             text-indent: 20px;
         }
@@ -237,7 +237,7 @@
     }
 
     &__month-button {
-        background: transparent url("../images/ic-arrow-right-green.regular.svg") no-repeat center center / 8px;
+        background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"><path fill="none" fill-rule="evenodd" stroke="%2300CA9D" stroke-width="1.5" d="M1.368 1L6.66 7.092 1 13.512"/></svg>') no-repeat center center / 8px;
         cursor: pointer;
         display: inline-block;
         height: 60px;
