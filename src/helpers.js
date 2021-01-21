@@ -85,6 +85,11 @@ export default {
     return nextMonth;
   },
 
+  pluralizedTranslation(i18nKey, count) {
+    const translation = i18nKey[count === 1 ? 'one' : 'other'];
+    return translation?.replace('%{count}', count);
+  },
+
   swipeAfterScroll(direction) {
     if (this.screenSize !== 'desktop' && this.isOpen) {
       const swiperWrapper = document.getElementById('swiperWrapper');

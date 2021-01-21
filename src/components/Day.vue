@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    .datepicker__tooltip(v-if='showTooltip && this.options.hoveringTooltip' v-html='tooltipMessageDisplay')
+    .datepicker__tooltip(v-if='showTooltip' v-html='tooltipMessage')
     .datepicker__month-day(
       @click.prevent.stop='dayClicked(date)'
       @keyup.enter.prevent.stop='dayClicked(date)'
@@ -22,6 +22,10 @@ export default {
   props: {
     isOpen: {
       type: Boolean,
+      required: true
+    },
+    i18n: {
+      type: Object,
       required: true
     },
     disabledDatesForCheckIn: {
@@ -69,7 +73,7 @@ export default {
       default: true,
       type: Boolean
     },
-    tooltipMessage: {
+    staticTooltipMessage: {
       default: null,
       type: String
     },
@@ -79,6 +83,10 @@ export default {
     },
     price: {
       type: [Number, String],
+      default: null
+    },
+    minNights: {
+      type: Number,
       default: null
     }
   },
@@ -95,25 +103,30 @@ export default {
       }
       return 0;
     },
+
     nightsCount() {
-      return this.countDays(this.checkIn, this.hoveringDate);
+      return this.countDays(this.checkIn, this.date);
     },
-    tooltipMessageDisplay() {
-      return this.tooltipMessage
-        ? this.tooltipMessage
-        : `${this.nightsCount} ${
-          this.nightsCount !== 1
-            ? this.options.i18n['nights']
-            : this.options.i18n['night']
-        }`;
+
+    dynamicTooltipMessage() {
+      if (this.choosingCheckOut) return this.pluralizedTranslation(this.i18n.nights, this.nightsCount);
+      if (!this.minNights) return null;
+      return this.pluralizedTranslation(this.i18n.minNights, this.minNights);
     },
+
+    tooltipMessage() {
+      return this.staticTooltipMessage || this.dynamicTooltipMessage;
+    },
+
     showTooltip() {
-      return (
-        !this.isDisabled &&
-        this.date == this.hoveringDate &&
-        this.checkIn !== null &&
-        this.checkOut == null
-      );
+      return this.options.hoveringTooltip
+          && this.isHovered
+          && this.isEnabled
+          && this.tooltipMessage;
+    },
+
+    isHovered() {
+      return this.compareDay(this.hoveringDate, this.date) == 0;
     },
 
     isToday() {

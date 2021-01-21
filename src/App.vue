@@ -64,6 +64,7 @@
               Day(
                 :is-open="isOpen"
                 :options="$props"
+                :i18n="i18n"
                 @day-clicked='handleDayClick($event)'
                 :date='day.date'
                 :choosingCheckOut='choosingCheckOut'
@@ -73,13 +74,14 @@
                 :nextDisabledDate='nextDisabledDate'
                 :activeMonthIndex='activeMonthIndex'
                 :hoveringDate='hoveringDate'
-                :tooltipMessage='tooltipMessage'
+                :staticTooltipMessage='staticTooltipMessage'
                 :dayNumber='getDay(day.date)'
                 :belongsToThisMonth='day.belongsToThisMonth'
                 :checkIn='checkIn'
                 :checkOut='checkOut'
                 :currentDateStyle='currentDateStyle'
                 :price='getPrice(day.date)'
+                :minNights='getMinNights(day.date)'
               )
         div(v-if='screenSize !== "desktop" && isOpen')
           .datepicker__week-row
@@ -108,6 +110,7 @@
                 Day(
                   :is-open="isOpen"
                   :options="$props"
+                  :i18n="i18n"
                   @day-clicked='handleDayClick($event)'
                   :date='day.date'
                   :choosingCheckOut='choosingCheckOut'
@@ -117,13 +120,14 @@
                   :nextDisabledDate='nextDisabledDate'
                   :activeMonthIndex='activeMonthIndex'
                   :hoveringDate='hoveringDate'
-                  :tooltipMessage='tooltipMessage'
+                  :staticTooltipMessage='staticTooltipMessage'
                   :dayNumber='getDay(day.date)'
                   :belongsToThisMonth='day.belongsToThisMonth'
                   :checkIn='checkIn'
                   :checkOut='checkOut'
                   :currentDateStyle='currentDateStyle'
                   :price='getPrice(day.date)'
+                  :minNights='getMinNights(day.date)'
                 )
             .next--mobile(
               @click='renderNextMonth' type="button"
@@ -135,7 +139,7 @@
 import throttle from 'lodash.throttle';
 import { directive as onClickOutside } from 'vue-on-click-outside';
 import fecha from 'fecha';
-import defaulti18n from './i18n.js';
+import defaultI18n from './i18n.js';
 
 import Day from './components/Day.vue';
 import DateInput from './components/DateInput.vue';
@@ -193,13 +197,17 @@ export default {
       default: true,
       type: [Boolean, Function]
     },
-    tooltipMessage: {
+    staticTooltipMessage: {
       default: null,
       type: String
     },
-    i18n: {
-      default: () => defaulti18n,
+    customI18n: {
+      default: null,
       type: Object
+    },
+    lang: {
+      default: 'en',
+      type: String
     },
     singleDaySelection: {
       default: false,
@@ -253,6 +261,10 @@ export default {
   },
 
   computed: {
+    i18n() {
+      const i18nStore = this.customI18n || defaultI18n;
+      return i18nStore[this.lang] || i18n['en'];
+    },
     showClearSelectionButton() {
       return Boolean(
         (this.checkIn || this.checkOut) && this.displayClearButton

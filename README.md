@@ -117,12 +117,12 @@ An array of strings in this format: `YYYY-MM-DD`. All the dates passed to the li
 
 Shows a tooltip with the number of nights when hovering a date.
 
-### tooltipMessage
+### staticTooltipMessage
 
 - Type: `String`
 - Default `null`
 
-If provided, it will override the default tooltip "X nights" with the text provided. You can use HTML in the string.
+If provided, it will override the default tooltip ("X nights min." when choosing check-in, "X nights" when choosing check-out) with the text provided. You can use HTML in the string.
 
 ## singleDaySelection
 
@@ -153,23 +153,41 @@ If set to true, displays a clear button on the right side of the input if there 
 
 Is set to true, all dates not matching a price range in `priceByDate` will be disabled.
 
-### i18n
+### customI18n
 
 - Type: `Object`
 
 Default:
 
 ```js
-i18n: {
-  night: 'Night',
-  nights: 'Nights',
-  'day-names': ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'],
-  'check-in': 'Check-in',
-  'check-out': 'Check-Out',
-  'month-names': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+{
+  en: {
+    nights: { one: '%{count} night', other: '%{count} nights' },
+    minNights: { one: '%{count} night minimum', other: '%{count} nights minimum' },
+    'day-names': ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'],
+    'check-in': 'Check-in',
+    'check-out': 'Check-out',
+    'month-names': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  },
+  fr: {
+    nights: { one: '%{count} nuit', other: '%{count} nuits' },
+    minNights: { one: '%{count} nuit minimum', other: '%{count} nuits minimum' },
+    'check-in': 'Arrivée',
+    'check-out': 'Départ',
+    'day-names': ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'],
+    'month-names': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+  }
 }
 ```
 
+I18n object with multiple languages that completely overrides the default one (see `src/i18n.js`).
+
+### lang
+
+- Type: `String`
+- Default: `'en'`
+
+Language code to access translation in the (default or custom) i18n object.
 
 ## API
 ⚠️ In order to open/close the datepicker from an external element, such as a button make sure to set `closeDatepickerOnClickOutside` to false
