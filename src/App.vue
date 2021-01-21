@@ -159,16 +159,13 @@ export default {
       type: [Object, null, String],
       default: () => ({ border: '1px solid #00c690' })
     },
-    value: {
-      type: String
-    },
-    startingDateValue: {
+    initialCheckIn: {
       default: null,
-      type: Date
+      type: [Date, String]
     },
-    endingDateValue: {
+    initialCheckOut: {
       default: null,
-      type: Date
+      type: [Date, String]
     },
     format: {
       default: 'YYYY-MM-DD',
@@ -237,8 +234,8 @@ export default {
   data() {
     return {
       hoveringDate: null,
-      checkIn: this.startingDateValue,
-      checkOut: this.endingDateValue,
+      checkIn: this.initialCheckIn ? new Date(this.initialCheckIn) : null,
+      checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,
       months: [],
       activeMonthIndex: 0,
       show: true,

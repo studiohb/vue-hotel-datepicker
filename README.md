@@ -56,13 +56,6 @@ The date format string.
 
 The start view date. All the dates before this date will be disabled.
 
-### startingDateValue
-
-- Type: `Date`
-- Default: `null`
-
-The initial value of the start date.
-
 ### endDate
 
 - Type: `Date` or `String` or `Boolean`
@@ -70,12 +63,19 @@ The initial value of the start date.
 
 The end view date. All the dates after this date will be disabled.
 
-### endingDateValue
+### initialCheckIn
 
 - Type: `Date`
 - Default: `null`
 
-The initial value of the end date.
+The initial check-in date (as if the user selected it).
+
+### initialCheckOut
+
+- Type: `Date`
+- Default: `null`
+
+The initial check-out date (as if the user selected it).
 
 ### firstDayOfWeek
 
