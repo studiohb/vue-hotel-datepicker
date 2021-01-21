@@ -217,6 +217,10 @@ export default {
       default: true,
       type: Boolean
     },
+    disableDatesWithoutPrice: {
+      default: false,
+      type: Boolean
+    },
     priceDefault: {
       default: '',
       type: [Number, String, null]

@@ -146,6 +146,13 @@ Shows the year next to the month
 
 If set to true, displays a clear button on the right side of the input if there are dates set
 
+## disableDatesWithoutPrice
+
+- Type: `boolean`
+- Default: `false`
+
+Is set to true, all dates not matching a price range in `priceByDate` will be disabled.
+
 ### i18n
 
 - Type: `Object`

@@ -155,11 +155,15 @@ export default {
       return this.compareDay(this.date, this.nextDisabledDate) == 1;
     },
 
+    isMissingPrice() {
+      return this.options.disableDatesWithoutPrice && !this.price;
+    },
+
     isDisabled() {
       return this.isInDisabledDates
           || this.isBeforeGlobalStartDate
           || this.isAfterGlobalEndDate
-          || !this.price
+          || this.isMissingPrice
           || this.isBeforeCheckInDay
           || this.isCheckInDay
           || this.isBeforeFirstEnabledDate
