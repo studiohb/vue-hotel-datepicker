@@ -189,7 +189,12 @@ export default {
 
     isHighlighted() {
       if (!this.checkIn) return false;
-      return this.isDayInRange(this.date, [this.checkIn, this.checkOut || this.hoveringDate]);
+      if (this.choosingCheckOut) return this.isDayInRange(this.date, [this.checkIn, this.hoveringDate]);
+      return this.isDayInRange(this.date, [this.checkIn, this.checkOut]);
+    },
+
+    isCurrentCheckOutCandidate() {
+      return this.choosingCheckOut && this.isHighlighted && this.isHovered && !this.isCheckInDay;
     },
 
     forbidsCheckIn() {
@@ -207,8 +212,8 @@ export default {
 
       // Selection
       if (this.isHighlighted) classes.push(this.cssClass('selected'));
-      if (this.isCheckInDay) classes.push(this.cssClass('first-day-selected'));
-      if (this.isCheckOutDay) classes.push(this.cssClass('last-day-selected'));
+      if (this.isCheckInDay && !this.isHovered) classes.push(this.cssClass('first-day-selected'));
+      if ((this.isCheckOutDay && !this.isHovered) || this.isCurrentCheckOutCandidate) classes.push(this.cssClass('last-day-selected'));
 
       // Half-days
       if (this.forbidsCheckIn) classes.push(this.cssClass('check-in-forbidden'));
