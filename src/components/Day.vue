@@ -178,7 +178,7 @@ export default {
           || this.isAfterGlobalEndDate
           || this.isMissingPrice
           || this.isBeforeCheckInDay
-          || this.isCheckInDay
+          || (this.choosingCheckOut && this.isCheckInDay)
           || this.isBeforeFirstEnabledDate
           || this.isAfterNextDisabledDate;
     },
