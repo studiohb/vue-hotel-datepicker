@@ -7,7 +7,6 @@
       :class='dayClass'
       :style='isToday ? currentDateStyle : ""'
       :tabindex="tabIndex"
-      ref="day"
     )
       .day-number {{ dayNumber }}
       .day-price(v-if='showPrice') {{ price }}
@@ -96,8 +95,7 @@ export default {
       if (
         !this.isOpen ||
         !this.belongsToThisMonth ||
-        this.isDisabled ||
-        !this.isClickable()
+        this.isDisabled
       ) {
         return -1;
       }
@@ -236,16 +234,8 @@ export default {
   methods: {
     ...Helpers,
 
-    isClickable() {
-      if (this.$refs && this.$refs.day) {
-        return getComputedStyle(this.$refs.day).pointerEvents !== 'none';
-      } else {
-        return true;
-      }
-    },
-
     dayClicked(date) {
-      if (!this.isDisabled && this.isClickable())
+      if (this.isEnabled)
         this.$emit('day-clicked', date);
     },
 

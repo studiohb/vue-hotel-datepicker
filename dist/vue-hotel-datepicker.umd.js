@@ -5165,12 +5165,12 @@ fecha.parse = function (dateStr, format, i18nSettings) {
     'month-names': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
   }
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=adc2321c&lang=pug&
-var Dayvue_type_template_id_adc2321c_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{ref:"day",staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
-var Dayvue_type_template_id_adc2321c_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=6fc4f610&lang=pug&
+var Dayvue_type_template_id_6fc4f610_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
+var Dayvue_type_template_id_6fc4f610_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=adc2321c&lang=pug&
+// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=6fc4f610&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.join.js
 var es_array_join = __webpack_require__("a15b");
@@ -5432,7 +5432,6 @@ function _toConsumableArray(arr) {
 //
 //
 //
-//
 
 /* harmony default export */ var Dayvue_type_script_lang_js_ = ({
   name: 'Day',
@@ -5513,7 +5512,7 @@ function _toConsumableArray(arr) {
   },
   computed: {
     tabIndex: function tabIndex() {
-      if (!this.isOpen || !this.belongsToThisMonth || this.isDisabled || !this.isClickable()) {
+      if (!this.isOpen || !this.belongsToThisMonth || this.isDisabled) {
         return -1;
       }
 
@@ -5574,7 +5573,7 @@ function _toConsumableArray(arr) {
       return this.options.disableDatesWithoutPrice && !this.price;
     },
     isDisabled: function isDisabled() {
-      return this.isInDisabledDates || this.isBeforeGlobalStartDate || this.isAfterGlobalEndDate || this.isMissingPrice || this.isBeforeCheckInDay || this.isCheckInDay || this.isBeforeFirstEnabledDate || this.isAfterNextDisabledDate;
+      return this.isInDisabledDates || this.isBeforeGlobalStartDate || this.isAfterGlobalEndDate || this.isMissingPrice || this.isBeforeCheckInDay || this.choosingCheckOut && this.isCheckInDay || this.isBeforeFirstEnabledDate || this.isAfterNextDisabledDate;
     },
     isEnabled: function isEnabled() {
       return !this.isDisabled;
@@ -5621,15 +5620,8 @@ function _toConsumableArray(arr) {
     }
   },
   methods: _objectSpread2(_objectSpread2({}, helpers), {}, {
-    isClickable: function isClickable() {
-      if (this.$refs && this.$refs.day) {
-        return getComputedStyle(this.$refs.day).pointerEvents !== 'none';
-      } else {
-        return true;
-      }
-    },
     dayClicked: function dayClicked(date) {
-      if (!this.isDisabled && this.isClickable()) this.$emit('day-clicked', date);
+      if (this.isEnabled) this.$emit('day-clicked', date);
     },
     cssClass: function cssClass(suffix) {
       return "datepicker__month-day--".concat(suffix);
@@ -5748,8 +5740,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_Dayvue_type_script_lang_js_,
-  Dayvue_type_template_id_adc2321c_lang_pug_render,
-  Dayvue_type_template_id_adc2321c_lang_pug_staticRenderFns,
+  Dayvue_type_template_id_6fc4f610_lang_pug_render,
+  Dayvue_type_template_id_6fc4f610_lang_pug_staticRenderFns,
   false,
   null,
   null,
