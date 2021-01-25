@@ -5156,12 +5156,12 @@ fecha.parse = function (dateStr, format, i18nSettings) {
     'month-names': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
   }
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=6fc4f610&lang=pug&
-var Dayvue_type_template_id_6fc4f610_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
-var Dayvue_type_template_id_6fc4f610_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=dac3a126&lang=pug&
+var Dayvue_type_template_id_dac3a126_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
+var Dayvue_type_template_id_dac3a126_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=6fc4f610&lang=pug&
+// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=dac3a126&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.join.js
 var es_array_join = __webpack_require__("a15b");
@@ -5521,7 +5521,7 @@ function _toConsumableArray(arr) {
       return this.staticTooltipMessage || this.dynamicTooltipMessage;
     },
     showTooltip: function showTooltip() {
-      return this.options.hoveringTooltip && this.isHovered && this.isEnabled && this.tooltipMessage;
+      return this.options.hoveringTooltip && this.isHovered && this.isEnabled && this.belongsToThisMonth && this.tooltipMessage;
     },
     isHovered: function isHovered() {
       return this.compareDay(this.hoveringDate, this.date) == 0;
@@ -5731,8 +5731,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_Dayvue_type_script_lang_js_,
-  Dayvue_type_template_id_6fc4f610_lang_pug_render,
-  Dayvue_type_template_id_6fc4f610_lang_pug_staticRenderFns,
+  Dayvue_type_template_id_dac3a126_lang_pug_render,
+  Dayvue_type_template_id_dac3a126_lang_pug_staticRenderFns,
   false,
   null,
   null,

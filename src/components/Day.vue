@@ -120,6 +120,7 @@ export default {
       return this.options.hoveringTooltip
           && this.isHovered
           && this.isEnabled
+          && this.belongsToThisMonth
           && this.tooltipMessage;
     },
 
