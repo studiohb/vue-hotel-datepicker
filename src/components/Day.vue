@@ -188,6 +188,7 @@ export default {
 
     isHighlighted() {
       if (!this.checkIn) return false;
+      if (this.isDisabled) return false;
       if (this.choosingCheckOut) return this.isDayInRange(this.date, [this.checkIn, this.hoveringDate]);
       return this.isDayInRange(this.date, [this.checkIn, this.checkOut]);
     },
