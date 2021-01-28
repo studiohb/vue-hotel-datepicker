@@ -62,10 +62,10 @@ export default {
     dayNumber: {
       type: String
     },
-    firstEnabledDate: {
+    minCheckOutDate: {
       type: [Date, Number, String]
     },
-    nextDisabledDate: {
+    maxCheckOutDate: {
       type: [Date, Number, String]
     },
     hoveringTooltip: {
@@ -157,18 +157,24 @@ export default {
       return this.compareDay(this.date, this.checkIn) == -1;
     },
 
-    isBeforeFirstEnabledDate() {
+    isBeforeMinCheckOutDate() {
       if (!this.choosingCheckOut) return null;
-      return this.compareDay(this.date, this.firstEnabledDate) == -1;
+      return this.compareDay(this.date, this.minCheckOutDate) == -1;
     },
 
-    isAfterNextDisabledDate() {
-      if (!this.choosingCheckOut) return null;
-      return this.compareDay(this.date, this.nextDisabledDate) == 1;
+    isAfterMaxCheckOutDate() {
+      if (!this.maxCheckOutDate) return null;
+      return this.compareDay(this.date, this.maxCheckOutDate) == 1;
     },
 
     isMissingPrice() {
       return this.options.disableDatesWithoutPrice && !this.price;
+    },
+
+    hasDisabledDatesBeforeMinNightsThreshold() {
+      const nextDay = this.addDays(this.date, 1);
+      const nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, nextDay);
+      return this.isDayInRange(nextDisabledDate, [nextDay, this.addDays(this.date, this.minNights)]);
     },
 
     isDisabled() {
@@ -178,8 +184,9 @@ export default {
           || this.isMissingPrice
           || this.isBeforeCheckInDay
           || (this.choosingCheckOut && this.isCheckInDay)
-          || this.isBeforeFirstEnabledDate
-          || this.isAfterNextDisabledDate;
+          || this.isBeforeMinCheckOutDate
+          || this.isAfterMaxCheckOutDate
+          || (!this.choosingCheckOut && this.hasDisabledDatesBeforeMinNightsThreshold);
     },
 
     isEnabled() {

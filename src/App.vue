@@ -70,8 +70,8 @@
                 :choosingCheckOut='choosingCheckOut'
                 :disabledDatesForCheckIn='disabledDatesForCheckIn'
                 :disabledDatesForCheckOut='disabledDatesForCheckOut'
-                :firstEnabledDate='firstEnabledDate'
-                :nextDisabledDate='nextDisabledDate'
+                :minCheckOutDate='minCheckOutDate'
+                :maxCheckOutDate='maxCheckOutDate'
                 :activeMonthIndex='activeMonthIndex'
                 :hoveringDate='hoveringDate'
                 :staticTooltipMessage='staticTooltipMessage'
@@ -116,8 +116,8 @@
                   :choosingCheckOut='choosingCheckOut'
                   :disabledDatesForCheckIn='disabledDatesForCheckIn'
                   :disabledDatesForCheckOut='disabledDatesForCheckOut'
-                  :firstEnabledDate='firstEnabledDate'
-                  :nextDisabledDate='nextDisabledDate'
+                  :minCheckOutDate='minCheckOutDate'
+                  :maxCheckOutDate='maxCheckOutDate'
                   :activeMonthIndex='activeMonthIndex'
                   :hoveringDate='hoveringDate'
                   :staticTooltipMessage='staticTooltipMessage'
@@ -279,16 +279,15 @@ export default {
     choosingCheckOut() {
       return this.checkIn && !this.checkOut;
     },
-    firstEnabledDate() {
+    minCheckOutDate() {
       if (!this.checkIn) return null;
       return this.addDays(this.checkIn, this.getMinNights(this.checkIn));
     },
-    maximumDate() {
-      return new Date(8640000000000000);
-    },
-    nextDisabledDate() {
+    maxCheckOutDate() {
       if (!this.choosingCheckOut) return null;
-      return this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1)) || this.maximumDate;
+      const nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));
+      const maxDateValue = new Date(8640000000000000);
+      return this.addDays(nextDisabledDate || maxDateValue, -1);
     }
   },
 
