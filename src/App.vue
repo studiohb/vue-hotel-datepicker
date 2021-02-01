@@ -171,6 +171,10 @@ export default {
       default: null,
       type: [Date, String]
     },
+    alwaysOpen: {
+      type: Boolean,
+      default: false
+    },
     format: {
       default: 'YYYY-MM-DD',
       type: String
@@ -249,7 +253,7 @@ export default {
       months: [],
       activeMonthIndex: 0,
       show: true,
-      isOpen: false,
+      isOpen: this.alwaysOpen,
       xDown: null,
       yDown: null,
       xUp: null,
@@ -291,6 +295,11 @@ export default {
 
   watch: {
     isOpen(value) {
+      if (!value && this.alwaysOpen) { // Prevent setting isOpen to false
+        this.isOpen = true;
+        return;
+      }
+
       if (!value) {
         this.$emit('closed', this);
       }
@@ -319,7 +328,7 @@ export default {
         this.hoveringDate = null;
         this.show = true;
         this.reRender();
-        this.isOpen = false;
+        this.hideDatepicker();
       }
 
       this.$emit('check-out-changed', newDate);
@@ -448,15 +457,15 @@ export default {
     },
 
     hideDatepicker() {
-      this.isOpen = false;
+      if (!this.alwaysOpen) this.isOpen = false;
     },
 
     showDatepicker() {
-      this.isOpen = true;
+      if (!this.alwaysOpen) this.isOpen = true;
     },
 
     toggleDatepicker() {
-      this.isOpen = !this.isOpen;
+      if (!this.alwaysOpen) this.isOpen = !this.isOpen;
     },
 
     clickOutside() {

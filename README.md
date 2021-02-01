@@ -77,6 +77,13 @@ The initial check-in date (as if the user selected it).
 
 The initial check-out date (as if the user selected it).
 
+### alwaysOpen
+
+- Type: `Boolean`
+- Default: `false`
+
+If true calendar is always open.
+
 ### firstDayOfWeek
 
 - Type: `Number`
