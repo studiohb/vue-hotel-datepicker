@@ -1,7 +1,7 @@
 <template lang="pug">
   .datepicker__wrapper(v-if='show' v-on-click-outside='clickOutside' @blur="clickOutside")
     .datepicker__close-button.-hide-on-desktop(v-if='isOpen' @click='hideDatepicker') ＋
-    .datepicker__dummy-wrapper(  :class="`${isOpen ? 'datepicker__dummy-wrapper--is-active' : ''}` ")
+    .datepicker__dummy-wrapper(:class="isOpen ? 'datepicker__dummy-wrapper--is-active' : ''")
       date-input(
         :i18n="i18n"
         :input-date="formatDate(checkIn)"
@@ -26,18 +26,18 @@
     .datepicker( :class='`${ isOpen ? "datepicker--open" : "datepicker--closed" }`')
       .-hide-on-desktop
         .datepicker__dummy-wrapper.datepicker__dummy-wrapper--no-border(
-          @click='toggleDatepicker' :class="`${isOpen ? 'datepicker__dummy-wrapper--is-active' : ''}`"
+          @click='toggleDatepicker' :class="isOpen ? 'datepicker__dummy-wrapper--is-active' : ''"
           v-if='isOpen'
         )
           .datepicker__input(
             tabindex="0"
-            :class="`${isOpen && checkIn == null ? 'datepicker__dummy-input--is-active' : ''}`"
+            :class="isOpen && !checkIn ? 'datepicker__dummy-input--is-active' : ''"
             v-text="`${checkIn ? formatDate(checkIn) : i18n['check-in']}`"
             type="button"
           )
           .datepicker__input(
             tabindex="0"
-            :class="`${isOpen && checkOut == null && checkIn !== null ? 'datepicker__dummy-input--is-active' : ''}`"
+            :class="isOpen && checkIn && !checkOut ? 'datepicker__dummy-input--is-active' : ''"
             v-text="`${checkOut ? formatDate(checkOut) : i18n['check-out']}`"
             type="button"
           )
@@ -53,14 +53,15 @@
             @keyup.enter.stop.prevent='renderNextMonth'
             :tabindex='isOpen ? 0 : -1'
           )
-        .datepicker__months(v-if='screenSize == "desktop"')
-          div.datepicker__month(v-for='n in [0,1]'  v-bind:key='n')
+        .datepicker__months(v-if='screenSize == "desktop"' :class="paneStyleClass")
+          div.datepicker__month(v-for='n in indexesOfMonthsToDisplay'  :key='n')
             p.datepicker__month-name(v-text='getMonth(months[activeMonthIndex+n].days[15].date)')
             .datepicker__week-row.-hide-up-to-tablet
-              .datepicker__week-name(v-for='dayName in i18n["day-names"]' v-text='dayName')
-            .square(v-for='day in months[activeMonthIndex+n].days'
+              .datepicker__week-name(v-for='dayName in i18n["day-names"]') {{ dayName }}
+            .square(
+              v-for='day in months[activeMonthIndex+n].days'
               @mouseover='hoveringDate = day.date'
-              )
+            )
               Day(
                 :is-open="isOpen"
                 :options="$props"
@@ -92,7 +93,7 @@
           .datepicker__months#swiperWrapper
             div.datepicker__month(
               v-for='(a, n) in months'
-              v-bind:key='n'
+              :key='n'
             )
               p.datepicker__month-name(
                 v-text='getMonth(months[n].days[15].date)'
@@ -105,7 +106,7 @@
               .square(v-for='(day, index) in months[n].days'
                 @mouseover='hoveringDate = day.date'
                 @focus='hoveringDate = day.date'
-                v-bind:key='index'
+                :key='index'
               )
                 Day(
                   :is-open="isOpen"
@@ -174,6 +175,10 @@ export default {
     alwaysOpen: {
       type: Boolean,
       default: false
+    },
+    numberOfMonthsToDisplay: {
+      type: Number,
+      default: 2
     },
     format: {
       default: 'YYYY-MM-DD',
@@ -290,6 +295,13 @@ export default {
       const nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));
       const maxDateValue = new Date(8640000000000000);
       return this.addDays(nextDisabledDate || maxDateValue, -1);
+    },
+    indexesOfMonthsToDisplay() {
+      return Array.from(Array(this.numberOfMonthsToDisplay).keys());
+    },
+    paneStyleClass() {
+      if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';
+      return 'datepicker__months-dualpane';
     }
   },
 

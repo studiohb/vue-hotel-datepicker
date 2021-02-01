@@ -270,7 +270,13 @@
 
     &__months {
         @include device($desktop) {
-            width: 650px;
+            &.datepicker__months-singlepane { width: 325px; }
+            &.datepicker__months-dualpane { width: 650px; }
+        }
+
+        @include device($desktop) {
+            &.datepicker__months-singlepane .datepicker__month { width: 100%; }
+            &.datepicker__months-dualpane .datepicker__month { width: 50%; }
         }
 
         @include device($up-to-tablet) {
@@ -287,18 +293,20 @@
             justify-content: flex-start;
         }
 
-        &::before {
-            background: $light-gray;
-            bottom: 0;
-            content: "";
-            display: block;
-            left: 50%;
-            position: absolute;
-            top: 0;
-            width: 1px;
+        &.datepicker__months-dualpane {
+            &::before {
+                background: $light-gray;
+                bottom: 0;
+                content: "";
+                display: block;
+                left: 50%;
+                position: absolute;
+                top: 0;
+                width: 1px;
 
-            @include device($up-to-tablet) {
-                display: none;
+                @include device($up-to-tablet) {
+                    display: none;
+                }
             }
         }
     }
@@ -306,7 +314,6 @@
     &__month {
         font-size: 12px;
         float: left;
-        width: 50%;
         padding-right: 10px;
 
         @include device($up-to-tablet) {

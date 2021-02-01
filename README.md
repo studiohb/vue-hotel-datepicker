@@ -84,6 +84,13 @@ The initial check-out date (as if the user selected it).
 
 If true calendar is always open.
 
+### nomberOfMonthsToDisplay
+
+- Type: `Number`
+- Default: `2`
+
+Number of months displayed (only `1` and `2` are supported values).
+
 ### firstDayOfWeek
 
 - Type: `Number`
