@@ -180,8 +180,8 @@ export default {
       default: () => new Date()
     },
     endDate: {
-      default: new Date(8640000000000000), // maximum date value
-      type: [Date, String, Number]
+      type: [Date, String],
+      default: () => new Date(8640000000000000) // maximum date value
     },
     firstDayOfWeek: {
       default: 0,
@@ -193,7 +193,7 @@ export default {
     },
     hoveringTooltip: {
       default: true,
-      type: [Boolean, Function]
+      type: Boolean
     },
     staticTooltipMessage: {
       default: null,
