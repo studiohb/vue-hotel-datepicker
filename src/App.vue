@@ -180,7 +180,7 @@ export default {
       default: () => new Date()
     },
     endDate: {
-      default: Infinity,
+      default: new Date(8640000000000000), // maximum date value
       type: [Date, String, Number]
     },
     firstDayOfWeek: {
@@ -188,9 +188,7 @@ export default {
       type: Number
     },
     disabledDates: {
-      default: function() {
-        return [];
-      },
+      default: () => [],
       type: Array
     },
     hoveringTooltip: {
@@ -505,14 +503,8 @@ export default {
         ].days.filter(day => day.belongsToThisMonth === true);
       }
 
-      if (this.endDate !== Infinity) {
-        if (
-          fecha.format(firstDayOfLastMonth[0].date, 'YYYYMM') ==
-          fecha.format(new Date(this.endDate), 'YYYYMM')
-        ) {
-          return;
-        }
-      }
+      if (this.compareDay(firstDayOfLastMonth[0].date, this.endDate) == 0)
+        return;
 
       this.createMonth(this.getNextMonth(firstDayOfLastMonth[0].date));
 
