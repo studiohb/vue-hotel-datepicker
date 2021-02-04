@@ -195,13 +195,16 @@ export default {
 
     isHighlighted() {
       if (!this.checkIn) return false;
-      if (this.isDisabled) return false;
+      if (this.isAfterMaxCheckOutDate) return false;
       if (this.choosingCheckOut) return this.isDayInRange(this.date, [this.checkIn, this.hoveringDate]);
       return this.isDayInRange(this.date, [this.checkIn, this.checkOut]);
     },
 
     isCurrentCheckOutCandidate() {
-      return this.choosingCheckOut && this.isHighlighted && this.isHovered && !this.isCheckInDay;
+      if (!this.choosingCheckOut) return false;
+      if (!this.isHighlighted) return false;
+      if (this.isCheckInDay) return false;
+      return this.compareDay(this.date, Math.min(this.maxCheckOutDate, this.hoveringDate)) == 0;
     },
 
     forbidsCheckIn() {
