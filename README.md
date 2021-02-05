@@ -122,7 +122,19 @@ Example:
 - Type: `Array`
 - Default: `[]`
 
-An array of strings in this format: `YYYY-MM-DD`. All the dates passed to the list will be disabled.
+An array of mixed:
+- `Date` objects
+- strings in `YYYY-MM-DD` format
+- ranges in format (values can be either `Date` objects or string in `YYYY-MM-DD` format):
+
+    ```js
+    {
+      start: new Date(),
+      end: 'YYYY-MM-DD'
+    }
+    ```
+
+All the dates passed to the list (or in ranges passed to this list) will be disabled.
 
 ### hoveringTooltip
 

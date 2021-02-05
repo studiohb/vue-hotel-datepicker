@@ -281,7 +281,14 @@ export default {
       return this.disabledDates;
     },
     disabledDatesForCheckOut() {
-      return this.disabledDates.map(date => this.addDays(date, 1));
+      return this.disabledDates.map(dateOrRange => {
+        if (this.isRangeObject(dateOrRange))
+          return {
+            start: this.addDays(dateOrRange.start, 1),
+            end: this.addDays(dateOrRange.end, 1)
+          };
+        return this.addDays(dateOrRange, 1);
+      });
     },
     choosingCheckOut() {
       return this.checkIn && !this.checkOut;
@@ -569,12 +576,12 @@ export default {
     },
 
     getPrice(date) {
-      const currentRange = this.priceByDate.find(range => this.isDayInRange(date, [range.start, range.end]));
+      const currentRange = this.priceByDate.find(range => this.isDayInRange(date, range));
       return currentRange?.price || this.priceDefault;
     },
 
     getMinNights(date) {
-      const currentRange = this.minNightsByDate.find(range => this.isDayInRange(date, [range.start, range.end]));
+      const currentRange = this.minNightsByDate.find(range => this.isDayInRange(date, range));
       return currentRange?.minNights || 1;
     },
   },
