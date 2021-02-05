@@ -39,10 +39,6 @@ export default {
     return typeof object === 'object' && object !== null && object.start && object.end;
   },
 
-  sortDates(dates) {
-    return [...dates].sort((a, b) => new Date(a) - new Date(b));
-  },
-
   countDays(start, end) {
     const oneDay = 24 * 60 * 60 * 1000;
     const firstDate = new Date(start);

@@ -241,9 +241,7 @@ export default {
     },
 
     disabledDates() {
-      return this.sortDates(
-        this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn
-      );
+      return this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn;
     },
 
     showPrice() {
