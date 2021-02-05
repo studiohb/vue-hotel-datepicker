@@ -1,22 +1,22 @@
 import fecha from 'fecha';
 
 export default {
-  getNextDate(datesArray, referenceDate) {
-    var now = new Date(referenceDate);
+  getNextDate(datesOrRangeArray, referenceDate) {
+    var reference = new Date(referenceDate);
     var closest = Infinity;
 
-    datesArray.forEach(function (d) {
-      var date = new Date(d);
-      if (date >= now && date < closest) {
-        closest = d;
-      }
+    datesOrRangeArray.forEach(dateOrRange => {
+      if (this.isDayInRange(reference, dateOrRange))
+        return reference;
+      const date = new Date(dateOrRange.start || dateOrRange); // use range start (if it's a range), or the value itself (if it's a Date or String)
+      if (this.compareDay(date, reference) == 0)
+        return reference; // stop parsing: we won't find a better candidate
+      if (date >= reference && date < closest)
+        closest = date;
     });
 
-    if (closest === Infinity) {
-      return null;
-    } else {
-      return closest;
-    }
+    if (closest === Infinity) return null;
+    return closest;
   },
 
   compareDay(day1, day2) {
@@ -31,12 +31,12 @@ export default {
   },
 
   isDayInRange(day, range) {
-    if (!day || !range[0] || !range[1]) return null;
-    return this.compareDay(day, range[0]) >= 0 && this.compareDay(day, range[1]) <= 0;
+    if (!day || !range.start || !range.end) return null;
+    return this.compareDay(day, range.start) >= 0 && this.compareDay(day, range.end) <= 0;
   },
 
-  sortDates(dates) {
-    return [...dates].sort((a, b) => new Date(a) - new Date(b));
+  isRangeObject(object) {
+    return typeof object === 'object' && object !== null && object.start && object.end;
   },
 
   countDays(start, end) {

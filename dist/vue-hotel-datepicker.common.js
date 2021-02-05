@@ -3523,35 +3523,6 @@ module.exports = TO_STRING_TAG_SUPPORT ? {}.toString : function toString() {
 
 /***/ }),
 
-/***/ "b0c0":
-/***/ (function(module, exports, __webpack_require__) {
-
-var DESCRIPTORS = __webpack_require__("83ab");
-var defineProperty = __webpack_require__("9bf2").f;
-
-var FunctionPrototype = Function.prototype;
-var FunctionPrototypeToString = FunctionPrototype.toString;
-var nameRE = /^\s*function ([^ (]*)/;
-var NAME = 'name';
-
-// Function instances `.name` property
-// https://tc39.es/ecma262/#sec-function-instances-name
-if (DESCRIPTORS && !(NAME in FunctionPrototype)) {
-  defineProperty(FunctionPrototype, NAME, {
-    configurable: true,
-    get: function () {
-      try {
-        return FunctionPrototypeToString.call(this).match(nameRE)[1];
-      } catch (error) {
-        return '';
-      }
-    }
-  });
-}
-
-
-/***/ }),
-
 /***/ "b622":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4687,12 +4658,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=c41598a6&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"170344ba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=79b00bec&lang=pug&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',{directives:[{name:"on-click-outside",rawName:"v-on-click-outside",value:(_vm.clickOutside),expression:"clickOutside"}],staticClass:"datepicker__wrapper",on:{"blur":_vm.clickOutside}},[(_vm.isOpen)?_c('div',{staticClass:"datepicker__close-button -hide-on-desktop",on:{"click":_vm.hideDatepicker}},[_vm._v("＋")]):_vm._e(),_c('div',{staticClass:"datepicker__dummy-wrapper",class:_vm.isOpen ? 'datepicker__dummy-wrapper--is-active' : ''},[_c('date-input',{attrs:{"i18n":_vm.i18n,"input-date":_vm.formatDate(_vm.checkIn),"input-date-type":"check-in","is-open":_vm.isOpen,"toggle-datepicker":_vm.toggleDatepicker,"single-day-selection":_vm.singleDaySelection}}),(!_vm.singleDaySelection)?_c('date-input',{attrs:{"i18n":_vm.i18n,"input-date":_vm.formatDate(_vm.checkOut),"input-date-type":"check-out","is-open":_vm.isOpen,"toggle-datepicker":_vm.toggleDatepicker,"single-day-selection":_vm.singleDaySelection}}):_vm._e()],1),(_vm.showClearSelectionButton)?_c('div',{staticClass:"datepicker__clear-button",attrs:{"tabindex":"0"},on:{"click":_vm.clearSelection}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 68 68"}},[_c('path',{attrs:{"d":"M6.5 6.5l55 55M61.5 6.5l-55 55"}})])]):_vm._e(),_c('div',{staticClass:"datepicker",class:("" + (_vm.isOpen ? "datepicker--open" : "datepicker--closed"))},[_c('div',{staticClass:"-hide-on-desktop"},[(_vm.isOpen)?_c('div',{staticClass:"datepicker__dummy-wrapper datepicker__dummy-wrapper--no-border",class:_vm.isOpen ? 'datepicker__dummy-wrapper--is-active' : '',on:{"click":_vm.toggleDatepicker}},[_c('div',{staticClass:"datepicker__input",class:_vm.isOpen && !_vm.checkIn ? 'datepicker__dummy-input--is-active' : '',attrs:{"tabindex":"0","type":"button"},domProps:{"textContent":_vm._s(("" + (_vm.checkIn ? _vm.formatDate(_vm.checkIn) : _vm.i18n['check-in'])))}}),_c('div',{staticClass:"datepicker__input",class:_vm.isOpen && _vm.checkIn && !_vm.checkOut ? 'datepicker__dummy-input--is-active' : '',attrs:{"tabindex":"0","type":"button"},domProps:{"textContent":_vm._s(("" + (_vm.checkOut ? _vm.formatDate(_vm.checkOut) : _vm.i18n['check-out'])))}})]):_vm._e()]),_c('div',{staticClass:"datepicker__inner"},[_c('div',{staticClass:"datepicker__header"},[_c('span',{staticClass:"datepicker__month-button datepicker__month-button--prev -hide-up-to-tablet",attrs:{"tabindex":_vm.isOpen ? 0 : -1},on:{"click":_vm.renderPreviousMonth,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.stopPropagation();$event.preventDefault();return _vm.renderPreviousMonth($event)}}}),_c('span',{staticClass:"datepicker__month-button datepicker__month-button--next -hide-up-to-tablet",attrs:{"tabindex":_vm.isOpen ? 0 : -1},on:{"click":_vm.renderNextMonth,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.stopPropagation();$event.preventDefault();return _vm.renderNextMonth($event)}}})]),(_vm.screenSize == "desktop")?_c('div',{staticClass:"datepicker__months",class:_vm.paneStyleClass},_vm._l((_vm.indexesOfMonthsToDisplay),function(n){return _c('div',{key:n,staticClass:"datepicker__month"},[_c('p',{staticClass:"datepicker__month-name",domProps:{"textContent":_vm._s(_vm.getMonth(_vm.months[_vm.activeMonthIndex+n].days[15].date))}}),_c('div',{staticClass:"datepicker__week-row -hide-up-to-tablet"},_vm._l((_vm.i18n["day-names"]),function(dayName){return _c('div',{staticClass:"datepicker__week-name"},[_vm._v(_vm._s(dayName))])}),0),_vm._l((_vm.months[_vm.activeMonthIndex+n].days),function(day){return _c('div',{staticClass:"square",on:{"mouseover":function($event){_vm.hoveringDate = day.date}}},[_c('Day',{attrs:{"is-open":_vm.isOpen,"options":_vm.$props,"i18n":_vm.i18n,"date":day.date,"choosingCheckOut":_vm.choosingCheckOut,"disabledDatesForCheckIn":_vm.disabledDatesForCheckIn,"disabledDatesForCheckOut":_vm.disabledDatesForCheckOut,"minCheckOutDate":_vm.minCheckOutDate,"maxCheckOutDate":_vm.maxCheckOutDate,"activeMonthIndex":_vm.activeMonthIndex,"hoveringDate":_vm.hoveringDate,"staticTooltipMessage":_vm.staticTooltipMessage,"dayNumber":_vm.getDay(day.date),"belongsToThisMonth":day.belongsToThisMonth,"checkIn":_vm.checkIn,"checkOut":_vm.checkOut,"currentDateStyle":_vm.currentDateStyle,"price":_vm.getPrice(day.date),"minNights":_vm.getMinNights(day.date)},on:{"day-clicked":function($event){return _vm.handleDayClick($event)}}})],1)})],2)}),0):_vm._e(),(_vm.screenSize !== "desktop" && _vm.isOpen)?_c('div',[_c('div',{staticClass:"datepicker__week-row"},_vm._l((this.i18n["day-names"]),function(dayName){return _c('div',{staticClass:"datepicker__week-name",domProps:{"textContent":_vm._s(dayName)}})}),0),_c('div',{staticClass:"datepicker__months",attrs:{"id":"swiperWrapper"}},[_vm._l((_vm.months),function(a,n){return _c('div',{key:n,staticClass:"datepicker__month"},[_c('p',{staticClass:"datepicker__month-name",domProps:{"textContent":_vm._s(_vm.getMonth(_vm.months[n].days[15].date))}}),_c('div',{staticClass:"datepicker__week-row -hide-up-to-tablet"},_vm._l((_vm.i18n["day-names"]),function(dayName){return _c('div',{staticClass:"datepicker__week-name",domProps:{"textContent":_vm._s(dayName)}})}),0),_vm._l((_vm.months[n].days),function(day,index){return _c('div',{key:index,staticClass:"square",on:{"mouseover":function($event){_vm.hoveringDate = day.date},"focus":function($event){_vm.hoveringDate = day.date}}},[_c('Day',{attrs:{"is-open":_vm.isOpen,"options":_vm.$props,"i18n":_vm.i18n,"date":day.date,"choosingCheckOut":_vm.choosingCheckOut,"disabledDatesForCheckIn":_vm.disabledDatesForCheckIn,"disabledDatesForCheckOut":_vm.disabledDatesForCheckOut,"minCheckOutDate":_vm.minCheckOutDate,"maxCheckOutDate":_vm.maxCheckOutDate,"activeMonthIndex":_vm.activeMonthIndex,"hoveringDate":_vm.hoveringDate,"staticTooltipMessage":_vm.staticTooltipMessage,"dayNumber":_vm.getDay(day.date),"belongsToThisMonth":day.belongsToThisMonth,"checkIn":_vm.checkIn,"checkOut":_vm.checkOut,"currentDateStyle":_vm.currentDateStyle,"price":_vm.getPrice(day.date),"minNights":_vm.getMinNights(day.date)},on:{"day-clicked":function($event){return _vm.handleDayClick($event)}}})],1)})],2)}),_c('div',{staticClass:"next--mobile",attrs:{"type":"button"},on:{"click":_vm.renderNextMonth}})],2)]):_vm._e()])])]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=c41598a6&lang=pug&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=79b00bec&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__("4de4");
@@ -5168,12 +5139,12 @@ fecha.parse = function (dateStr, format, i18nSettings) {
     'month-names': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
   }
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=094d275e&lang=pug&
-var Dayvue_type_template_id_094d275e_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
-var Dayvue_type_template_id_094d275e_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"170344ba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Day.vue?vue&type=template&id=5f0c19cf&lang=pug&
+var Dayvue_type_template_id_5f0c19cf_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.showTooltip)?_c('div',{staticClass:"datepicker__tooltip",domProps:{"innerHTML":_vm._s(_vm.tooltipMessage)}}):_vm._e(),_c('div',{staticClass:"datepicker__month-day",class:_vm.dayClass,style:(_vm.isToday ? _vm.currentDateStyle : ""),attrs:{"tabindex":_vm.tabIndex},on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();$event.stopPropagation();return _vm.dayClicked(_vm.date)}}},[_c('div',{staticClass:"day-number"},[_vm._v(_vm._s(_vm.dayNumber))]),(_vm.showPrice)?_c('div',{staticClass:"day-price"},[_vm._v(_vm._s(_vm.price))]):_vm._e()])])}
+var Dayvue_type_template_id_5f0c19cf_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=094d275e&lang=pug&
+// CONCATENATED MODULE: ./src/components/Day.vue?vue&type=template&id=5f0c19cf&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.join.js
 var es_array_join = __webpack_require__("a15b");
@@ -5187,28 +5158,13 @@ var es_regexp_exec = __webpack_require__("ac1f");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
 var es_string_replace = __webpack_require__("5319");
 
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-}
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.description.js
 var es_symbol_description = __webpack_require__("e01a");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.iterator.js
 var es_symbol_iterator = __webpack_require__("d28b");
 
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 
 
 
@@ -5216,43 +5172,20 @@ var es_symbol_iterator = __webpack_require__("d28b");
 
 
 
+function _typeof(obj) {
+  "@babel/helpers - typeof";
 
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-}
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.slice.js
-var es_array_slice = __webpack_require__("fb6a");
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
-var es_function_name = __webpack_require__("b0c0");
-
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
-
-
-
-
-
-
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
-
-
-
-
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+  return _typeof(obj);
 }
 // CONCATENATED MODULE: ./src/helpers.js
 
@@ -5262,22 +5195,21 @@ function _toConsumableArray(arr) {
 
 
 /* harmony default export */ var helpers = ({
-  getNextDate: function getNextDate(datesArray, referenceDate) {
-    var now = new Date(referenceDate);
+  getNextDate: function getNextDate(datesOrRangeArray, referenceDate) {
+    var _this = this;
+
+    var reference = new Date(referenceDate);
     var closest = Infinity;
-    datesArray.forEach(function (d) {
-      var date = new Date(d);
+    datesOrRangeArray.forEach(function (dateOrRange) {
+      if (_this.isDayInRange(reference, dateOrRange)) return reference;
+      var date = new Date(dateOrRange.start || dateOrRange); // use range start (if it's a range), or the value itself (if it's a Date or String)
 
-      if (date >= now && date < closest) {
-        closest = d;
-      }
+      if (_this.compareDay(date, reference) == 0) return reference; // stop parsing: we won't find a better candidate
+
+      if (date >= reference && date < closest) closest = date;
     });
-
-    if (closest === Infinity) {
-      return null;
-    } else {
-      return closest;
-    }
+    if (closest === Infinity) return null;
+    return closest;
   },
   compareDay: function compareDay(day1, day2) {
     if (!day1 || !day2) return null;
@@ -5288,13 +5220,11 @@ function _toConsumableArray(arr) {
     if (date1 < date2) return -1;
   },
   isDayInRange: function isDayInRange(day, range) {
-    if (!day || !range[0] || !range[1]) return null;
-    return this.compareDay(day, range[0]) >= 0 && this.compareDay(day, range[1]) <= 0;
+    if (!day || !range.start || !range.end) return null;
+    return this.compareDay(day, range.start) >= 0 && this.compareDay(day, range.end) <= 0;
   },
-  sortDates: function sortDates(dates) {
-    return _toConsumableArray(dates).sort(function (a, b) {
-      return new Date(a) - new Date(b);
-    });
+  isRangeObject: function isRangeObject(object) {
+    return _typeof(object) === 'object' && object !== null && object.start && object.end;
   },
   countDays: function countDays(start, end) {
     var oneDay = 24 * 60 * 60 * 1000;
@@ -5538,8 +5468,8 @@ function _toConsumableArray(arr) {
     isInDisabledDates: function isInDisabledDates() {
       var _this = this;
 
-      return this.disabledDates.some(function (i) {
-        return _this.compareDay(i, _this.date) == 0;
+      return this.disabledDates.some(function (dateOrRange) {
+        return _this.isRangeObject(dateOrRange) ? _this.isDayInRange(_this.date, dateOrRange) : _this.compareDay(_this.date, dateOrRange) == 0;
       });
     },
     isBeforeGlobalStartDate: function isBeforeGlobalStartDate() {
@@ -5566,7 +5496,11 @@ function _toConsumableArray(arr) {
     hasDisabledDatesBeforeMinNightsThreshold: function hasDisabledDatesBeforeMinNightsThreshold() {
       var nextDay = this.addDays(this.date, 1);
       var nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, nextDay);
-      return this.isDayInRange(nextDisabledDate, [nextDay, this.addDays(this.date, this.minNights)]);
+      var minNightsThreshold = this.addDays(this.date, this.minNights);
+      return this.isDayInRange(nextDisabledDate, {
+        start: nextDay,
+        end: minNightsThreshold
+      });
     },
     isDisabled: function isDisabled() {
       return this.isInDisabledDates || this.isBeforeGlobalStartDate || this.isAfterGlobalEndDate || this.isMissingPrice || this.isBeforeCheckInDay || this.choosingCheckOut && this.isCheckInDay || this.isBeforeMinCheckOutDate || this.isAfterMaxCheckOutDate || !this.choosingCheckOut && this.hasDisabledDatesBeforeMinNightsThreshold;
@@ -5577,8 +5511,14 @@ function _toConsumableArray(arr) {
     isHighlighted: function isHighlighted() {
       if (!this.checkIn) return false;
       if (this.isAfterMaxCheckOutDate) return false;
-      if (this.choosingCheckOut) return this.isDayInRange(this.date, [this.checkIn, this.hoveringDate]);
-      return this.isDayInRange(this.date, [this.checkIn, this.checkOut]);
+      if (this.choosingCheckOut) return this.isDayInRange(this.date, {
+        start: this.checkIn,
+        end: this.hoveringDate
+      });
+      return this.isDayInRange(this.date, {
+        start: this.checkIn,
+        end: this.checkOut
+      });
     },
     isCurrentCheckOutCandidate: function isCurrentCheckOutCandidate() {
       if (!this.choosingCheckOut) return false;
@@ -5589,15 +5529,15 @@ function _toConsumableArray(arr) {
     forbidsCheckIn: function forbidsCheckIn() {
       var _this2 = this;
 
-      return this.disabledDatesForCheckIn.some(function (i) {
-        return _this2.compareDay(i, _this2.date) == 0;
+      return this.disabledDatesForCheckIn.some(function (dateOrRange) {
+        return _this2.isRangeObject(dateOrRange) ? _this2.isDayInRange(_this2.date, dateOrRange) : _this2.compareDay(_this2.date, dateOrRange) == 0;
       });
     },
     forbidsCheckOut: function forbidsCheckOut() {
       var _this3 = this;
 
-      return this.disabledDatesForCheckOut.some(function (i) {
-        return _this3.compareDay(i, _this3.date) == 0;
+      return this.disabledDatesForCheckOut.some(function (dateOrRange) {
+        return _this3.isRangeObject(dateOrRange) ? _this3.isDayInRange(_this3.date, dateOrRange) : _this3.compareDay(_this3.date, dateOrRange) == 0;
       });
     },
     dayClass: function dayClass() {
@@ -5613,7 +5553,7 @@ function _toConsumableArray(arr) {
       return classes.join(' ');
     },
     disabledDates: function disabledDates() {
-      return this.sortDates(this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn);
+      return this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn;
     },
     showPrice: function showPrice() {
       return this.isEnabled || this.isCheckInDay;
@@ -5740,8 +5680,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_Dayvue_type_script_lang_js_,
-  Dayvue_type_template_id_094d275e_lang_pug_render,
-  Dayvue_type_template_id_094d275e_lang_pug_staticRenderFns,
+  Dayvue_type_template_id_5f0c19cf_lang_pug_render,
+  Dayvue_type_template_id_5f0c19cf_lang_pug_staticRenderFns,
   false,
   null,
   null,
@@ -5750,7 +5690,7 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Day = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"e8732fc2-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateInput.vue?vue&type=template&id=3abb6762&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"170344ba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateInput.vue?vue&type=template&id=3abb6762&lang=pug&
 var DateInputvue_type_template_id_3abb6762_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"datepicker__input",class:_vm.inputClass,attrs:{"data-qa":"datepickerInput","tabindex":_vm.tabIndex},domProps:{"textContent":_vm._s(_vm.inputDate ? _vm.inputDate : _vm.i18n[_vm.inputDateType])},on:{"click":_vm.toggleDatepicker,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.stopPropagation();$event.preventDefault();return _vm.toggleDatepicker($event)}}})}
 var DateInputvue_type_template_id_3abb6762_lang_pug_staticRenderFns = []
 
@@ -6145,8 +6085,12 @@ var main = __webpack_require__("c1c3");
     disabledDatesForCheckOut: function disabledDatesForCheckOut() {
       var _this = this;
 
-      return this.disabledDates.map(function (date) {
-        return _this.addDays(date, 1);
+      return this.disabledDates.map(function (dateOrRange) {
+        if (_this.isRangeObject(dateOrRange)) return {
+          start: _this.addDays(dateOrRange.start, 1),
+          end: _this.addDays(dateOrRange.end, 1)
+        };
+        return _this.addDays(dateOrRange, 1);
       });
     },
     choosingCheckOut: function choosingCheckOut() {
@@ -6406,7 +6350,7 @@ var main = __webpack_require__("c1c3");
       var _this5 = this;
 
       var currentRange = this.priceByDate.find(function (range) {
-        return _this5.isDayInRange(date, [range.start, range.end]);
+        return _this5.isDayInRange(date, range);
       });
       return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.price) || this.priceDefault;
     },
@@ -6414,7 +6358,7 @@ var main = __webpack_require__("c1c3");
       var _this6 = this;
 
       var currentRange = this.minNightsByDate.find(function (range) {
-        return _this6.isDayInRange(date, [range.start, range.end]);
+        return _this6.isDayInRange(date, range);
       });
       return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.minNights) || 1;
     }
@@ -6447,63 +6391,6 @@ var App_component = normalizeComponent(
 
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (App);
 
-
-
-/***/ }),
-
-/***/ "fb6a":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $ = __webpack_require__("23e7");
-var isObject = __webpack_require__("861d");
-var isArray = __webpack_require__("e8b5");
-var toAbsoluteIndex = __webpack_require__("23cb");
-var toLength = __webpack_require__("50c4");
-var toIndexedObject = __webpack_require__("fc6a");
-var createProperty = __webpack_require__("8418");
-var wellKnownSymbol = __webpack_require__("b622");
-var arrayMethodHasSpeciesSupport = __webpack_require__("1dde");
-var arrayMethodUsesToLength = __webpack_require__("ae40");
-
-var HAS_SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('slice');
-var USES_TO_LENGTH = arrayMethodUsesToLength('slice', { ACCESSORS: true, 0: 0, 1: 2 });
-
-var SPECIES = wellKnownSymbol('species');
-var nativeSlice = [].slice;
-var max = Math.max;
-
-// `Array.prototype.slice` method
-// https://tc39.es/ecma262/#sec-array.prototype.slice
-// fallback for not array-like ES3 strings and DOM objects
-$({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT || !USES_TO_LENGTH }, {
-  slice: function slice(start, end) {
-    var O = toIndexedObject(this);
-    var length = toLength(O.length);
-    var k = toAbsoluteIndex(start, length);
-    var fin = toAbsoluteIndex(end === undefined ? length : end, length);
-    // inline `ArraySpeciesCreate` for usage native `Array#slice` where it's possible
-    var Constructor, result, n;
-    if (isArray(O)) {
-      Constructor = O.constructor;
-      // cross-realm fallback
-      if (typeof Constructor == 'function' && (Constructor === Array || isArray(Constructor.prototype))) {
-        Constructor = undefined;
-      } else if (isObject(Constructor)) {
-        Constructor = Constructor[SPECIES];
-        if (Constructor === null) Constructor = undefined;
-      }
-      if (Constructor === Array || Constructor === undefined) {
-        return nativeSlice.call(O, k, fin);
-      }
-    }
-    result = new (Constructor === undefined ? Array : Constructor)(max(fin - k, 0));
-    for (n = 0; k < fin; k++, n++) if (k in O) createProperty(result, n, O[k]);
-    result.length = n;
-    return result;
-  }
-});
 
 
 /***/ }),

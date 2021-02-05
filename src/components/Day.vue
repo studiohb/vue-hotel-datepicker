@@ -141,7 +141,9 @@ export default {
     },
 
     isInDisabledDates() {
-      return this.disabledDates.some(i => this.compareDay(i, this.date) == 0);
+      return this.disabledDates.some(dateOrRange =>
+        this.isRangeObject(dateOrRange) ? this.isDayInRange(this.date, dateOrRange) : this.compareDay(this.date, dateOrRange) == 0
+      );
     },
 
     isBeforeGlobalStartDate() {
@@ -174,7 +176,9 @@ export default {
     hasDisabledDatesBeforeMinNightsThreshold() {
       const nextDay = this.addDays(this.date, 1);
       const nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, nextDay);
-      return this.isDayInRange(nextDisabledDate, [nextDay, this.addDays(this.date, this.minNights)]);
+      const minNightsThreshold = this.addDays(this.date, this.minNights);
+
+      return this.isDayInRange(nextDisabledDate, {start: nextDay, end: minNightsThreshold});
     },
 
     isDisabled() {
@@ -196,8 +200,8 @@ export default {
     isHighlighted() {
       if (!this.checkIn) return false;
       if (this.isAfterMaxCheckOutDate) return false;
-      if (this.choosingCheckOut) return this.isDayInRange(this.date, [this.checkIn, this.hoveringDate]);
-      return this.isDayInRange(this.date, [this.checkIn, this.checkOut]);
+      if (this.choosingCheckOut) return this.isDayInRange(this.date, {start: this.checkIn, end: this.hoveringDate});
+      return this.isDayInRange(this.date, {start: this.checkIn, end: this.checkOut});
     },
 
     isCurrentCheckOutCandidate() {
@@ -208,11 +212,15 @@ export default {
     },
 
     forbidsCheckIn() {
-      return this.disabledDatesForCheckIn.some(i => this.compareDay(i, this.date) == 0);
+      return this.disabledDatesForCheckIn.some(dateOrRange =>
+        this.isRangeObject(dateOrRange) ? this.isDayInRange(this.date, dateOrRange) : this.compareDay(this.date, dateOrRange) == 0
+      );
     },
 
     forbidsCheckOut() {
-      return this.disabledDatesForCheckOut.some(i => this.compareDay(i, this.date) == 0);
+      return this.disabledDatesForCheckOut.some(dateOrRange =>
+        this.isRangeObject(dateOrRange) ? this.isDayInRange(this.date, dateOrRange) : this.compareDay(this.date, dateOrRange) == 0
+      );
     },
 
     dayClass() {
@@ -233,9 +241,7 @@ export default {
     },
 
     disabledDates() {
-      return this.sortDates(
-        this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn
-      );
+      return this.choosingCheckOut ? this.disabledDatesForCheckOut : this.disabledDatesForCheckIn;
     },
 
     showPrice() {
