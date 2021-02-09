@@ -77,14 +77,14 @@ The initial check-in date (as if the user selected it).
 
 The initial check-out date (as if the user selected it).
 
-### alwaysOpen
+### alwaysOpenOnDesktop
 
 - Type: `Boolean`
 - Default: `false`
 
-If true calendar is always open.
+If true calendar is always open on desktop-size screens.
 
-### nomberOfMonthsToDisplay
+### numberOfMonthsToDisplay
 
 - Type: `Number`
 - Default: `2`

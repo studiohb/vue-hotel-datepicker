@@ -23,7 +23,7 @@
       svg(xmlns='http://www.w3.org/2000/svg' viewBox="0 0 68 68")
         path(d='M6.5 6.5l55 55M61.5 6.5l-55 55')
 
-    .datepicker( :class='`${ isOpen ? "datepicker--open" : "datepicker--closed" }`')
+    .datepicker(:class='datepickerClass')
       .-hide-on-desktop
         .datepicker__dummy-wrapper.datepicker__dummy-wrapper--no-border(
           @click='toggleDatepicker' :class="isOpen ? 'datepicker__dummy-wrapper--is-active' : ''"
@@ -172,7 +172,7 @@ export default {
       default: null,
       type: [Date, String]
     },
-    alwaysOpen: {
+    alwaysOpenOnDesktop: {
       type: Boolean,
       default: false
     },
@@ -258,12 +258,11 @@ export default {
       months: [],
       activeMonthIndex: 0,
       show: true,
-      isOpen: this.alwaysOpen,
+      isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,
       xDown: null,
       yDown: null,
       xUp: null,
-      yUp: null,
-      screenSize: this.handleWindowResize()
+      yUp: null
     };
   },
 
@@ -309,6 +308,18 @@ export default {
     paneStyleClass() {
       if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';
       return 'datepicker__months-dualpane';
+    },
+    datepickerClass() {
+      return `datepicker--${this.isOpen ? 'open' : 'closed'}`;
+    },
+    screenSize() {
+      if (window.innerWidth < 480) return 'smartphone';
+      if (window.innerWidth < 768) return 'tablet';
+      return 'desktop'; // window.innerWidth >= 768
+    },
+    alwaysOpen() {
+      if (this.alwaysOpenOnDesktop && this.screenSize === 'desktop') return true;
+      return false;
     }
   },
 
@@ -328,12 +339,12 @@ export default {
 
         if (value) {
           bodyClassList.add('-overflow-hidden');
-          setTimeout(() => {
-            let swiperWrapper = document.getElementById('swiperWrapper');
-            let monthHeihgt = document.querySelector('.datepicker__month')
-              .offsetHeight;
-            swiperWrapper.scrollTop = this.activeMonthIndex * monthHeihgt;
-          }, 100);
+          this.$nextTick(() => {
+            const swiperWrapper = document.getElementById('swiperWrapper');
+            const monthEl = document.querySelector('.datepicker__month');
+            const monthHeight = monthEl ? monthEl.offsetHeight : 1;
+            swiperWrapper.scrollTop = this.activeMonthIndex * monthHeight;
+          });
         } else {
           bodyClassList.remove('-overflow-hidden');
         }
@@ -401,7 +412,7 @@ export default {
   mounted() {
     document.addEventListener('touchstart', this.handleTouchStart, false);
     document.addEventListener('touchmove', this.handleTouchMove, false);
-    window.addEventListener('resize', this.handleWindowResize);
+    window.addEventListener('resize', this.forceScreenSizeRecomputation);
 
     this.onElementHeightChange(document.body, () => {
       this.emitHeighChangeEvent();
@@ -411,7 +422,7 @@ export default {
   destroyed() {
     window.removeEventListener('touchstart', this.handleTouchStart);
     window.removeEventListener('touchmove', this.handleTouchMove);
-    window.removeEventListener('resize', this.handleWindowResize);
+    window.removeEventListener('resize', this.forceScreenSizeRecomputation);
   },
   methods: {
     ...Helpers,
@@ -423,16 +434,11 @@ export default {
       return '';
     },
 
-    handleWindowResize() {
-      if (window.innerWidth < 480) {
-        this.screenSize = 'smartphone';
-      } else if (window.innerWidth >= 480 && window.innerWidth < 768) {
-        this.screenSize = 'tablet';
-      } else if (window.innerWidth >= 768) {
-        this.screenSize = 'desktop';
-      }
-
-      return this.screenSize;
+    forceScreenSizeRecomputation() {
+      this._computedWatchers.screenSize.run();
+      this._computedWatchers.alwaysOpen.run();
+      this.isOpen = this.screenSize === 'desktop' ? this.alwaysOpenOnDesktop : false;
+      this.$forceUpdate();
     },
 
     onElementHeightChange(el, callback) {
@@ -488,9 +494,8 @@ export default {
     },
 
     clickOutside() {
-      if (this.closeDatepickerOnClickOutside) {
+      if (this.closeDatepickerOnClickOutside && this.screenSize === 'desktop')
         this.hideDatepicker();
-      }
     },
 
     handleDayClick(date) {
