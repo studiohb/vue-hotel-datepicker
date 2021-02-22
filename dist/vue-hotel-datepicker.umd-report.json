@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.46.0",
-  "hash": "7adfb65c244d18800256",
-  "time": 3972,
-  "builtAt": 1614007817533,
+  "hash": "e20b14d42f22dd774061",
+  "time": 4081,
+  "builtAt": 1614012034193,
   "publicPath": "",
   "outputPath": "/home/mike/code/studiohb/vue-hotel-datepicker/dist",
   "assetsByChunkName": {
@@ -29,7 +29,7 @@
     },
     {
       "name": "vue-hotel-datepicker.umd.js",
-      "size": 206623,
+      "size": 206575,
       "chunks": [
         0
       ],
@@ -42,7 +42,7 @@
     },
     {
       "name": "vue-hotel-datepicker.umd.js.map",
-      "size": 268649,
+      "size": 268589,
       "chunks": [
         0
       ],
@@ -92,7 +92,7 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 194287,
+      "size": 194239,
       "names": [
         "vue-hotel-datepicker.umd"
       ],
@@ -100,7 +100,7 @@
         "vue-hotel-datepicker.umd.js",
         "vue-hotel-datepicker.umd.js.map"
       ],
-      "hash": "b902d5134ab95c954670",
+      "hash": "650f6899cb7d7171d361",
       "siblings": [
       ],
       "parents": [
@@ -744,7 +744,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -753,7 +753,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -1739,7 +1739,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -2255,7 +2255,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -2264,7 +2264,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -2436,7 +2436,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -2445,7 +2445,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -2793,7 +2793,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -3232,7 +3232,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -3241,7 +3241,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -3662,7 +3662,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -5056,7 +5056,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -5667,7 +5667,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -5676,12 +5676,12 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony import specifier",
               "userRequest": "lodash.throttle",
-              "loc": "503:21-29"
+              "loc": "501:21-29"
             }
           ],
           "usedExports": [
@@ -5876,7 +5876,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "cjs require",
@@ -6890,7 +6890,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -6958,7 +6958,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -6967,7 +6967,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -7030,7 +7030,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -7294,7 +7294,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -7303,7 +7303,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -7380,7 +7380,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -7973,7 +7973,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -8149,7 +8149,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -8158,7 +8158,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony import specifier",
@@ -8327,7 +8327,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -9590,7 +9590,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -9735,7 +9735,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -9744,7 +9744,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -9971,7 +9971,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10242,7 +10242,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10305,7 +10305,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10314,7 +10314,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10483,7 +10483,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10715,7 +10715,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10724,7 +10724,7 @@
             },
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -10792,7 +10792,7 @@
           "reasons": [
             {
               "moduleId": "fb15",
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
               "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
               "type": "harmony side effect evaluation",
@@ -11316,11 +11316,11 @@
         },
         {
           "id": "fb15",
-          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "name": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "index": 0,
           "index2": 146,
-          "size": 53069,
+          "size": 53021,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -11524,12 +11524,12 @@
               "optimizationBailout": [
               ],
               "depth": 1,
-              "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=49409ecc&lang=pug&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
+              "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=71f0ff00&lang=pug&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
             },
             {
               "id": null,
-              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "name": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "name": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "index": 4,
               "index2": 3,
               "size": 447,
@@ -11566,7 +11566,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "loc": "1:0-91"
                 },
                 {
@@ -11575,7 +11575,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "loc": "10:2-8"
                 },
                 {
@@ -11584,7 +11584,7 @@
                   "module": "./src/App.vue",
                   "moduleName": "./src/App.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "loc": "11:2-17"
                 }
               ],
@@ -11599,7 +11599,7 @@
               "optimizationBailout": [
               ],
               "depth": 2,
-              "source": "export * from \"-!../node_modules/cache-loader/dist/cjs.js?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"170344ba-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&\""
+              "source": "export * from \"-!../node_modules/cache-loader/dist/cjs.js?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"170344ba-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&\""
             },
             {
               "id": null,
@@ -11767,8 +11767,8 @@
             },
             {
               "id": null,
-              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "index": 5,
               "index2": 2,
               "size": 6511,
@@ -11778,9 +11778,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "issuer": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "issuerId": null,
-              "issuerName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "issuerName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "issuerPath": [
                 {
                   "id": null,
@@ -11794,8 +11794,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-                  "name": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&"
+                  "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+                  "name": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&"
                 }
               ],
               "failed": false,
@@ -11806,20 +11806,20 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-                  "module": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-                  "moduleName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+                  "module": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+                  "moduleName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "loc": "1:0-447"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-                  "module": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-                  "moduleName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+                  "module": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+                  "moduleName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "type": "harmony export imported specifier",
-                  "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+                  "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
                   "loc": "1:0-447"
                 }
               ],
@@ -11842,7 +11842,7 @@
               "name": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "index": 7,
               "index2": 143,
-              "size": 13826,
+              "size": 13778,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -11921,7 +11921,7 @@
               "optimizationBailout": [
               ],
               "depth": 3,
-              "source": "import \"core-js/modules/es.array.filter.js\";\nimport \"core-js/modules/es.array.find.js\";\nimport \"core-js/modules/es.array.from.js\";\nimport \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.array.map.js\";\nimport \"core-js/modules/es.number.constructor.js\";\nimport \"core-js/modules/es.object.to-string.js\";\nimport \"core-js/modules/es.regexp.to-string.js\";\nimport \"core-js/modules/es.string.iterator.js\";\nimport \"core-js/modules/web.dom-collections.iterator.js\";\nimport _objectSpread from \"/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nimport throttle from 'lodash.throttle';\nimport { directive as onClickOutside } from 'vue-on-click-outside';\nimport fecha from 'fecha';\nimport defaultI18n from './i18n.js';\nimport Day from './components/Day.vue';\nimport Helpers from './helpers.js';\nimport './assets/scss/main.scss';\nexport default {\n  name: 'VueHotelDatePicker',\n  directives: {\n    'on-click-outside': onClickOutside\n  },\n  components: {\n    Day: Day\n  },\n  props: {\n    currentDateStyle: {\n      type: [Object, null, String],\n      default: function _default() {\n        return {\n          border: '1px solid #00c690'\n        };\n      }\n    },\n    initialCheckIn: {\n      default: null,\n      type: [Date, String]\n    },\n    initialCheckOut: {\n      default: null,\n      type: [Date, String]\n    },\n    alwaysOpenOnDesktop: {\n      type: Boolean,\n      default: false\n    },\n    numberOfMonthsToDisplay: {\n      type: Number,\n      default: 2\n    },\n    format: {\n      default: 'YYYY-MM-DD',\n      type: String\n    },\n    startDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date();\n      }\n    },\n    endDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date(8640000000000000);\n      } // maximum date value\n\n    },\n    firstDayOfWeek: {\n      default: 0,\n      type: Number\n    },\n    disabledDates: {\n      default: function _default() {\n        return [];\n      },\n      type: Array\n    },\n    hoveringTooltip: {\n      default: true,\n      type: Boolean\n    },\n    staticTooltipMessage: {\n      default: null,\n      type: String\n    },\n    customI18n: {\n      default: null,\n      type: Object\n    },\n    lang: {\n      default: 'en',\n      type: String\n    },\n    showYear: {\n      default: false,\n      type: Boolean\n    },\n    closeDatepickerOnClickOutside: {\n      default: true,\n      type: Boolean\n    },\n    displayClearButton: {\n      default: true,\n      type: Boolean\n    },\n    disableDatesWithoutPrice: {\n      default: false,\n      type: Boolean\n    },\n    priceDefault: {\n      default: '',\n      type: [Number, String, null]\n    },\n    priceByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    },\n    minNightsByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    }\n  },\n  data: function data() {\n    return {\n      hoveringDate: null,\n      checkIn: this.initialCheckIn ? new Date(this.initialCheckIn) : null,\n      checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,\n      months: [],\n      activeMonthIndex: 0,\n      isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,\n      xDown: null,\n      yDown: null,\n      xUp: null,\n      yUp: null\n    };\n  },\n  computed: {\n    i18n: function (_i18n) {\n      function i18n() {\n        return _i18n.apply(this, arguments);\n      }\n\n      i18n.toString = function () {\n        return _i18n.toString();\n      };\n\n      return i18n;\n    }(function () {\n      var i18nStore = this.customI18n || defaultI18n;\n      return i18nStore[this.lang] || i18n['en'];\n    }),\n    showClearSelectionButton: function showClearSelectionButton() {\n      return Boolean((this.checkIn || this.checkOut) && this.displayClearButton);\n    },\n    disabledDatesForCheckIn: function disabledDatesForCheckIn() {\n      return this.disabledDates;\n    },\n    disabledDatesForCheckOut: function disabledDatesForCheckOut() {\n      var _this = this;\n\n      return this.disabledDates.map(function (dateOrRange) {\n        if (_this.isRangeObject(dateOrRange)) return {\n          start: _this.addDays(dateOrRange.start, 1),\n          end: _this.addDays(dateOrRange.end, 1)\n        };\n        return _this.addDays(dateOrRange, 1);\n      });\n    },\n    choosingCheckOut: function choosingCheckOut() {\n      return this.checkIn && !this.checkOut;\n    },\n    minCheckOutDate: function minCheckOutDate() {\n      if (!this.checkIn) return null;\n      return this.addDays(this.checkIn, this.getMinNights(this.checkIn));\n    },\n    maxCheckOutDate: function maxCheckOutDate() {\n      if (!this.choosingCheckOut) return null;\n      var nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));\n      var maxDateValue = new Date(8640000000000000);\n      return this.addDays(nextDisabledDate || maxDateValue, -1);\n    },\n    indexesOfMonthsToDisplay: function indexesOfMonthsToDisplay() {\n      return Array.from(Array(this.numberOfMonthsToDisplay).keys());\n    },\n    paneStyleClass: function paneStyleClass() {\n      if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';\n      return 'datepicker__months-dualpane';\n    },\n    datepickerClass: function datepickerClass() {\n      return \"datepicker--\".concat(this.isOpen ? 'open' : 'closed');\n    },\n    screenSize: function screenSize() {\n      if (window.innerWidth < 480) return 'smartphone';\n      if (window.innerWidth < 768) return 'tablet';\n      return 'desktop'; // window.innerWidth >= 768\n    },\n    alwaysOpen: function alwaysOpen() {\n      if (this.alwaysOpenOnDesktop && this.screenSize === 'desktop') return true;\n      return false;\n    }\n  },\n  watch: {\n    isOpen: function isOpen(value) {\n      var _this2 = this;\n\n      if (!value && this.alwaysOpen) {\n        // Prevent setting isOpen to false\n        this.isOpen = true;\n        return;\n      }\n\n      if (!value) {\n        this.$emit('closed', this);\n      }\n\n      if (this.screenSize !== 'desktop') {\n        var bodyClassList = document.querySelector('body').classList;\n\n        if (value) {\n          bodyClassList.add('-overflow-hidden');\n          this.$nextTick(function () {\n            var swiperWrapper = document.getElementById('swiperWrapper');\n            var monthEl = document.querySelector('.datepicker__month');\n            var monthHeight = monthEl ? monthEl.offsetHeight : 1;\n            swiperWrapper.scrollTop = _this2.activeMonthIndex * monthHeight;\n          });\n        } else {\n          bodyClassList.remove('-overflow-hidden');\n        }\n      }\n    },\n    checkIn: function checkIn(newDate) {\n      this.$emit('check-in-changed', newDate);\n    },\n    checkOut: function checkOut(newDate) {\n      if (this.checkOut !== null && this.checkOut !== null) {\n        this.hoveringDate = null;\n        this.reRender();\n        this.hideDatepicker();\n      }\n\n      this.$emit('check-out-changed', newDate);\n    }\n  },\n  beforeMount: function beforeMount() {\n    fecha.i18n = {\n      dayNames: this.i18n['day-names'],\n      dayNamesShort: this.shortenString(this.i18n['day-names'], 3),\n      monthNames: this.i18n['month-names'],\n      monthNamesShort: this.shortenString(this.i18n['month-names'], 3),\n      amPm: ['am', 'pm'],\n      // D is the day of the month, function returns something like...  3rd or 11th\n      DoFn: function DoFn(D) {\n        return D + ['th', 'st', 'nd', 'rd'][D % 10 > 3 ? 0 : (D - D % 10 !== 10) * D % 10];\n      }\n    };\n\n    if (this.checkIn && (this.getMonthDiff(this.getNextMonth(new Date(this.startDate)), this.checkIn) > 0 || this.getMonthDiff(this.startDate, this.checkIn) > 0)) {\n      this.createMonth(new Date(this.startDate));\n      var count = this.getMonthDiff(this.startDate, this.checkIn);\n      var nextMonth = new Date(this.startDate);\n\n      for (var i = 0; i <= count; i++) {\n        var tempNextMonth = this.getNextMonth(nextMonth);\n        this.createMonth(tempNextMonth);\n        nextMonth = tempNextMonth;\n      }\n\n      if (this.checkOut && this.getMonthDiff(this.checkIn, this.checkOut) > 0) {\n        this.createMonth(this.getNextMonth(nextMonth));\n        this.activeMonthIndex = 1;\n      }\n\n      this.activeMonthIndex += count;\n    } else {\n      this.createMonth(new Date(this.startDate));\n      this.createMonth(this.getNextMonth(new Date(this.startDate)));\n    }\n  },\n  mounted: function mounted() {\n    var _this3 = this;\n\n    document.addEventListener('touchstart', this.handleTouchStart, false);\n    document.addEventListener('touchmove', this.handleTouchMove, false);\n    window.addEventListener('resize', this.forceScreenSizeRecomputation);\n    this.onElementHeightChange(document.body, function () {\n      _this3.emitHeighChangeEvent();\n    });\n  },\n  destroyed: function destroyed() {\n    window.removeEventListener('touchstart', this.handleTouchStart);\n    window.removeEventListener('touchmove', this.handleTouchMove);\n    window.removeEventListener('resize', this.forceScreenSizeRecomputation);\n  },\n  methods: _objectSpread(_objectSpread({}, Helpers), {}, {\n    formatDate: function formatDate(date) {\n      if (date) {\n        return fecha.format(date, this.format);\n      }\n\n      return '';\n    },\n    forceScreenSizeRecomputation: function forceScreenSizeRecomputation() {\n      this._computedWatchers.screenSize.run();\n\n      this._computedWatchers.alwaysOpen.run();\n\n      this.isOpen = this.screenSize === 'desktop' ? this.alwaysOpenOnDesktop : false;\n      this.$forceUpdate();\n    },\n    onElementHeightChange: function onElementHeightChange(el, callback) {\n      var lastHeight = el.clientHeight;\n      var newHeight = lastHeight;\n\n      (function run() {\n        newHeight = el.clientHeight;\n\n        if (lastHeight !== newHeight) {\n          callback();\n        }\n\n        lastHeight = newHeight;\n\n        if (el.onElementHeightChangeTimer) {\n          clearTimeout(el.onElementHeightChangeTimer);\n        }\n\n        el.onElementHeightChangeTimer = setTimeout(run, 1000);\n      })();\n    },\n    emitHeighChangeEvent: function emitHeighChangeEvent() {\n      this.$emit('height-changed');\n    },\n    clearSelection: function clearSelection() {\n      this.isOpen = false;\n      this.hoveringDate = null;\n      this.checkIn = null;\n      this.checkOut = null;\n      this.reRender();\n    },\n    hideDatepicker: function hideDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = false;\n    },\n    showDatepicker: function showDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = true;\n    },\n    toggleDatepicker: function toggleDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = !this.isOpen;\n    },\n    clickOutside: function clickOutside() {\n      if (this.closeDatepickerOnClickOutside && this.screenSize === 'desktop') this.hideDatepicker();\n    },\n    handleDayClick: function handleDayClick(date) {\n      if (!this.checkIn) {\n        this.checkIn = date;\n      } else if (this.checkIn && !this.checkOut) {\n        this.checkOut = date;\n        this.isOpen = false;\n      } else {\n        this.checkOut = null;\n        this.checkIn = date;\n      }\n    },\n    renderPreviousMonth: function renderPreviousMonth() {\n      if (this.activeMonthIndex >= 1) {\n        this.activeMonthIndex--;\n      } else return;\n    },\n    renderNextMonth: throttle(function throttleRenderNextMonth() {\n      if (this.activeMonthIndex < this.months.length - 2) {\n        this.activeMonthIndex++;\n        return;\n      }\n\n      var firstDayOfLastMonth;\n\n      if (this.screenSize !== 'desktop') {\n        firstDayOfLastMonth = this.months[this.months.length - 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      } else {\n        firstDayOfLastMonth = this.months[this.activeMonthIndex + 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      }\n\n      if (this.compareDay(firstDayOfLastMonth[0].date, this.endDate) == 0) return;\n      this.createMonth(this.getNextMonth(firstDayOfLastMonth[0].date));\n      this.activeMonthIndex++;\n    }, 200),\n    getDay: function getDay(date) {\n      return fecha.format(date, 'D');\n    },\n    getMonth: function getMonth(date) {\n      return this.i18n['month-names'][fecha.format(date, 'M') - 1] + (this.showYear ? fecha.format(date, ' YYYY') : '');\n    },\n    createMonth: function createMonth(date) {\n      var firstDay = this.getFirstDay(date, this.firstDayOfWeek);\n      var month = {\n        days: []\n      };\n\n      for (var i = 0; i < 42; i++) {\n        month.days.push({\n          date: this.addDays(firstDay, i),\n          belongsToThisMonth: this.addDays(firstDay, i).getMonth() === date.getMonth(),\n          isInRange: false\n        });\n      }\n\n      this.months.push(month);\n    },\n    getPrice: function getPrice(date) {\n      var _this4 = this;\n\n      var currentRange = this.priceByDate.find(function (range) {\n        return _this4.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.price) || this.priceDefault;\n    },\n    getMinNights: function getMinNights(date) {\n      var _this5 = this;\n\n      var currentRange = this.minNightsByDate.find(function (range) {\n        return _this5.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.minNights) || 1;\n    }\n  })\n};"
+              "source": "import \"core-js/modules/es.array.filter.js\";\nimport \"core-js/modules/es.array.find.js\";\nimport \"core-js/modules/es.array.from.js\";\nimport \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.array.map.js\";\nimport \"core-js/modules/es.number.constructor.js\";\nimport \"core-js/modules/es.object.to-string.js\";\nimport \"core-js/modules/es.regexp.to-string.js\";\nimport \"core-js/modules/es.string.iterator.js\";\nimport \"core-js/modules/web.dom-collections.iterator.js\";\nimport _objectSpread from \"/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nimport throttle from 'lodash.throttle';\nimport { directive as onClickOutside } from 'vue-on-click-outside';\nimport fecha from 'fecha';\nimport defaultI18n from './i18n.js';\nimport Day from './components/Day.vue';\nimport Helpers from './helpers.js';\nimport './assets/scss/main.scss';\nexport default {\n  name: 'VueHotelDatePicker',\n  directives: {\n    'on-click-outside': onClickOutside\n  },\n  components: {\n    Day: Day\n  },\n  props: {\n    currentDateStyle: {\n      type: [Object, null, String],\n      default: function _default() {\n        return {\n          border: '1px solid #00c690'\n        };\n      }\n    },\n    initialCheckIn: {\n      default: null,\n      type: [Date, String]\n    },\n    initialCheckOut: {\n      default: null,\n      type: [Date, String]\n    },\n    alwaysOpenOnDesktop: {\n      type: Boolean,\n      default: false\n    },\n    numberOfMonthsToDisplay: {\n      type: Number,\n      default: 2\n    },\n    format: {\n      default: 'YYYY-MM-DD',\n      type: String\n    },\n    startDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date();\n      }\n    },\n    endDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date(8640000000000000);\n      } // maximum date value\n\n    },\n    firstDayOfWeek: {\n      default: 0,\n      type: Number\n    },\n    disabledDates: {\n      default: function _default() {\n        return [];\n      },\n      type: Array\n    },\n    hoveringTooltip: {\n      default: true,\n      type: Boolean\n    },\n    staticTooltipMessage: {\n      default: null,\n      type: String\n    },\n    customI18n: {\n      default: null,\n      type: Object\n    },\n    lang: {\n      default: 'en',\n      type: String\n    },\n    showYear: {\n      default: false,\n      type: Boolean\n    },\n    closeDatepickerOnClickOutside: {\n      default: true,\n      type: Boolean\n    },\n    displayClearButton: {\n      default: true,\n      type: Boolean\n    },\n    disableDatesWithoutPrice: {\n      default: false,\n      type: Boolean\n    },\n    priceDefault: {\n      default: '',\n      type: [Number, String, null]\n    },\n    priceByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    },\n    minNightsByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    }\n  },\n  data: function data() {\n    return {\n      hoveringDate: null,\n      checkIn: this.initialCheckIn ? new Date(this.initialCheckIn) : null,\n      checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,\n      months: [],\n      activeMonthIndex: 0,\n      isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,\n      xDown: null,\n      yDown: null,\n      xUp: null,\n      yUp: null\n    };\n  },\n  computed: {\n    i18n: function (_i18n) {\n      function i18n() {\n        return _i18n.apply(this, arguments);\n      }\n\n      i18n.toString = function () {\n        return _i18n.toString();\n      };\n\n      return i18n;\n    }(function () {\n      var i18nStore = this.customI18n || defaultI18n;\n      return i18nStore[this.lang] || i18n['en'];\n    }),\n    showClearSelectionButton: function showClearSelectionButton() {\n      return Boolean((this.checkIn || this.checkOut) && this.displayClearButton);\n    },\n    disabledDatesForCheckIn: function disabledDatesForCheckIn() {\n      return this.disabledDates;\n    },\n    disabledDatesForCheckOut: function disabledDatesForCheckOut() {\n      var _this = this;\n\n      return this.disabledDates.map(function (dateOrRange) {\n        if (_this.isRangeObject(dateOrRange)) return {\n          start: _this.addDays(dateOrRange.start, 1),\n          end: _this.addDays(dateOrRange.end, 1)\n        };\n        return _this.addDays(dateOrRange, 1);\n      });\n    },\n    choosingCheckOut: function choosingCheckOut() {\n      return this.checkIn && !this.checkOut;\n    },\n    minCheckOutDate: function minCheckOutDate() {\n      if (!this.checkIn) return null;\n      return this.addDays(this.checkIn, this.getMinNights(this.checkIn));\n    },\n    maxCheckOutDate: function maxCheckOutDate() {\n      if (!this.choosingCheckOut) return null;\n      var nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));\n      var maxDateValue = new Date(8640000000000000);\n      return this.addDays(nextDisabledDate || maxDateValue, -1);\n    },\n    indexesOfMonthsToDisplay: function indexesOfMonthsToDisplay() {\n      return Array.from(Array(this.numberOfMonthsToDisplay).keys());\n    },\n    paneStyleClass: function paneStyleClass() {\n      if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';\n      return 'datepicker__months-dualpane';\n    },\n    datepickerClass: function datepickerClass() {\n      return \"datepicker--\".concat(this.isOpen ? 'open' : 'closed');\n    },\n    screenSize: function screenSize() {\n      if (window.innerWidth < 480) return 'smartphone';\n      if (window.innerWidth < 768) return 'tablet';\n      return 'desktop'; // window.innerWidth >= 768\n    },\n    alwaysOpen: function alwaysOpen() {\n      if (this.alwaysOpenOnDesktop && this.screenSize === 'desktop') return true;\n      return false;\n    }\n  },\n  watch: {\n    isOpen: function isOpen(value) {\n      var _this2 = this;\n\n      if (!value && this.alwaysOpen) {\n        // Prevent setting isOpen to false\n        this.isOpen = true;\n        return;\n      }\n\n      if (!value) {\n        this.$emit('closed', this);\n      }\n\n      if (this.screenSize !== 'desktop') {\n        var bodyClassList = document.querySelector('body').classList;\n\n        if (value) {\n          bodyClassList.add('-overflow-hidden');\n          this.$nextTick(function () {\n            var swiperWrapper = document.getElementById('swiperWrapper');\n            var monthEl = document.querySelector('.datepicker__month');\n            var monthHeight = monthEl ? monthEl.offsetHeight : 1;\n            swiperWrapper.scrollTop = _this2.activeMonthIndex * monthHeight;\n          });\n        } else {\n          bodyClassList.remove('-overflow-hidden');\n        }\n      }\n    },\n    checkIn: function checkIn(newDate) {\n      this.$emit('check-in-changed', newDate);\n    },\n    checkOut: function checkOut(newDate) {\n      if (this.checkOut !== null && this.checkOut !== null) {\n        this.hoveringDate = null;\n        this.hideDatepicker();\n      }\n\n      this.$emit('check-out-changed', newDate);\n    }\n  },\n  beforeMount: function beforeMount() {\n    fecha.i18n = {\n      dayNames: this.i18n['day-names'],\n      dayNamesShort: this.shortenString(this.i18n['day-names'], 3),\n      monthNames: this.i18n['month-names'],\n      monthNamesShort: this.shortenString(this.i18n['month-names'], 3),\n      amPm: ['am', 'pm'],\n      // D is the day of the month, function returns something like...  3rd or 11th\n      DoFn: function DoFn(D) {\n        return D + ['th', 'st', 'nd', 'rd'][D % 10 > 3 ? 0 : (D - D % 10 !== 10) * D % 10];\n      }\n    };\n\n    if (this.checkIn && (this.getMonthDiff(this.getNextMonth(new Date(this.startDate)), this.checkIn) > 0 || this.getMonthDiff(this.startDate, this.checkIn) > 0)) {\n      this.createMonth(new Date(this.startDate));\n      var count = this.getMonthDiff(this.startDate, this.checkIn);\n      var nextMonth = new Date(this.startDate);\n\n      for (var i = 0; i <= count; i++) {\n        var tempNextMonth = this.getNextMonth(nextMonth);\n        this.createMonth(tempNextMonth);\n        nextMonth = tempNextMonth;\n      }\n\n      if (this.checkOut && this.getMonthDiff(this.checkIn, this.checkOut) > 0) {\n        this.createMonth(this.getNextMonth(nextMonth));\n        this.activeMonthIndex = 1;\n      }\n\n      this.activeMonthIndex += count;\n    } else {\n      this.createMonth(new Date(this.startDate));\n      this.createMonth(this.getNextMonth(new Date(this.startDate)));\n    }\n  },\n  mounted: function mounted() {\n    var _this3 = this;\n\n    document.addEventListener('touchstart', this.handleTouchStart, false);\n    document.addEventListener('touchmove', this.handleTouchMove, false);\n    window.addEventListener('resize', this.forceScreenSizeRecomputation);\n    this.onElementHeightChange(document.body, function () {\n      _this3.emitHeighChangeEvent();\n    });\n  },\n  destroyed: function destroyed() {\n    window.removeEventListener('touchstart', this.handleTouchStart);\n    window.removeEventListener('touchmove', this.handleTouchMove);\n    window.removeEventListener('resize', this.forceScreenSizeRecomputation);\n  },\n  methods: _objectSpread(_objectSpread({}, Helpers), {}, {\n    formatDate: function formatDate(date) {\n      if (date) {\n        return fecha.format(date, this.format);\n      }\n\n      return '';\n    },\n    forceScreenSizeRecomputation: function forceScreenSizeRecomputation() {\n      this._computedWatchers.screenSize.run();\n\n      this._computedWatchers.alwaysOpen.run();\n\n      this.isOpen = this.screenSize === 'desktop' ? this.alwaysOpenOnDesktop : false;\n      this.$forceUpdate();\n    },\n    onElementHeightChange: function onElementHeightChange(el, callback) {\n      var lastHeight = el.clientHeight;\n      var newHeight = lastHeight;\n\n      (function run() {\n        newHeight = el.clientHeight;\n\n        if (lastHeight !== newHeight) {\n          callback();\n        }\n\n        lastHeight = newHeight;\n\n        if (el.onElementHeightChangeTimer) {\n          clearTimeout(el.onElementHeightChangeTimer);\n        }\n\n        el.onElementHeightChangeTimer = setTimeout(run, 1000);\n      })();\n    },\n    emitHeighChangeEvent: function emitHeighChangeEvent() {\n      this.$emit('height-changed');\n    },\n    clearSelection: function clearSelection() {\n      this.isOpen = false;\n      this.hoveringDate = null;\n      this.checkIn = null;\n      this.checkOut = null;\n    },\n    hideDatepicker: function hideDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = false;\n    },\n    showDatepicker: function showDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = true;\n    },\n    toggleDatepicker: function toggleDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = !this.isOpen;\n    },\n    clickOutside: function clickOutside() {\n      if (this.closeDatepickerOnClickOutside && this.screenSize === 'desktop') this.hideDatepicker();\n    },\n    handleDayClick: function handleDayClick(date) {\n      if (!this.checkIn) {\n        this.checkIn = date;\n      } else if (this.checkIn && !this.checkOut) {\n        this.checkOut = date;\n        this.isOpen = false;\n      } else {\n        this.checkOut = null;\n        this.checkIn = date;\n      }\n    },\n    renderPreviousMonth: function renderPreviousMonth() {\n      if (this.activeMonthIndex >= 1) {\n        this.activeMonthIndex--;\n      } else return;\n    },\n    renderNextMonth: throttle(function throttleRenderNextMonth() {\n      if (this.activeMonthIndex < this.months.length - 2) {\n        this.activeMonthIndex++;\n        return;\n      }\n\n      var firstDayOfLastMonth;\n\n      if (this.screenSize !== 'desktop') {\n        firstDayOfLastMonth = this.months[this.months.length - 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      } else {\n        firstDayOfLastMonth = this.months[this.activeMonthIndex + 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      }\n\n      if (this.compareDay(firstDayOfLastMonth[0].date, this.endDate) == 0) return;\n      this.createMonth(this.getNextMonth(firstDayOfLastMonth[0].date));\n      this.activeMonthIndex++;\n    }, 200),\n    getDay: function getDay(date) {\n      return fecha.format(date, 'D');\n    },\n    getMonth: function getMonth(date) {\n      return this.i18n['month-names'][fecha.format(date, 'M') - 1] + (this.showYear ? fecha.format(date, ' YYYY') : '');\n    },\n    createMonth: function createMonth(date) {\n      var firstDay = this.getFirstDay(date, this.firstDayOfWeek);\n      var month = {\n        days: []\n      };\n\n      for (var i = 0; i < 42; i++) {\n        month.days.push({\n          date: this.addDays(firstDay, i),\n          belongsToThisMonth: this.addDays(firstDay, i).getMonth() === date.getMonth(),\n          isInRange: false\n        });\n      }\n\n      this.months.push(month);\n    },\n    getPrice: function getPrice(date) {\n      var _this4 = this;\n\n      var currentRange = this.priceByDate.find(function (range) {\n        return _this4.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.price) || this.priceDefault;\n    },\n    getMinNights: function getMinNights(date) {\n      var _this5 = this;\n\n      var currentRange = this.minNightsByDate.find(function (range) {\n        return _this5.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.minNights) || 1;\n    }\n  })\n};"
             },
             {
               "id": null,
@@ -12010,7 +12010,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2",
-                  "loc": "429:11-24"
+                  "loc": "428:11-24"
                 },
                 {
                   "moduleId": null,
@@ -12019,7 +12019,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2",
-                  "loc": "429:25-38"
+                  "loc": "428:25-38"
                 }
               ],
               "usedExports": [
@@ -12120,7 +12120,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "fecha",
-                  "loc": "380:4-9"
+                  "loc": "379:4-9"
                 },
                 {
                   "moduleId": null,
@@ -12129,7 +12129,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "fecha",
-                  "loc": "432:15-20"
+                  "loc": "431:15-20"
                 },
                 {
                   "moduleId": null,
@@ -12138,7 +12138,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "fecha",
-                  "loc": "526:13-18"
+                  "loc": "524:13-18"
                 },
                 {
                   "moduleId": null,
@@ -12147,7 +12147,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "fecha",
-                  "loc": "529:38-43"
+                  "loc": "527:38-43"
                 },
                 {
                   "moduleId": null,
@@ -12156,7 +12156,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "fecha",
-                  "loc": "529:86-91"
+                  "loc": "527:86-91"
                 }
               ],
               "usedExports": [
@@ -12322,7 +12322,7 @@
                   "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
                   "type": "harmony import specifier",
                   "userRequest": "./helpers.js",
-                  "loc": "429:43-50"
+                  "loc": "428:43-50"
                 }
               ],
               "usedExports": [
@@ -13895,7 +13895,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -13904,7 +13904,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -14890,7 +14890,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -15406,7 +15406,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -15415,7 +15415,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -15587,7 +15587,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -15596,7 +15596,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -15944,7 +15944,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -16383,7 +16383,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -16392,7 +16392,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -16813,7 +16813,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -18207,7 +18207,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -18818,7 +18818,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -18827,12 +18827,12 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony import specifier",
           "userRequest": "lodash.throttle",
-          "loc": "503:21-29"
+          "loc": "501:21-29"
         }
       ],
       "usedExports": [
@@ -19027,7 +19027,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "cjs require",
@@ -20041,7 +20041,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20109,7 +20109,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20118,7 +20118,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20181,7 +20181,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20445,7 +20445,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20454,7 +20454,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -20531,7 +20531,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -21124,7 +21124,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -21300,7 +21300,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -21309,7 +21309,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony import specifier",
@@ -21478,7 +21478,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -22741,7 +22741,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -22886,7 +22886,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -22895,7 +22895,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23122,7 +23122,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23393,7 +23393,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23456,7 +23456,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23465,7 +23465,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23634,7 +23634,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23866,7 +23866,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23875,7 +23875,7 @@
         },
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -23943,7 +23943,7 @@
       "reasons": [
         {
           "moduleId": "fb15",
-          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+          "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
           "module": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "moduleName": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
           "type": "harmony side effect evaluation",
@@ -24467,11 +24467,11 @@
     },
     {
       "id": "fb15",
-      "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js e1d4466a361b811d3f00af4043a02d29",
+      "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js 4ac829d03d9d2b35adb37a676a1aff3c",
       "name": "./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js + 18 modules",
       "index": 0,
       "index2": 146,
-      "size": 53069,
+      "size": 53021,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -24675,12 +24675,12 @@
           "optimizationBailout": [
           ],
           "depth": 1,
-          "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=49409ecc&lang=pug&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
+          "source": "import { render, staticRenderFns } from \"./App.vue?vue&type=template&id=71f0ff00&lang=pug&\"\nimport script from \"./App.vue?vue&type=script&lang=js&\"\nexport * from \"./App.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
         },
         {
           "id": null,
-          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-          "name": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+          "name": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
           "index": 4,
           "index2": 3,
           "size": 447,
@@ -24717,7 +24717,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony side effect evaluation",
-              "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "loc": "1:0-91"
             },
             {
@@ -24726,7 +24726,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony import specifier",
-              "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "loc": "10:2-8"
             },
             {
@@ -24735,7 +24735,7 @@
               "module": "./src/App.vue",
               "moduleName": "./src/App.vue",
               "type": "harmony import specifier",
-              "userRequest": "./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "userRequest": "./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "loc": "11:2-17"
             }
           ],
@@ -24750,7 +24750,7 @@
           "optimizationBailout": [
           ],
           "depth": 2,
-          "source": "export * from \"-!../node_modules/cache-loader/dist/cjs.js?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"170344ba-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&\""
+          "source": "export * from \"-!../node_modules/cache-loader/dist/cjs.js?{\\\"cacheDirectory\\\":\\\"node_modules/.cache/vue-loader\\\",\\\"cacheIdentifier\\\":\\\"170344ba-vue-loader-template\\\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&\""
         },
         {
           "id": null,
@@ -24918,8 +24918,8 @@
         },
         {
           "id": null,
-          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+          "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+          "name": "./node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
           "index": 5,
           "index2": 2,
           "size": 6511,
@@ -24929,9 +24929,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+          "issuer": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
           "issuerId": null,
-          "issuerName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+          "issuerName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
           "issuerPath": [
             {
               "id": null,
@@ -24945,8 +24945,8 @@
             },
             {
               "id": null,
-              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "name": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&"
+              "identifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "name": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&"
             }
           ],
           "failed": false,
@@ -24957,20 +24957,20 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "module": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "moduleName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "module": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "moduleName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "type": "harmony side effect evaluation",
-              "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "loc": "1:0-447"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "module": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
-              "moduleName": "./src/App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "moduleIdentifier": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/pug-plain-loader/index.js!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/cache-loader/dist/cjs.js??ref--0-0!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/eslint-loader/index.js??ref--13-0!/home/mike/code/studiohb/vue-hotel-datepicker/src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "module": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
+              "moduleName": "./src/App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "type": "harmony export imported specifier",
-              "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=49409ecc&lang=pug&",
+              "userRequest": "-!../node_modules/cache-loader/dist/cjs.js?{\"cacheDirectory\":\"node_modules/.cache/vue-loader\",\"cacheIdentifier\":\"170344ba-vue-loader-template\"}!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/pug-plain-loader/index.js!../node_modules/cache-loader/dist/cjs.js??ref--0-0!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=71f0ff00&lang=pug&",
               "loc": "1:0-447"
             }
           ],
@@ -24993,7 +24993,7 @@
           "name": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
           "index": 7,
           "index2": 143,
-          "size": 13826,
+          "size": 13778,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -25072,7 +25072,7 @@
           "optimizationBailout": [
           ],
           "depth": 3,
-          "source": "import \"core-js/modules/es.array.filter.js\";\nimport \"core-js/modules/es.array.find.js\";\nimport \"core-js/modules/es.array.from.js\";\nimport \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.array.map.js\";\nimport \"core-js/modules/es.number.constructor.js\";\nimport \"core-js/modules/es.object.to-string.js\";\nimport \"core-js/modules/es.regexp.to-string.js\";\nimport \"core-js/modules/es.string.iterator.js\";\nimport \"core-js/modules/web.dom-collections.iterator.js\";\nimport _objectSpread from \"/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nimport throttle from 'lodash.throttle';\nimport { directive as onClickOutside } from 'vue-on-click-outside';\nimport fecha from 'fecha';\nimport defaultI18n from './i18n.js';\nimport Day from './components/Day.vue';\nimport Helpers from './helpers.js';\nimport './assets/scss/main.scss';\nexport default {\n  name: 'VueHotelDatePicker',\n  directives: {\n    'on-click-outside': onClickOutside\n  },\n  components: {\n    Day: Day\n  },\n  props: {\n    currentDateStyle: {\n      type: [Object, null, String],\n      default: function _default() {\n        return {\n          border: '1px solid #00c690'\n        };\n      }\n    },\n    initialCheckIn: {\n      default: null,\n      type: [Date, String]\n    },\n    initialCheckOut: {\n      default: null,\n      type: [Date, String]\n    },\n    alwaysOpenOnDesktop: {\n      type: Boolean,\n      default: false\n    },\n    numberOfMonthsToDisplay: {\n      type: Number,\n      default: 2\n    },\n    format: {\n      default: 'YYYY-MM-DD',\n      type: String\n    },\n    startDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date();\n      }\n    },\n    endDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date(8640000000000000);\n      } // maximum date value\n\n    },\n    firstDayOfWeek: {\n      default: 0,\n      type: Number\n    },\n    disabledDates: {\n      default: function _default() {\n        return [];\n      },\n      type: Array\n    },\n    hoveringTooltip: {\n      default: true,\n      type: Boolean\n    },\n    staticTooltipMessage: {\n      default: null,\n      type: String\n    },\n    customI18n: {\n      default: null,\n      type: Object\n    },\n    lang: {\n      default: 'en',\n      type: String\n    },\n    showYear: {\n      default: false,\n      type: Boolean\n    },\n    closeDatepickerOnClickOutside: {\n      default: true,\n      type: Boolean\n    },\n    displayClearButton: {\n      default: true,\n      type: Boolean\n    },\n    disableDatesWithoutPrice: {\n      default: false,\n      type: Boolean\n    },\n    priceDefault: {\n      default: '',\n      type: [Number, String, null]\n    },\n    priceByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    },\n    minNightsByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    }\n  },\n  data: function data() {\n    return {\n      hoveringDate: null,\n      checkIn: this.initialCheckIn ? new Date(this.initialCheckIn) : null,\n      checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,\n      months: [],\n      activeMonthIndex: 0,\n      isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,\n      xDown: null,\n      yDown: null,\n      xUp: null,\n      yUp: null\n    };\n  },\n  computed: {\n    i18n: function (_i18n) {\n      function i18n() {\n        return _i18n.apply(this, arguments);\n      }\n\n      i18n.toString = function () {\n        return _i18n.toString();\n      };\n\n      return i18n;\n    }(function () {\n      var i18nStore = this.customI18n || defaultI18n;\n      return i18nStore[this.lang] || i18n['en'];\n    }),\n    showClearSelectionButton: function showClearSelectionButton() {\n      return Boolean((this.checkIn || this.checkOut) && this.displayClearButton);\n    },\n    disabledDatesForCheckIn: function disabledDatesForCheckIn() {\n      return this.disabledDates;\n    },\n    disabledDatesForCheckOut: function disabledDatesForCheckOut() {\n      var _this = this;\n\n      return this.disabledDates.map(function (dateOrRange) {\n        if (_this.isRangeObject(dateOrRange)) return {\n          start: _this.addDays(dateOrRange.start, 1),\n          end: _this.addDays(dateOrRange.end, 1)\n        };\n        return _this.addDays(dateOrRange, 1);\n      });\n    },\n    choosingCheckOut: function choosingCheckOut() {\n      return this.checkIn && !this.checkOut;\n    },\n    minCheckOutDate: function minCheckOutDate() {\n      if (!this.checkIn) return null;\n      return this.addDays(this.checkIn, this.getMinNights(this.checkIn));\n    },\n    maxCheckOutDate: function maxCheckOutDate() {\n      if (!this.choosingCheckOut) return null;\n      var nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));\n      var maxDateValue = new Date(8640000000000000);\n      return this.addDays(nextDisabledDate || maxDateValue, -1);\n    },\n    indexesOfMonthsToDisplay: function indexesOfMonthsToDisplay() {\n      return Array.from(Array(this.numberOfMonthsToDisplay).keys());\n    },\n    paneStyleClass: function paneStyleClass() {\n      if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';\n      return 'datepicker__months-dualpane';\n    },\n    datepickerClass: function datepickerClass() {\n      return \"datepicker--\".concat(this.isOpen ? 'open' : 'closed');\n    },\n    screenSize: function screenSize() {\n      if (window.innerWidth < 480) return 'smartphone';\n      if (window.innerWidth < 768) return 'tablet';\n      return 'desktop'; // window.innerWidth >= 768\n    },\n    alwaysOpen: function alwaysOpen() {\n      if (this.alwaysOpenOnDesktop && this.screenSize === 'desktop') return true;\n      return false;\n    }\n  },\n  watch: {\n    isOpen: function isOpen(value) {\n      var _this2 = this;\n\n      if (!value && this.alwaysOpen) {\n        // Prevent setting isOpen to false\n        this.isOpen = true;\n        return;\n      }\n\n      if (!value) {\n        this.$emit('closed', this);\n      }\n\n      if (this.screenSize !== 'desktop') {\n        var bodyClassList = document.querySelector('body').classList;\n\n        if (value) {\n          bodyClassList.add('-overflow-hidden');\n          this.$nextTick(function () {\n            var swiperWrapper = document.getElementById('swiperWrapper');\n            var monthEl = document.querySelector('.datepicker__month');\n            var monthHeight = monthEl ? monthEl.offsetHeight : 1;\n            swiperWrapper.scrollTop = _this2.activeMonthIndex * monthHeight;\n          });\n        } else {\n          bodyClassList.remove('-overflow-hidden');\n        }\n      }\n    },\n    checkIn: function checkIn(newDate) {\n      this.$emit('check-in-changed', newDate);\n    },\n    checkOut: function checkOut(newDate) {\n      if (this.checkOut !== null && this.checkOut !== null) {\n        this.hoveringDate = null;\n        this.reRender();\n        this.hideDatepicker();\n      }\n\n      this.$emit('check-out-changed', newDate);\n    }\n  },\n  beforeMount: function beforeMount() {\n    fecha.i18n = {\n      dayNames: this.i18n['day-names'],\n      dayNamesShort: this.shortenString(this.i18n['day-names'], 3),\n      monthNames: this.i18n['month-names'],\n      monthNamesShort: this.shortenString(this.i18n['month-names'], 3),\n      amPm: ['am', 'pm'],\n      // D is the day of the month, function returns something like...  3rd or 11th\n      DoFn: function DoFn(D) {\n        return D + ['th', 'st', 'nd', 'rd'][D % 10 > 3 ? 0 : (D - D % 10 !== 10) * D % 10];\n      }\n    };\n\n    if (this.checkIn && (this.getMonthDiff(this.getNextMonth(new Date(this.startDate)), this.checkIn) > 0 || this.getMonthDiff(this.startDate, this.checkIn) > 0)) {\n      this.createMonth(new Date(this.startDate));\n      var count = this.getMonthDiff(this.startDate, this.checkIn);\n      var nextMonth = new Date(this.startDate);\n\n      for (var i = 0; i <= count; i++) {\n        var tempNextMonth = this.getNextMonth(nextMonth);\n        this.createMonth(tempNextMonth);\n        nextMonth = tempNextMonth;\n      }\n\n      if (this.checkOut && this.getMonthDiff(this.checkIn, this.checkOut) > 0) {\n        this.createMonth(this.getNextMonth(nextMonth));\n        this.activeMonthIndex = 1;\n      }\n\n      this.activeMonthIndex += count;\n    } else {\n      this.createMonth(new Date(this.startDate));\n      this.createMonth(this.getNextMonth(new Date(this.startDate)));\n    }\n  },\n  mounted: function mounted() {\n    var _this3 = this;\n\n    document.addEventListener('touchstart', this.handleTouchStart, false);\n    document.addEventListener('touchmove', this.handleTouchMove, false);\n    window.addEventListener('resize', this.forceScreenSizeRecomputation);\n    this.onElementHeightChange(document.body, function () {\n      _this3.emitHeighChangeEvent();\n    });\n  },\n  destroyed: function destroyed() {\n    window.removeEventListener('touchstart', this.handleTouchStart);\n    window.removeEventListener('touchmove', this.handleTouchMove);\n    window.removeEventListener('resize', this.forceScreenSizeRecomputation);\n  },\n  methods: _objectSpread(_objectSpread({}, Helpers), {}, {\n    formatDate: function formatDate(date) {\n      if (date) {\n        return fecha.format(date, this.format);\n      }\n\n      return '';\n    },\n    forceScreenSizeRecomputation: function forceScreenSizeRecomputation() {\n      this._computedWatchers.screenSize.run();\n\n      this._computedWatchers.alwaysOpen.run();\n\n      this.isOpen = this.screenSize === 'desktop' ? this.alwaysOpenOnDesktop : false;\n      this.$forceUpdate();\n    },\n    onElementHeightChange: function onElementHeightChange(el, callback) {\n      var lastHeight = el.clientHeight;\n      var newHeight = lastHeight;\n\n      (function run() {\n        newHeight = el.clientHeight;\n\n        if (lastHeight !== newHeight) {\n          callback();\n        }\n\n        lastHeight = newHeight;\n\n        if (el.onElementHeightChangeTimer) {\n          clearTimeout(el.onElementHeightChangeTimer);\n        }\n\n        el.onElementHeightChangeTimer = setTimeout(run, 1000);\n      })();\n    },\n    emitHeighChangeEvent: function emitHeighChangeEvent() {\n      this.$emit('height-changed');\n    },\n    clearSelection: function clearSelection() {\n      this.isOpen = false;\n      this.hoveringDate = null;\n      this.checkIn = null;\n      this.checkOut = null;\n      this.reRender();\n    },\n    hideDatepicker: function hideDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = false;\n    },\n    showDatepicker: function showDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = true;\n    },\n    toggleDatepicker: function toggleDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = !this.isOpen;\n    },\n    clickOutside: function clickOutside() {\n      if (this.closeDatepickerOnClickOutside && this.screenSize === 'desktop') this.hideDatepicker();\n    },\n    handleDayClick: function handleDayClick(date) {\n      if (!this.checkIn) {\n        this.checkIn = date;\n      } else if (this.checkIn && !this.checkOut) {\n        this.checkOut = date;\n        this.isOpen = false;\n      } else {\n        this.checkOut = null;\n        this.checkIn = date;\n      }\n    },\n    renderPreviousMonth: function renderPreviousMonth() {\n      if (this.activeMonthIndex >= 1) {\n        this.activeMonthIndex--;\n      } else return;\n    },\n    renderNextMonth: throttle(function throttleRenderNextMonth() {\n      if (this.activeMonthIndex < this.months.length - 2) {\n        this.activeMonthIndex++;\n        return;\n      }\n\n      var firstDayOfLastMonth;\n\n      if (this.screenSize !== 'desktop') {\n        firstDayOfLastMonth = this.months[this.months.length - 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      } else {\n        firstDayOfLastMonth = this.months[this.activeMonthIndex + 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      }\n\n      if (this.compareDay(firstDayOfLastMonth[0].date, this.endDate) == 0) return;\n      this.createMonth(this.getNextMonth(firstDayOfLastMonth[0].date));\n      this.activeMonthIndex++;\n    }, 200),\n    getDay: function getDay(date) {\n      return fecha.format(date, 'D');\n    },\n    getMonth: function getMonth(date) {\n      return this.i18n['month-names'][fecha.format(date, 'M') - 1] + (this.showYear ? fecha.format(date, ' YYYY') : '');\n    },\n    createMonth: function createMonth(date) {\n      var firstDay = this.getFirstDay(date, this.firstDayOfWeek);\n      var month = {\n        days: []\n      };\n\n      for (var i = 0; i < 42; i++) {\n        month.days.push({\n          date: this.addDays(firstDay, i),\n          belongsToThisMonth: this.addDays(firstDay, i).getMonth() === date.getMonth(),\n          isInRange: false\n        });\n      }\n\n      this.months.push(month);\n    },\n    getPrice: function getPrice(date) {\n      var _this4 = this;\n\n      var currentRange = this.priceByDate.find(function (range) {\n        return _this4.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.price) || this.priceDefault;\n    },\n    getMinNights: function getMinNights(date) {\n      var _this5 = this;\n\n      var currentRange = this.minNightsByDate.find(function (range) {\n        return _this5.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.minNights) || 1;\n    }\n  })\n};"
+          "source": "import \"core-js/modules/es.array.filter.js\";\nimport \"core-js/modules/es.array.find.js\";\nimport \"core-js/modules/es.array.from.js\";\nimport \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.array.map.js\";\nimport \"core-js/modules/es.number.constructor.js\";\nimport \"core-js/modules/es.object.to-string.js\";\nimport \"core-js/modules/es.regexp.to-string.js\";\nimport \"core-js/modules/es.string.iterator.js\";\nimport \"core-js/modules/web.dom-collections.iterator.js\";\nimport _objectSpread from \"/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nimport throttle from 'lodash.throttle';\nimport { directive as onClickOutside } from 'vue-on-click-outside';\nimport fecha from 'fecha';\nimport defaultI18n from './i18n.js';\nimport Day from './components/Day.vue';\nimport Helpers from './helpers.js';\nimport './assets/scss/main.scss';\nexport default {\n  name: 'VueHotelDatePicker',\n  directives: {\n    'on-click-outside': onClickOutside\n  },\n  components: {\n    Day: Day\n  },\n  props: {\n    currentDateStyle: {\n      type: [Object, null, String],\n      default: function _default() {\n        return {\n          border: '1px solid #00c690'\n        };\n      }\n    },\n    initialCheckIn: {\n      default: null,\n      type: [Date, String]\n    },\n    initialCheckOut: {\n      default: null,\n      type: [Date, String]\n    },\n    alwaysOpenOnDesktop: {\n      type: Boolean,\n      default: false\n    },\n    numberOfMonthsToDisplay: {\n      type: Number,\n      default: 2\n    },\n    format: {\n      default: 'YYYY-MM-DD',\n      type: String\n    },\n    startDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date();\n      }\n    },\n    endDate: {\n      type: [Date, String],\n      default: function _default() {\n        return new Date(8640000000000000);\n      } // maximum date value\n\n    },\n    firstDayOfWeek: {\n      default: 0,\n      type: Number\n    },\n    disabledDates: {\n      default: function _default() {\n        return [];\n      },\n      type: Array\n    },\n    hoveringTooltip: {\n      default: true,\n      type: Boolean\n    },\n    staticTooltipMessage: {\n      default: null,\n      type: String\n    },\n    customI18n: {\n      default: null,\n      type: Object\n    },\n    lang: {\n      default: 'en',\n      type: String\n    },\n    showYear: {\n      default: false,\n      type: Boolean\n    },\n    closeDatepickerOnClickOutside: {\n      default: true,\n      type: Boolean\n    },\n    displayClearButton: {\n      default: true,\n      type: Boolean\n    },\n    disableDatesWithoutPrice: {\n      default: false,\n      type: Boolean\n    },\n    priceDefault: {\n      default: '',\n      type: [Number, String, null]\n    },\n    priceByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    },\n    minNightsByDate: {\n      type: Array,\n      default: function _default() {\n        return [];\n      }\n    }\n  },\n  data: function data() {\n    return {\n      hoveringDate: null,\n      checkIn: this.initialCheckIn ? new Date(this.initialCheckIn) : null,\n      checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,\n      months: [],\n      activeMonthIndex: 0,\n      isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,\n      xDown: null,\n      yDown: null,\n      xUp: null,\n      yUp: null\n    };\n  },\n  computed: {\n    i18n: function (_i18n) {\n      function i18n() {\n        return _i18n.apply(this, arguments);\n      }\n\n      i18n.toString = function () {\n        return _i18n.toString();\n      };\n\n      return i18n;\n    }(function () {\n      var i18nStore = this.customI18n || defaultI18n;\n      return i18nStore[this.lang] || i18n['en'];\n    }),\n    showClearSelectionButton: function showClearSelectionButton() {\n      return Boolean((this.checkIn || this.checkOut) && this.displayClearButton);\n    },\n    disabledDatesForCheckIn: function disabledDatesForCheckIn() {\n      return this.disabledDates;\n    },\n    disabledDatesForCheckOut: function disabledDatesForCheckOut() {\n      var _this = this;\n\n      return this.disabledDates.map(function (dateOrRange) {\n        if (_this.isRangeObject(dateOrRange)) return {\n          start: _this.addDays(dateOrRange.start, 1),\n          end: _this.addDays(dateOrRange.end, 1)\n        };\n        return _this.addDays(dateOrRange, 1);\n      });\n    },\n    choosingCheckOut: function choosingCheckOut() {\n      return this.checkIn && !this.checkOut;\n    },\n    minCheckOutDate: function minCheckOutDate() {\n      if (!this.checkIn) return null;\n      return this.addDays(this.checkIn, this.getMinNights(this.checkIn));\n    },\n    maxCheckOutDate: function maxCheckOutDate() {\n      if (!this.choosingCheckOut) return null;\n      var nextDisabledDate = this.getNextDate(this.disabledDatesForCheckOut, this.addDays(this.checkIn, 1));\n      var maxDateValue = new Date(8640000000000000);\n      return this.addDays(nextDisabledDate || maxDateValue, -1);\n    },\n    indexesOfMonthsToDisplay: function indexesOfMonthsToDisplay() {\n      return Array.from(Array(this.numberOfMonthsToDisplay).keys());\n    },\n    paneStyleClass: function paneStyleClass() {\n      if (this.numberOfMonthsToDisplay === 1) return 'datepicker__months-singlepane';\n      return 'datepicker__months-dualpane';\n    },\n    datepickerClass: function datepickerClass() {\n      return \"datepicker--\".concat(this.isOpen ? 'open' : 'closed');\n    },\n    screenSize: function screenSize() {\n      if (window.innerWidth < 480) return 'smartphone';\n      if (window.innerWidth < 768) return 'tablet';\n      return 'desktop'; // window.innerWidth >= 768\n    },\n    alwaysOpen: function alwaysOpen() {\n      if (this.alwaysOpenOnDesktop && this.screenSize === 'desktop') return true;\n      return false;\n    }\n  },\n  watch: {\n    isOpen: function isOpen(value) {\n      var _this2 = this;\n\n      if (!value && this.alwaysOpen) {\n        // Prevent setting isOpen to false\n        this.isOpen = true;\n        return;\n      }\n\n      if (!value) {\n        this.$emit('closed', this);\n      }\n\n      if (this.screenSize !== 'desktop') {\n        var bodyClassList = document.querySelector('body').classList;\n\n        if (value) {\n          bodyClassList.add('-overflow-hidden');\n          this.$nextTick(function () {\n            var swiperWrapper = document.getElementById('swiperWrapper');\n            var monthEl = document.querySelector('.datepicker__month');\n            var monthHeight = monthEl ? monthEl.offsetHeight : 1;\n            swiperWrapper.scrollTop = _this2.activeMonthIndex * monthHeight;\n          });\n        } else {\n          bodyClassList.remove('-overflow-hidden');\n        }\n      }\n    },\n    checkIn: function checkIn(newDate) {\n      this.$emit('check-in-changed', newDate);\n    },\n    checkOut: function checkOut(newDate) {\n      if (this.checkOut !== null && this.checkOut !== null) {\n        this.hoveringDate = null;\n        this.hideDatepicker();\n      }\n\n      this.$emit('check-out-changed', newDate);\n    }\n  },\n  beforeMount: function beforeMount() {\n    fecha.i18n = {\n      dayNames: this.i18n['day-names'],\n      dayNamesShort: this.shortenString(this.i18n['day-names'], 3),\n      monthNames: this.i18n['month-names'],\n      monthNamesShort: this.shortenString(this.i18n['month-names'], 3),\n      amPm: ['am', 'pm'],\n      // D is the day of the month, function returns something like...  3rd or 11th\n      DoFn: function DoFn(D) {\n        return D + ['th', 'st', 'nd', 'rd'][D % 10 > 3 ? 0 : (D - D % 10 !== 10) * D % 10];\n      }\n    };\n\n    if (this.checkIn && (this.getMonthDiff(this.getNextMonth(new Date(this.startDate)), this.checkIn) > 0 || this.getMonthDiff(this.startDate, this.checkIn) > 0)) {\n      this.createMonth(new Date(this.startDate));\n      var count = this.getMonthDiff(this.startDate, this.checkIn);\n      var nextMonth = new Date(this.startDate);\n\n      for (var i = 0; i <= count; i++) {\n        var tempNextMonth = this.getNextMonth(nextMonth);\n        this.createMonth(tempNextMonth);\n        nextMonth = tempNextMonth;\n      }\n\n      if (this.checkOut && this.getMonthDiff(this.checkIn, this.checkOut) > 0) {\n        this.createMonth(this.getNextMonth(nextMonth));\n        this.activeMonthIndex = 1;\n      }\n\n      this.activeMonthIndex += count;\n    } else {\n      this.createMonth(new Date(this.startDate));\n      this.createMonth(this.getNextMonth(new Date(this.startDate)));\n    }\n  },\n  mounted: function mounted() {\n    var _this3 = this;\n\n    document.addEventListener('touchstart', this.handleTouchStart, false);\n    document.addEventListener('touchmove', this.handleTouchMove, false);\n    window.addEventListener('resize', this.forceScreenSizeRecomputation);\n    this.onElementHeightChange(document.body, function () {\n      _this3.emitHeighChangeEvent();\n    });\n  },\n  destroyed: function destroyed() {\n    window.removeEventListener('touchstart', this.handleTouchStart);\n    window.removeEventListener('touchmove', this.handleTouchMove);\n    window.removeEventListener('resize', this.forceScreenSizeRecomputation);\n  },\n  methods: _objectSpread(_objectSpread({}, Helpers), {}, {\n    formatDate: function formatDate(date) {\n      if (date) {\n        return fecha.format(date, this.format);\n      }\n\n      return '';\n    },\n    forceScreenSizeRecomputation: function forceScreenSizeRecomputation() {\n      this._computedWatchers.screenSize.run();\n\n      this._computedWatchers.alwaysOpen.run();\n\n      this.isOpen = this.screenSize === 'desktop' ? this.alwaysOpenOnDesktop : false;\n      this.$forceUpdate();\n    },\n    onElementHeightChange: function onElementHeightChange(el, callback) {\n      var lastHeight = el.clientHeight;\n      var newHeight = lastHeight;\n\n      (function run() {\n        newHeight = el.clientHeight;\n\n        if (lastHeight !== newHeight) {\n          callback();\n        }\n\n        lastHeight = newHeight;\n\n        if (el.onElementHeightChangeTimer) {\n          clearTimeout(el.onElementHeightChangeTimer);\n        }\n\n        el.onElementHeightChangeTimer = setTimeout(run, 1000);\n      })();\n    },\n    emitHeighChangeEvent: function emitHeighChangeEvent() {\n      this.$emit('height-changed');\n    },\n    clearSelection: function clearSelection() {\n      this.isOpen = false;\n      this.hoveringDate = null;\n      this.checkIn = null;\n      this.checkOut = null;\n    },\n    hideDatepicker: function hideDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = false;\n    },\n    showDatepicker: function showDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = true;\n    },\n    toggleDatepicker: function toggleDatepicker() {\n      if (!this.alwaysOpen) this.isOpen = !this.isOpen;\n    },\n    clickOutside: function clickOutside() {\n      if (this.closeDatepickerOnClickOutside && this.screenSize === 'desktop') this.hideDatepicker();\n    },\n    handleDayClick: function handleDayClick(date) {\n      if (!this.checkIn) {\n        this.checkIn = date;\n      } else if (this.checkIn && !this.checkOut) {\n        this.checkOut = date;\n        this.isOpen = false;\n      } else {\n        this.checkOut = null;\n        this.checkIn = date;\n      }\n    },\n    renderPreviousMonth: function renderPreviousMonth() {\n      if (this.activeMonthIndex >= 1) {\n        this.activeMonthIndex--;\n      } else return;\n    },\n    renderNextMonth: throttle(function throttleRenderNextMonth() {\n      if (this.activeMonthIndex < this.months.length - 2) {\n        this.activeMonthIndex++;\n        return;\n      }\n\n      var firstDayOfLastMonth;\n\n      if (this.screenSize !== 'desktop') {\n        firstDayOfLastMonth = this.months[this.months.length - 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      } else {\n        firstDayOfLastMonth = this.months[this.activeMonthIndex + 1].days.filter(function (day) {\n          return day.belongsToThisMonth === true;\n        });\n      }\n\n      if (this.compareDay(firstDayOfLastMonth[0].date, this.endDate) == 0) return;\n      this.createMonth(this.getNextMonth(firstDayOfLastMonth[0].date));\n      this.activeMonthIndex++;\n    }, 200),\n    getDay: function getDay(date) {\n      return fecha.format(date, 'D');\n    },\n    getMonth: function getMonth(date) {\n      return this.i18n['month-names'][fecha.format(date, 'M') - 1] + (this.showYear ? fecha.format(date, ' YYYY') : '');\n    },\n    createMonth: function createMonth(date) {\n      var firstDay = this.getFirstDay(date, this.firstDayOfWeek);\n      var month = {\n        days: []\n      };\n\n      for (var i = 0; i < 42; i++) {\n        month.days.push({\n          date: this.addDays(firstDay, i),\n          belongsToThisMonth: this.addDays(firstDay, i).getMonth() === date.getMonth(),\n          isInRange: false\n        });\n      }\n\n      this.months.push(month);\n    },\n    getPrice: function getPrice(date) {\n      var _this4 = this;\n\n      var currentRange = this.priceByDate.find(function (range) {\n        return _this4.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.price) || this.priceDefault;\n    },\n    getMinNights: function getMinNights(date) {\n      var _this5 = this;\n\n      var currentRange = this.minNightsByDate.find(function (range) {\n        return _this5.isDayInRange(date, range);\n      });\n      return (currentRange === null || currentRange === void 0 ? void 0 : currentRange.minNights) || 1;\n    }\n  })\n};"
         },
         {
           "id": null,
@@ -25161,7 +25161,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2",
-              "loc": "429:11-24"
+              "loc": "428:11-24"
             },
             {
               "moduleId": null,
@@ -25170,7 +25170,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "/home/mike/code/studiohb/vue-hotel-datepicker/node_modules/@babel/runtime/helpers/esm/objectSpread2",
-              "loc": "429:25-38"
+              "loc": "428:25-38"
             }
           ],
           "usedExports": [
@@ -25271,7 +25271,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "fecha",
-              "loc": "380:4-9"
+              "loc": "379:4-9"
             },
             {
               "moduleId": null,
@@ -25280,7 +25280,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "fecha",
-              "loc": "432:15-20"
+              "loc": "431:15-20"
             },
             {
               "moduleId": null,
@@ -25289,7 +25289,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "fecha",
-              "loc": "526:13-18"
+              "loc": "524:13-18"
             },
             {
               "moduleId": null,
@@ -25298,7 +25298,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "fecha",
-              "loc": "529:38-43"
+              "loc": "527:38-43"
             },
             {
               "moduleId": null,
@@ -25307,7 +25307,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "fecha",
-              "loc": "529:86-91"
+              "loc": "527:86-91"
             }
           ],
           "usedExports": [
@@ -25473,7 +25473,7 @@
               "moduleName": "./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&",
               "type": "harmony import specifier",
               "userRequest": "./helpers.js",
-              "loc": "429:43-50"
+              "loc": "428:43-50"
             }
           ],
           "usedExports": [

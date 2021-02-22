@@ -340,7 +340,6 @@ export default {
     checkOut(newDate) {
       if (this.checkOut !== null && this.checkOut !== null) {
         this.hoveringDate = null;
-        this.reRender();
         this.hideDatepicker();
       }
 
@@ -454,7 +453,6 @@ export default {
       this.hoveringDate = null;
       this.checkIn = null;
       this.checkOut = null;
-      this.reRender();
     },
 
     hideDatepicker() {
