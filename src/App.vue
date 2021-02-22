@@ -2,19 +2,17 @@
   .datepicker__wrapper(v-on-click-outside='clickOutside' @blur="clickOutside")
     .datepicker__close-button.-hide-on-desktop(v-if='isOpen' @click='hideDatepicker') ＋
     .datepicker__dummy-wrapper(:class="isOpen ? 'datepicker__dummy-wrapper--is-active' : ''")
-      date-input(
-        :i18n="i18n"
-        :input-date="formatDate(checkIn)"
-        input-date-type="check-in"
-        :is-open="isOpen"
-        :toggle-datepicker="toggleDatepicker"
+      .datepicker__input(
+        @click="toggleDatepicker"
+        @keyup.enter.stop.prevent="toggleDatepicker"
+        v-text="checkIn ? formatDate(checkIn) : i18n['check-in']"
+        :tabindex="0"
       )
-      date-input(
-        :i18n="i18n"
-        :input-date="formatDate(checkOut)"
-        input-date-type="check-out"
-        :is-open="isOpen"
-        :toggle-datepicker="toggleDatepicker"
+      .datepicker__input(
+        @click="toggleDatepicker"
+        @keyup.enter.stop.prevent="toggleDatepicker"
+        v-text="checkOut ? formatDate(checkOut) : i18n['check-out']"
+        :tabindex="1"
       )
     .datepicker__clear-button(tabindex="0" @click='clearSelection' v-if="showClearSelectionButton")
       svg(xmlns='http://www.w3.org/2000/svg' viewBox="0 0 68 68")
@@ -27,16 +25,12 @@
           v-if='isOpen'
         )
           .datepicker__input(
+            :v-text="checkIn ? formatDate(checkIn) : i18n['check-in']"
             tabindex="0"
-            :class="isOpen && !checkIn ? 'datepicker__dummy-input--is-active' : ''"
-            v-text="`${checkIn ? formatDate(checkIn) : i18n['check-in']}`"
-            type="button"
           )
           .datepicker__input(
-            tabindex="0"
-            :class="isOpen && checkIn && !checkOut ? 'datepicker__dummy-input--is-active' : ''"
-            v-text="`${checkOut ? formatDate(checkOut) : i18n['check-out']}`"
-            type="button"
+            :v-text="checkOut ? formatDate(checkOut) : i18n['check-out']"
+            tabindex="1"
           )
       .datepicker__inner
         .datepicker__header
@@ -140,7 +134,6 @@ import fecha from 'fecha';
 import defaultI18n from './i18n.js';
 
 import Day from './components/Day.vue';
-import DateInput from './components/DateInput.vue';
 import Helpers from './helpers.js';
 import './assets/scss/main.scss';
 
@@ -153,7 +146,6 @@ export default {
 
   components: {
     Day,
-    DateInput
   },
 
   props: {
