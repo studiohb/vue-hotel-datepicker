@@ -1,5 +1,5 @@
 <template lang="pug">
-  .datepicker__wrapper(v-if='show' v-on-click-outside='clickOutside' @blur="clickOutside")
+  .datepicker__wrapper(v-on-click-outside='clickOutside' @blur="clickOutside")
     .datepicker__close-button.-hide-on-desktop(v-if='isOpen' @click='hideDatepicker') ＋
     .datepicker__dummy-wrapper(:class="isOpen ? 'datepicker__dummy-wrapper--is-active' : ''")
       date-input(
@@ -250,7 +250,6 @@ export default {
       checkOut: this.initialCheckOut ? new Date(this.initialCheckOut) : null,
       months: [],
       activeMonthIndex: 0,
-      show: true,
       isOpen: window.innerWidth >= 768 ? this.alwaysOpenOnDesktop : false,
       xDown: null,
       yDown: null,
@@ -349,7 +348,6 @@ export default {
     checkOut(newDate) {
       if (this.checkOut !== null && this.checkOut !== null) {
         this.hoveringDate = null;
-        this.show = true;
         this.reRender();
         this.hideDatepicker();
       }
@@ -459,18 +457,11 @@ export default {
       this.$emit('height-changed');
     },
 
-    reRender() {
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
-      });
-    },
-
     clearSelection() {
+      this.isOpen = false;
       this.hoveringDate = null;
       this.checkIn = null;
       this.checkOut = null;
-      this.show = true;
       this.reRender();
     },
 
@@ -496,6 +487,7 @@ export default {
         this.checkIn = date;
       } else if (this.checkIn && !this.checkOut) {
         this.checkOut = date;
+        this.isOpen = false;
       } else {
         this.checkOut = null;
         this.checkIn = date;
@@ -533,14 +525,6 @@ export default {
 
       this.activeMonthIndex++;
     }, 200),
-
-    setCheckIn(date) {
-      this.checkIn = date;
-    },
-
-    setCheckOut(date) {
-      this.checkOut = date;
-    },
 
     getDay(date) {
       return fecha.format(date, 'D');
