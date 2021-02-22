@@ -3,7 +3,6 @@
     @click="toggleDatepicker"
     @keyup.enter.stop.prevent="toggleDatepicker"
     data-qa='datepickerInput'
-    :class="inputClass"
     v-text="inputDate ? inputDate : i18n[inputDateType]"
     :tabindex="tabIndex"
   )
@@ -25,10 +24,6 @@ export default {
       type: String,
       default: 'check-in'
     },
-    singleDaySelection: {
-      type: Boolean,
-      default: false,
-    },
     toggleDatepicker: {
       type: Function,
       required: true,
@@ -40,12 +35,6 @@ export default {
   },
 
   computed: {
-    inputClass() {
-      return {
-        'datepicker__input--is-active': this.isOpen && this.inputDate == null,
-        'datepicker__input--single-date': this.singleDaySelection,
-      };
-    },
     tabIndex() {
       return this.inputDateType === 'check-in' ? 0 : -1;
     }

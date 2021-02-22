@@ -154,32 +154,6 @@
             width: calc(50% - 4px);
             text-indent: 20px;
         }
-
-        &--is-active {
-            color: $primary-color;
-        }
-
-        &--is-active::placeholder {
-            color: $primary-color;
-        }
-
-        &--is-active::-moz-placeholder {
-            color: $primary-color;
-        }
-
-        &--is-active:-ms-input-placeholder {
-            color: $primary-color;
-        }
-
-        &--is-active:-moz-placeholder {
-            color: $primary-color;
-        }
-
-        &--single-date:first-child {
-            width: 100%;
-            background: none;
-            text-align: left;
-        }
     }
 
     &__month-day {

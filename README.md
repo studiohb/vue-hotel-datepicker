@@ -150,11 +150,6 @@ Shows a tooltip with the number of nights when hovering a date.
 
 If provided, it will override the default tooltip ("X nights min." when choosing check-in, "X nights" when choosing check-out) with the text provided. You can use HTML in the string.
 
-## singleDaySelection
-
-- Type `boolean`
-- Default `false`
-
 ## showYear
 
 - Type `boolean`

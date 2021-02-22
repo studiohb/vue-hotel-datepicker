@@ -8,16 +8,13 @@
         input-date-type="check-in"
         :is-open="isOpen"
         :toggle-datepicker="toggleDatepicker"
-        :single-day-selection="singleDaySelection"
       )
       date-input(
-        v-if="!singleDaySelection"
         :i18n="i18n"
         :input-date="formatDate(checkOut)"
         input-date-type="check-out"
         :is-open="isOpen"
         :toggle-datepicker="toggleDatepicker"
-        :single-day-selection="singleDaySelection"
       )
     .datepicker__clear-button(tabindex="0" @click='clearSelection' v-if="showClearSelectionButton")
       svg(xmlns='http://www.w3.org/2000/svg' viewBox="0 0 68 68")
@@ -215,10 +212,6 @@ export default {
     lang: {
       default: 'en',
       type: String
-    },
-    singleDaySelection: {
-      default: false,
-      type: Boolean
     },
     showYear: {
       default: false,
@@ -499,12 +492,9 @@ export default {
     },
 
     handleDayClick(date) {
-      if (this.checkIn == null && this.singleDaySelection == false) {
+      if (!this.checkIn) {
         this.checkIn = date;
-      } else if (this.singleDaySelection == true) {
-        this.checkIn = date;
-        this.checkOut = date;
-      } else if (this.checkIn !== null && this.checkOut == null) {
+      } else if (this.checkIn && !this.checkOut) {
         this.checkOut = date;
       } else {
         this.checkOut = null;
