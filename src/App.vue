@@ -25,11 +25,11 @@
           v-if='isOpen'
         )
           .datepicker__input(
-            :v-text="checkIn ? formatDate(checkIn) : i18n['check-in']"
+            v-text="checkIn ? formatDate(checkIn) : i18n['check-in']"
             tabindex="0"
           )
           .datepicker__input(
-            :v-text="checkOut ? formatDate(checkOut) : i18n['check-out']"
+            v-text="checkOut ? formatDate(checkOut) : i18n['check-out']"
             tabindex="1"
           )
       .datepicker__inner
