@@ -121,7 +121,7 @@
                   :price='getPrice(day.date)'
                   :minNights='getMinNights(day.date)'
                 )
-            .next--mobile(
+            button.next--mobile(
               @click='renderNextMonth' type="button"
             )
 
